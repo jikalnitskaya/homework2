@@ -1,0 +1,80 @@
+.main {margin: 0px auto;
+	width: 1340px;
+	border: 1px solid black;}
+
+.logo {font-size: 60px;
+	font-family: sans-serif;
+	margin: 0px 0px 30px 10px;}
+
+.menu {height: 40px;
+	background: hsl(0,0%,40%);
+	margin: 0px 10px;}
+
+.menu ul {list-style: none;}
+
+.menu ul li {display: inline-block;
+	text-align: center;}
+
+.menu ul li a {display: block;
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	line-height: 40px;
+	height: 40px;
+	width: 200px;}
+
+.menu ul li a:hover {background: hsl(0,0%,25%);}
+
+.left {margin: 40px 10px 70px 10px;
+	width: 200px;
+	float: left;}
+
+.left ul li {border: 1px solid hsl(280,100%,90%);
+	height: 40px;
+	width: 200px;}
+
+.left ul li a {display: block;
+	text-decoration: none;
+	color: hsl(0,0%,25%);
+	line-height: 40px;
+	width: 200px;
+	padding-left: 10px;}
+
+.left ul li a:hover{color: black;
+	background: hsl(280,100%,90%);
+	width: 186px;
+	padding: 0px 0px 0px 14px;}
+
+.centre {float: right;
+	margin: 40px 10px 70px 10px;
+	width: 1000px}
+
+.centre .image {border: 1px solid hsl(280,100%,90%);}
+
+.centre .image img {display: block;
+	margin: 0px auto;
+	padding: 30px;}
+
+p {margin-top: 40px;
+	font-size: 16px;}
+
+.footer {clear: both;
+	margin: 0px 10px 30px 10px;
+	height: 40px;
+	background: hsl(280,100%,90%)}
+
+.footer ul li {display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	width: 200px;}
+
+.footer ul li a {display: block;
+	color: hsl(0,0%,25%);
+	text-decoration: none;
+	font-family: sans-serif;}
+
+.footer ul li a:hover{text-decoration: underline;}
+
+.end {float:right;
+	width: 250px;}
