@@ -1,0 +1,103 @@
+.big {height: 1200px;
+	width: 100%;
+	background: #509be2;}
+
+.darkblue {background: #4c79a3;
+	height: 30px;}
+
+.lightblue {background: #bfdffd; 
+	background: linear-gradient(to top, #fbfcfd, #bfdffd);
+	height: 140px;}	
+
+.main {height: 1170px;
+	margin: 0 10%;
+	background: white;
+	position: absolute;
+	top: 0;}
+
+.header {height: 170px;}
+
+.contacts {margin-top: 5px;
+	margin-right: 10px;
+	float: right;
+	color: hsl(240,100%,40%);}
+
+.country {border: 1px solid black;
+	margin-top: 10px;
+	margin-right: 10px;
+	clear: right;
+	float: right;}
+
+.country ul li {display: inline-block;
+	width: 80px;
+	height: 70px;
+	text-align: center;
+	border: 1px solid black;}
+/*блоки с картинками прыгают*/
+
+.country ul li a:hover {color: violet;}
+
+/*нет теней*/
+
+.picture {display: block;
+	height: 248px;
+	width: 1078px;
+	border: 1px solid #509be2;}
+
+.menu-bar ul {width: 100%;
+	height: 30px;
+	position: relative;
+	background: hsl(0,0%,25%);}
+
+.menu-bar ul li {display: inline-block;
+	width: 150px;
+	text-align: center;}
+
+.menu-bar ul li a {color: white;
+	display: block;
+	text-decoration: none;
+	line-height: 30px;}
+
+.menu-bar ul li a:hover {background: hsl(0,0%,15%);}
+
+/*.trip ul {position: absolute; 
+	left: -9999px;}*/
+
+.content {height: 710px;}
+
+.info {float: left;
+	height: 718px;
+	width: 20%;
+	padding: 0 10px;
+	background: #edeef0;
+	border: 1px solid #7792ab;}
+
+.info h3 {text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 5px;
+	padding-bottom: 5px;}
+
+.news {float: right;
+	height: 718px;
+	width: 20%;
+	padding: 0 10px;
+	background: #edeef0;
+	border: 1px solid #7792ab;}
+
+.news h3 {text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 5px;
+	padding-bottom: 5px;}
+
+.footer {clear: both;
+	text-align: center;
+	height: 30px;
+	width: 100%;
+	color: white;
+	padding-top: 2px;
+	margin-top: 1000px;}
+
+
+
