@@ -1,0 +1,48 @@
+* {margin: 0;
+	padding: 0;}
+
+table {border-collapse: collapse;
+	border-top-color: white;}
+
+td {border: 12px solid #212318;}
+
+.first {height: 47px;}
+.second {height: 128px;}
+.third {height: 129px;}
+.fourth {height: 61px;}
+.fifth {height: 58px;}
+.sixth {height: 29px;}
+.seventh {height: 31px;}
+
+.aaa {width: 49px;}
+.black1 {width: 65px;}
+.black2 {width: 63px;}
+.black3 {width: 128px;}
+.bbb {width: 76px;}
+.ccc {width: 76px;}
+
+.yellow1 {background: #fff06f;}
+.yellow2 {background: #fff06f;}
+.yellow3 {background: #fff06f;}
+.red {background: #ff604c;}
+.blue {background: #0b4986;}
+.black1 {background: #2a3732;}
+.black2 {background: #2a3732;}
+.black3 {background: #2a3732;}
+
+.ab {border-top-style: none;
+	border-left-style: none;}
+.bc {border-top-style: none;}
+.yellow1 {border-top-style: none;
+	border-right-style: none;}
+.yellow2 {border-right-style: none;}
+.cd {border-left-style: none;}
+.aaa {border-left-style: none;}
+.yellow3 {border-bottom-style: none;
+	border-left-style: none;}
+.de {border-bottom-style: none;
+	border-right-style: none;}
+.ef {border-bottom-style: none;}
+.blue {border-right-style: none;}
+.ccc {border-right-style: none;}
+.fg {border-right-style: none;}
