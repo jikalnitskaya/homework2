@@ -1,0 +1,106 @@
+.header {height: 40px;
+	background: #075190;}
+
+.menu {float: right;
+	height: 40px;}
+
+.header ul li {display: inline-block;
+	text-align: center;
+	margin: 0 5px;}
+
+.bord {margin-right: 75px;
+	border-right: 1px solid #56a2dc;}
+
+.fl {position: relative;
+	width: 180px;}
+
+.flag {position: absolute;
+	margin-left: 20px;
+	left: -25px;
+	top: 7px;}
+
+.header ul li .fl {color: white;}/*белый*/
+.header ul li a .bc {color: white;}/*белый*/
+
+.header ul li a {color: #4ea1db;
+	display: inline-block;
+	text-decoration: none;
+	padding: 0px 20px;
+	line-height: 40px;}
+
+
+
+.ab {text-decoration: underline;}
+
+.header ul li a:hover {color: white;
+	background: #4eabda;}
+
+body {background-image: url(../img/bgr.png);
+	background-size: 100%;}
+
+.window {width: 562px;
+	height: 612px;
+	margin: 213px auto 202px auto;
+	background: #393f34;
+	opacity: 0.7;
+	text-align: center;}
+
+h1 {font-size: 26px;
+	font-family: serif;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;}
+
+hr {margin-bottom: 25px;}
+
+a .fb {padding-top: 15px;
+	padding-bottom: 15px;
+	border: 1px solid black;
+	opacity: 1;}/*прозрачность*/
+
+h2 {color: #7c7f7c;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 40px;
+	margin-left: auto;
+	margin-right: auto;}
+
+h2:before {content: "";
+    display: inline;
+    border-top: solid 1px #666666;
+    width: 50px;
+    height: 1px;
+    padding-right: 20px;
+    padding-left: 20px;}
+
+h2:after {content: "";
+    display: inline-block;
+    border-top: solid 1px #666666;
+    width: 50px;
+    height: 1px;}
+
+p {margin-top: 15px;}
+
+.textfield {width: 276px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background: black;
+    opacity: 1;}/*прозрачность*/
+
+.textfield:hover {background: #1b5288;}
+
+.check {font-color: white;} /*не белеет*/
+
+.btn {width: 276px;
+	height: 30px;
+	margin-top: 15px;
+	background: #307cc5;
+	border-radius: 5px;
+	color: white;
+	opacity: 1;} /*прозрачность*/
+
+.agree {color: white;
+	padding: 20px 131px 30px 131px;
+	width: 300px;
+	font-size: 12px;}
