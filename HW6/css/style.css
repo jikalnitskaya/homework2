@@ -1,19 +1,45 @@
+
+.wrapper {margin: 16px 45px 0px;}
+
 .header {display: inline;}
 
-.phone {/*display: inline;*/
+.phone {display: inline;
+	width: 297px;
+	height: 22px;
+	padding-left: 7px;
 	color: #949b9e;
 	vertical-align: middle;
-	border: 1px solid black;}
+	font-family: arial;
+	font-size: 18px;}
 
-/*.avtor {width: 21px;
+.ph {width: 21px;
 	height: 21px;
 	border: 1px solid #0e3a5e;
-	border-radius: 10px;
-	background: #0e3a5e;}
+	border-radius: 21px;
+	background: #0e3a5e;
+	display: block;}
 
-.login {display: inline-block;
+.login {width: 495px;
+	height: 27px;
+	margin-left: 17px;
+	vertical-align: middle;
+	display: inline;
 	border: 1px solid #1a5879;
 	background: #1a5879;}
 
-form {display: inline;}*/
+.avtor {width: 21px;
+	height: 21px;
+	border: 1px solid #0e3a5e;}
+
+.login input {width: 113px;
+	height: 18px;}
+
+.login form button {border: 1px solid #0e3a5e;
+	border-left: 1px solid white;
+	color: white;
+	background: #0e3a5e;}
+
+.login .reg {color: white;}
+
+
 
