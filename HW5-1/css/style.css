@@ -40,28 +40,29 @@
 	background: #4eabda;}
 
 body {background-image: url(../img/bgr.png);
-	background-size: 100%;}
+	background-size: cover;}
 
 .window {width: 562px;
-	height: 612px;
-	margin: 213px auto 202px auto;
+	height: 500px;
+	margin: 50px auto 50px auto;
 	background: rgba(48, 53, 43, 0.6);
 	text-align: center;}
 
 h1 {font-size: 26px;
 	font-family: serif;
 	color: white;
-	padding-top: 20px;
-	padding-bottom: 20px;}
+	padding-top: 10px;
+	/*padding-bottom: 15px;*/}
 
-hr {margin-bottom: 25px;}
+hr {margin-bottom: 10px;}
 
 a .fb {padding-top: 15px;
-	padding-bottom: 15px;}
+	padding-bottom: 15px;
+	line-height: 35px;}
 
 h2 {color: #7c7f7c;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	position: relative;
 	width: 40px;
 	margin-left: auto;
@@ -73,7 +74,7 @@ h2:before {content: "";
     width: 120px;
     height: 1px;
     position: absolute;
-    top: 22px;
+    top: 14px;
     left: -120px;}
 
 h2:after {content: "";
@@ -82,10 +83,10 @@ h2:after {content: "";
     width: 120px;
     height: 1px;
     position: absolute;
-    top: 22px;
+    top: 14px;
     left: 35px;}
 
-p {margin-top: 15px;}
+p {margin-top: 10px;}
 
 .textfield {width: 276px;
     padding: 10px;
@@ -100,12 +101,12 @@ label {color: #c0c0bf;}
 
 .btn {width: 153px;
 	height: 30px;
-	margin-top: 15px;
+	margin-top: 10px;
 	background: #50aedb;
 	border-radius: 5px;
 	color: white;}
 
 .agree {color: #cccccc;
-	padding: 0px 131px 20px;
+	padding: 0px 131px 10px;
 	width: 300px;
 	font-size: 12px;}

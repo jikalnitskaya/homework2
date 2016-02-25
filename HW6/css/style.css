@@ -41,5 +41,28 @@
 
 .login .reg {color: white;}
 
+/*.left {float: left;
+	width: 20%;
+	padding: 0 10px;
+	background: #edeef0;
+	border: 1px solid #7792ab;
+	border-top: none;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;}
+
+    {float: left;
+	width: 55%;
+	margin: 0 auto;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;}
+
+    {float: right;
+	width: 20%;
+	padding: 0 10px;
+	background: #edeef0;
+	border: 1px solid #7792ab;
+	border-top: none;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;}
 
 
