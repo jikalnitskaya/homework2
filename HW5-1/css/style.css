@@ -12,21 +12,25 @@
 	border-right: 1px solid #56a2dc;}
 
 .fl {position: relative;
-	width: 180px;}
+	width: 180px;
+	color: white;}/*!!!!*/
 
 .flag {position: absolute;
 	margin-left: 20px;
 	left: -25px;
 	top: 7px;}
 
-.header ul li .fl {color: white;}/*белый*/
-.header ul li a .bc {color: white;}/*белый*/
-
 .header ul li a {color: #4ea1db;
 	display: inline-block;
 	text-decoration: none;
 	padding: 0px 20px;
 	line-height: 40px;}
+
+.header ul li.fl a {color: white;}/*белый*/
+
+.header ul li a.bc {color: white;}
+
+
 
 
 
@@ -41,8 +45,7 @@ body {background-image: url(../img/bgr.png);
 .window {width: 562px;
 	height: 612px;
 	margin: 213px auto 202px auto;
-	background: #393f34;
-	opacity: 0.7;
+	background: rgba(48, 53, 43, 0.6);
 	text-align: center;}
 
 h1 {font-size: 26px;
@@ -54,53 +57,55 @@ h1 {font-size: 26px;
 hr {margin-bottom: 25px;}
 
 a .fb {padding-top: 15px;
-	padding-bottom: 15px;
-	border: 1px solid black;
-	opacity: 1;}/*прозрачность*/
+	padding-bottom: 15px;}
 
 h2 {color: #7c7f7c;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	position: relative;
 	width: 40px;
 	margin-left: auto;
 	margin-right: auto;}
 
 h2:before {content: "";
-    display: inline;
+    display: block;
     border-top: solid 1px #666666;
-    width: 50px;
+    width: 120px;
     height: 1px;
-    padding-right: 20px;
-    padding-left: 20px;}
+    position: absolute;
+    top: 22px;
+    left: -120px;}
 
 h2:after {content: "";
-    display: inline-block;
+    display: block;
     border-top: solid 1px #666666;
-    width: 50px;
-    height: 1px;}
+    width: 120px;
+    height: 1px;
+    position: absolute;
+    top: 22px;
+    left: 35px;}
 
 p {margin-top: 15px;}
 
 .textfield {width: 276px;
     padding: 10px;
     box-sizing: border-box;
-    color: white;
-    background: black;
-    opacity: 1;}/*прозрачность*/
+    color: #cccccc;
+    background: black;}
 
-.textfield:hover {background: #1b5288;}
+.textfield:hover {background: #1b5288;
+	color: #fffcfc;}
 
-.check {font-color: white;} /*не белеет*/
+label {color: #c0c0bf;}
 
-.btn {width: 276px;
+.btn {width: 153px;
 	height: 30px;
 	margin-top: 15px;
-	background: #307cc5;
+	background: #50aedb;
 	border-radius: 5px;
-	color: white;
-	opacity: 1;} /*прозрачность*/
+	color: white;}
 
-.agree {color: white;
-	padding: 20px 131px 30px 131px;
+.agree {color: #cccccc;
+	padding: 0px 131px 20px;
 	width: 300px;
 	font-size: 12px;}

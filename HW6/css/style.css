@@ -1,13 +1,19 @@
-.phone {display: inline;}
+.header {display: inline;}
 
-img {width: 21px;
+.phone {/*display: inline;*/
+	color: #949b9e;
+	vertical-align: middle;
+	border: 1px solid black;}
+
+/*.avtor {width: 21px;
 	height: 21px;
 	border: 1px solid #0e3a5e;
 	border-radius: 10px;
 	background: #0e3a5e;}
 
-p {color: #949b9e}
-
-.login {display: inline;
+.login {display: inline-block;
 	border: 1px solid #1a5879;
 	background: #1a5879;}
+
+form {display: inline;}*/
+
