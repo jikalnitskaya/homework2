@@ -40,7 +40,8 @@
 	background: #4eabda;}
 
 body {background-image: url(../img/bgr.png);
-	background-size: cover;}
+	background-size: cover;
+	background-position: center;}
 
 .window {width: 562px;
 	height: 500px;
@@ -54,15 +55,15 @@ h1 {font-size: 26px;
 	padding-top: 10px;
 	/*padding-bottom: 15px;*/}
 
-hr {margin-bottom: 10px;}
+hr {margin-bottom: 15px;}
 
 a .fb {padding-top: 15px;
 	padding-bottom: 15px;
 	line-height: 35px;}
 
 h2 {color: #7c7f7c;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	position: relative;
 	width: 40px;
 	margin-left: auto;
@@ -74,7 +75,7 @@ h2:before {content: "";
     width: 120px;
     height: 1px;
     position: absolute;
-    top: 14px;
+    top: 17px;
     left: -120px;}
 
 h2:after {content: "";
@@ -83,7 +84,7 @@ h2:after {content: "";
     width: 120px;
     height: 1px;
     position: absolute;
-    top: 14px;
+    top: 17px;
     left: 35px;}
 
 p {margin-top: 10px;}

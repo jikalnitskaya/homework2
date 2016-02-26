@@ -41,28 +41,30 @@
 
 .login .reg {color: white;}
 
-/*.left {float: left;
-	width: 20%;
-	padding: 0 10px;
-	background: #edeef0;
-	border: 1px solid #7792ab;
-	border-top: none;
-	padding-bottom: 20000px;
-    margin-bottom: -20000px;}
+.menu {display: inline;}
 
-    {float: left;
-	width: 55%;
+.content {max-width: 910px;
+	overflow: hidden;
+	border: 1px solid black;}
+
+.left {float: left;
+	width: 185px;
+	/*padding: 0 10px;*/
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;border: 1px solid black;}
+
+.main {float: left;
+	width: 526;
 	margin: 0 auto;
 	padding-bottom: 20000px;
-    margin-bottom: -20000px;}
+    margin-bottom: -20000px;border: 1px solid black;}
 
-    {float: right;
-	width: 20%;
-	padding: 0 10px;
-	background: #edeef0;
-	border: 1px solid #7792ab;
-	border-top: none;
+.right {float: right;
+	width: 185px;
+	/*padding: 0 10px;*/
 	padding-bottom: 20000px;
-    margin-bottom: -20000px;}
+    margin-bottom: -20000px;border: 1px solid black;}
+
+/*.tire {float: left;}*/
 
 
