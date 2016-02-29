@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<title>homework 6</title>
 
-    @font-face {font-family: Lucida Sans Unicode Regular;
-    src: url(fonts/Lucida Sans Unicode Regular.ttf);}
+    <style type="text/css">@font-face {font-family: Lucida Sans Unicode Regular; src: url(fonts/Lucida Sans Unicode Regular.ttf);}
+    </style>
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,9 +17,9 @@
 <body>
     <div class="wrapper">
     	<div class="header">
-    	    <div class="phone">
+    	    <div class="phone1">
     		    <img class="ph" src="img/phone.png" alt="Ph">
-    		    <p>(044)123-45-67 (044)567-89-10</p>
+    		    <span class="phone">(044)123-45-67 (044)567-89-10</span>
     		</div>
 
             <div class="login">
@@ -27,60 +27,94 @@
             	<form action="#" method="post">
             	    <input type="text" placeholder="логин">
             		<input type="password" placeholder="пароль">
-            		<button type="submit">вход</button>
+            		
             	</form>
+                <a class="enter" href="#">вход</a>
             	<a class="reg" href="#">регистрация</a>
-            	<a href="#">Забыли пароль?</a>
+            	<a class="pass" href="#">Забыли пароль?</a>
             </div>
             <div class="navi">
-                <a href="#"><img src="img/home.png" alt="home"></a>
-                <a href="#"><img src="img/map.png" alt="map"></a>
-                <a href="#"><img src="img/letter.png" alt="letter"></a>
+                <div class="home">
+                    <a href="#">
+                        <img src="img/home.png" alt="home">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/map.png" alt="map">
+                    </a>
+                </div>
+                <div class="letter">
+                    <a href="#">
+                        <img src="img/letter.png" alt="letter">
+                    </a>
+                </div>
             </div>
     	</div>
-        <img src="img/blick.png" alt="logo">
+
+        <img class="zazor" src="img/blick.png" alt="logo">
+        
         <div class="menu">
-            <div>
-                <ul>
-                    <li><a href="#">О КОМПАНИИ</a></li>
-                    <li><a href="#">ОПЛАТА</a></li>
-                    <li><a href="#">ДОСТАВКА</a></li>
-                    <li><a href="#">СТАТЬИ</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
-                </ul>
-            </div>
             <div class="koshik">
-                <img src="img/koshik.png">
-                товаров: 0 на сумму: 0,00 грн.
+                <span><img src="img/koshik.png"></span>
+                <span class="text">товаров:</span>
+                <span class="fig1">0</span>
+                <span>на сумму:</span>
+                <span class="fig2">0,00 грн.</span>
             </div>
+            <div class="navig">
+                <nav>
+                    <a href="#">О КОМПАНИИ</a>
+                    <a href="#">ОПЛАТА</a>
+                    <a href="#">ДОСТАВКА</a>
+                    <a href="#">СТАТЬИ</a>
+                    <a href="#">КОНТАКТЫ</a>
+                </nav>
+            </div>
+            
         </div>
         <div class="empty">
-            
+            <div class="empty1"></div>
+            <div class="empty2"></div>
+            <div class="empty3"></div>  
         </div>
         <div class="content">
             <div class="left">
-                <p><img src="img/list.png">КАТАЛОГ ПРОДУКЦИИ:</p>
-                <p>
-                    <div class="circle1"></div>
-                    <div class="circle2"></div>ШИНЫ</p>
+                <div class="kat left_position1">
+                    <div class="list1">
+                        <img class="list" src="img/list.png">
+                    </div>
+                    <span>КАТАЛОГ ПРОДУКЦИИ:</span>
+                </div>
+
+                <div class="punkt left_position">
+                    <div class="circle"></div>
+                    <span>ШИНЫ</span>
+                </div>
+
                 <ul>
                     <li><a href="#">Наименование 1</a></li>
                     <li><a href="#">Наименование 2</a></li>
                     <li><a href="#">Наименование 3</a></li>
                     <li><a href="#">Наименование 4</a></li>
                 </ul>
-                <p>
-                    <div class="circle1"></div>
-                    <div class="circle2"></div>ДИСКИ</p>
+                <div class="punkt left_position">
+                    <div class="circle"></div>
+                    <span>ДИСКИ</span>
+                </div>
+
                 <ul>
                     <li><a href="#">Наименование 1</a></li>
                     <li><a href="#">Наименование 2</a></li>
                     <li><a href="#">Наименование 3</a></li>
                     <li><a href="#">Наименование 4</a></li>
                 </ul>
-                <p>
-                    <div class="circle1"></div>
-                    <div class="circle2"></div>БОЛТЫ</p>
+
+                <div class="punkt left_position">
+                    <div class="circle"></div>
+                    <span>БОЛТЫ</span>
+                </div>
+
                 <ul>
                     <li><a href="#">Наименование 1</a></li>
                     <li><a href="#">Наименование 2</a></li>
@@ -88,75 +122,120 @@
                     <li><a href="#">Наименование 4</a></li>
                 </ul>
             </div>
+
             <div class="main">
-                <div class="tire">
-                    <h1>Goodyear</h1>
-                    <h2>Ultra Grip Extreme</h2>
-                    <a href="#"><img src="img/tyre1.png" alt="Goodyear"></a>
-                    <p>90,00 грн.</p>
+                <div class="tire pic1">
+                    <p class="first">Goodyear</p>
+                    <p class="second">Ultra Grip Extreme</p>
+                    <a href="#">
+                        <div class="trimg">
+                            <img src="img/tyre1.png" alt="Goodyear">
+                        </div>
+                    </a>
+                    <p class="third">90,00 грн.</p>
                 </div>
 
-                <div class="tire">
-                    <h1>Nokian</h1>
-                    <h2>Hakkapeliitta R</h2>
-                    <a href="#"><img src="img/tyre2.png" alt="Nokian"></a>
-                    <p>115,00 грн.</p>
+                <div class="tire pic2">
+                    <p class="first">Nokian</p>
+                    <p class="second">Hakkapeliitta R</p>
+                    <a href="#">
+                        <div class="trimg">
+                            <img src="img/tyre2.png" alt="Nokian">
+                        </div>
+                    </a>
+                    <p class="third">115,00 грн.</p>
                 </div>
 
-                <div class="tire">
-                    <h1>Hankook</h1>
-                    <h2>K 708 155/65 R14</h2>
-                    <a href="#"><img src="img/tyre3.png" alt="Hankook"></a>
-                    <p>393,00 грн.</p>
+                <div class="tire pic3">
+                    <p class="first">Hankook</p>
+                    <p class="second">K 708 155/65 R14</p>
+                    <a href="#">
+                        <div class="trimg">
+                            <img src="img/tyre3.png" alt="Hankook">
+                        </div>
+                    </a>
+                    <p class="third">393,00 грн.</p>
                 </div>
 
-                <div class="tire">
-                    <h1>Goodyear</h1>
-                    <h2>Ultra Grip Extreme</h2>
-                    <a href="#"><img src="img/tyre4.png" alt="Goodyear"></a>
-                    <p>90,00 грн.</p>
+                <div class="tire pic4">
+                    <p class="first">Goodyear</p>
+                    <p class="second">Ultra Grip Extreme</p>
+                    <a href="#">
+                        <div class="trimg">
+                            <img src="img/tyre4.png" alt="Goodyear">
+                        </div>
+                    </a>
+                    <p class="third">90,00 грн.</p>
                 </div>
 
-                <div class="tire">
-                    <h1>Nokian</h1>
-                    <h2>Hakkapeliitta R</h2>
-                    <a href="#"><img src="img/tyre5.png" alt="Nokian"></a>
-                    <p>115,00 грн.</p>
+                <div class="tire pic5">
+                    <p class="first">Nokian</p>
+                    <p class="second">Hakkapeliitta R</p>
+                    <a href="#">
+                        <div class="trimg">
+                            <img src="img/tyre5.png" alt="Nokian">
+                        </div>
+                    </a>
+                    <p class="third">115,00 грн.</p>
                 </div>
 
-                <div class="tire">
-                    <h1>Hankook</h1>
-                    <h2>K 708 155/65 R14</h2>
-                    <a href="#"><img src="img/tyre6.png" alt="Hankook"></a>
-                    <p>393,00 грн.</p>
+                <div class="tire pic6">
+                    <p class="first">Hankook</p>
+                    <p class="second">K 708 155/65 R14</p>
+                    <a href="#">
+                        <div class="trimg">
+                            <img src="img/tyre6.png" alt="Hankook">
+                        </div>
+                    </a>
+                    <p class="third">393,00 грн.</p>
                 </div>
 
-                <div class="tire">
-                    <h1>Goodyear</h1>
-                    <h2>Ultra Grip Extreme</h2>
-                    <a href="#"><img src="img/tyre7.png" alt="Goodyear"></a>
-                    <p>90,00 грн.</p>
+                <div class="tire pic7">
+                    <p class="first">Goodyear</p>
+                    <p class="second">Ultra Grip Extreme</p>
+                    <a href="#">
+                        <div class="trimg">
+                            <img src="img/tyre7.png" alt="Goodyear">
+                        </div>
+                    </a>
+                    <p class="third">90,00 грн.</p>
                 </div>
 
-                <div class="tire">
-                    <h1>Nokian</h1>
-                    <h2>Hakkapeliitta R</h2>
-                    <a href="#"><img src="img/tyre8.png" alt="Nokian"></a>
-                    <p>115,00 грн.</p>
+                <div class="tire pic8">
+                    <p class="first">Nokian</p>
+                    <p class="second">Hakkapeliitta R</p>
+                    <a href="#">
+                        <div class="trimg">
+                            <img src="img/tyre8.png" alt="Nokian">
+                        </div>
+                    </a>
+                    <p class="third">115,00 грн.</p>
                 </div>
 
-                <div class="tire">
-                    <h1>Hankook</h1>
-                    <h2>K 708 155/65 R14</h2>
-                    <a href="#"><img src="img/tyre9.png" alt="Hankook"></a>
-                    <p>393,00 грн.</p>
+                <div class="tire pic9">
+                    <p class="first">Hankook</p>
+                    <p class="second">K 708 155/65 R14</p>
+                    <a href="#">
+                        <div class="trimg">
+                            <img src="img/tyre9.png" alt="Hankook">
+                        </div>
+                    </a>
+                    <p class="third">393,00 грн.</p>
                 </div>
             </div>
+
             <div class="right">
-                <p><img src="img/list.png">БРЕНДЫ:</p>
-                <p>
-                    <div class="circle1"></div>
-                    <div class="circle2"></div>ШИНЫ</p>
+                <div class="kat right_position">
+                    <div class="list1">
+                        <img class="list" src="img/list.png">
+                    </div>
+                    <span class="br">БРЕНДЫ:</span>
+                </div>
+
+                <div class="punkt">
+                    <div class="circle"></div>
+                    <span>ШИНЫ</span>
+                </div>
 
                 <form action="#" method="post">
                     <p><label><input class="check" type="checkbox">Бренд 1</label></p>
@@ -166,9 +245,10 @@
                     <p><label><input class="check" type="checkbox">Бренд 3</label></p>
                 </form>
 
-                <p>
-                    <div class="circle1"></div>
-                    <div class="circle2"></div>ДИСКИ</p>
+                <div class="punkt">
+                    <div class="circle"></div>
+                    <span>ДИСКИ</span>
+                </div>
 
                 <form action="#" method="post">
                     <p><label><input class="check" type="checkbox">Бренд 1</label></p>
@@ -200,9 +280,9 @@
             <li><a href="#">О компании</a></li>
             <li><a href="#">Доставка</a></li> 
             <li><a href="#">Статьи</a></li> 
-            <li><a href="#">Контакты</a></li> 
-            <p>Создание сайта &copy;Global Vision</p>     
+            <li><a href="#">Контакты</a></li>    
         </ul>
+        <p>Создание сайта &copy;Global Vision</p>
 	</div>
 </body>
 </html>
