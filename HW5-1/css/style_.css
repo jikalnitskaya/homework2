@@ -44,7 +44,7 @@ body {background-image: url(../img/_bgr.png);
 	background-position: center;}
 
 .window {width: 562px;
-	height: 500px;
+	/*height: 500px;*/
 	margin: 50px auto 50px auto;
 	background: rgba(48, 53, 43, 0.6);
 	text-align: center;}
