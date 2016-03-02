@@ -1,3 +1,4 @@
+@font-face {font-family: Lucida Sans Unicode Regular; src: url(fonts/Lucida Sans Unicode Regular.ttf);}
 
 .wrapper {margin: 27px 45px 0px;
 	max-width: 910px;}
@@ -166,6 +167,10 @@ nav a:hover {color: #eaedef;
 	box-shadow: 5px 5px 10px rgba(165, 165, 165, 0.5);
 	margin-bottom: 10px;
 	float: left;}
+
+.empty:after {content: " ";
+    display: block;
+    clear: both;}
 
 /*центральная часть*/
 .content {clear: both;

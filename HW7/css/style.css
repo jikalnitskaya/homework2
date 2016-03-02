@@ -1,0 +1,13 @@
+@font-face {font-family: League Gothic; src: url(fonts/league-gothic_regular.ttf);}
+@font-face {font-family: Open Sans Light; src: url(fonts/open-sans-light.ttf);}
+@font-face {font-family: Open Sans Extrabold; src: url(fonts/open_sans-extra_bold.ttf);}
+
+header {background-image: url(../img/bg_.png);
+	background-repeat: no-repeat;
+	height: 848px;}
+
+h2 {color: white;
+	font-style: League Gothic;
+	font-size: 48px;}
+
+span {color: red;}
