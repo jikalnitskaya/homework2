@@ -13,7 +13,7 @@
 
 .fl {position: relative;
 	width: 180px;
-	color: white;}/*!!!!*/
+	color: white;}
 
 .flag {position: absolute;
 	margin-left: 20px;
@@ -26,7 +26,7 @@
 	padding: 0px 20px;
 	line-height: 40px;}
 
-.header ul li.fl a {color: white;}/*белый*/
+.header ul li.fl a {color: white;}
 
 .header ul li a.bc {color: white;}
 
@@ -39,7 +39,7 @@
 .header ul li a:hover {color: white;
 	background: #4eabda;}
 
-body {background-image: url(../img/bgr.png);
+body {background-image: url(../img/_bgr.png);
 	background-size: cover;
 	background-position: center;}
 
@@ -52,8 +52,7 @@ body {background-image: url(../img/bgr.png);
 h1 {font-size: 26px;
 	font-family: serif;
 	color: white;
-	padding-top: 10px;
-	/*padding-bottom: 15px;*/}
+	padding-top: 10px;}
 
 hr {margin-bottom: 15px;}
 
