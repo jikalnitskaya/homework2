@@ -1,4 +1,4 @@
-@font-face {font-family: Lucida Sans Unicode Regular; src: url(fonts/Lucida Sans Unicode Regular.ttf);}
+@font-face {font-family: "Lucida Sans Unicode Regular"; src: url(fonts/Lucida Sans Unicode Regular.ttf);}
 
 .wrapper {margin: 27px 45px 0px;
 	max-width: 910px;}
@@ -20,7 +20,7 @@
 	padding-top: 2px;
 	margin-top: 1px;
 	color: #949b9e;
-	font-family: Arial Regular;
+	font-family: "Arial Regular";
 	font-size: 20px;}
 
 .phone1 {float: left;
@@ -36,7 +36,7 @@
 	border: 1px solid #1a5879;
 	border-radius: 4px;
 	box-shadow: 3px 3px 10px rgba(180, 180, 180, 0.5);
-	font-family: Lucida Sans Unicode Regular;}
+	font-family: "Lucida Sans Unicode Regular";}
 
 .avtor {width: 16px;
 	height: 17px;
@@ -90,21 +90,26 @@
 	margin-bottom: 3px;}
 
 /*меню*/
-.menu {clear: both;
-	max-width: 910px;
+.menu {width: 100%;
 	display: inline-block;
 	background: linear-gradient(to bottom, #4d5663, #010101);
 	color: #b1bcc0;
-	font-family: Lucida Sans Unicode Regular;
+	font-family: "Lucida Sans Unicode Regular";
 	font-size: 13px;
 	border: 1px solid #010101;
 	border-radius: 4px;
 	box-shadow: 3px 3px 10px rgba(80, 82, 94, 0.5);
 	margin-bottom: 10px;}
 
+.clearfix:after {content: "";
+    display: table;
+    clear: both;}
+
+.menu_item {float: left;}
+
 .koshik {float: right;
 	margin-right: 3px;
-	margin-left: 50px;
+	margin-left: 7%;
 	margin-top: 8px;}
 
 .koshik img {vertical-align: middle;}
@@ -121,13 +126,17 @@
 	margin-right: 12px;}
 
 .navig {float: right;
-	margin-left: 136px;}
+	/*margin-left: 136px;*/}
 
 nav a {text-decoration: none;
+	font-family: "Lucida Sans Unicode Regular";
+	font-size: 13px;
 	color: #b1bcc0;
 	line-height: 30px;
-	padding: 5px 10px;
-	margin-right: 10px;}
+	padding: 5px 15px;
+	/*margin-right: 10px;*/}
+
+nav a:last-child {margin-right: 0;}
 
 nav a:hover {color: #eaedef;
 	background: linear-gradient(to bottom, #25617b, #0d3458);
@@ -233,7 +242,7 @@ nav a:hover {color: #eaedef;
 
 /*пункт меню с картинкой*/
 .kat {display: inline-block;
-	font-family: Lucida Sans Unicode Regular;
+	font-family: "Lucida Sans Unicode Regular";
 	font-size: 13px;
 	color: #114165;
 	border: 1px solid #114165;
@@ -254,7 +263,7 @@ nav a:hover {color: #eaedef;
     vertical-align: middle;}
 
 /*пункт меню с кружком*/
-.punkt {font-family: Lucida Sans Unicode Regular;
+.punkt {font-family: "Lucida Sans Unicode Regular";
 	font-size: 13px;
 	color: #114165;
 	border: 1px solid #114165;
@@ -394,14 +403,14 @@ nav a:hover {color: #eaedef;
 	margin-bottom: 28px;}
 
 /*заголовок*/
-.tire .first {font-family: Lucida Sans Unicode Regular;
+.tire .first {font-family: "Lucida Sans Unicode Regular";
 	font-size: 19px;
 	color: #206988;
 	margin-top: 2px;
 	margin-left: 4px;}
 
 /*бренд шины*/
-.tire .second {font-family: Lucida Sans Unicode Regular;
+.tire .second {font-family: "Lucida Sans Unicode Regular";
 	font-size: 14px;
 	color: #1f2528;
     margin-left: 2px;
@@ -421,7 +430,7 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third {font-family: Arial;
+.tire .third {font-family: "Arial";
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
@@ -432,13 +441,13 @@ nav a:hover {color: #eaedef;
 	margin-left: -5px;}
 
 /*заголовок*/
-.tire .first2 {font-family: Lucida Sans Unicode Regular;
+.tire .first2 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 19px;
 	color: #206988;
 	margin-left: 8px;
 	margin-top: 1px;}
 
-.tire .second2 {font-family: Lucida Sans Unicode Regular;
+.tire .second2 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 14px;
 	color: #1f2528;    
 	margin-left: 2px;
@@ -458,7 +467,7 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third2 {font-family: Arial;
+.tire .third2 {font-family: "Arial";
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
@@ -469,13 +478,13 @@ nav a:hover {color: #eaedef;
 	margin-left: -2px;}
 
 /*заголовок*/
-.tire .first3 {font-family: Lucida Sans Unicode Regular;
+.tire .first3 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 19px;
 	color: #206988;
 	margin-left: 10px;
 	margin-top: 1px;}
 
-.tire .second3 {font-family: Lucida Sans Unicode Regular;
+.tire .second3 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 14px;
 	color: #1f2528;
 	margin-left: -5px;}
@@ -494,7 +503,7 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third3 {font-family: Arial;
+.tire .third3 {font-family: "Arial";
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
@@ -505,13 +514,13 @@ nav a:hover {color: #eaedef;
 	margin-left: -1px;}
 
 /*заголовок*/
-.tire .first4 {font-family: Lucida Sans Unicode Regular;
+.tire .first4 {font-family: "Lucida Sans Unicode Regular"
 	font-size: 19px;
 	color: #206988;
 	margin-left: 5px;
 	margin-top: 1px;}
 
-.tire .second4 {font-family: Lucida Sans Unicode Regular;
+.tire .second4 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 14px;
 	color: #1f2528;
 	margin-left: 2px;
@@ -531,7 +540,7 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third4 {font-family: Arial;
+.tire .third4 {font-family: "Arial";
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
@@ -542,13 +551,13 @@ nav a:hover {color: #eaedef;
 	margin-left: -4px;}
 
 /*заголовок*/
-.tire .first5 {font-family: Lucida Sans Unicode Regular;
+.tire .first5 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 19px;
 	color: #206988;
 	margin-left: 10px;
 	margin-top: 1px;}
 
-.tire .second5 {font-family: Lucida Sans Unicode Regular;
+.tire .second5 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 14px;
 	color: #1f2528;
 	margin-left: 1px;
@@ -568,7 +577,7 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third5 {font-family: Arial;
+.tire .third5 {font-family: "Arial";
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
@@ -579,13 +588,13 @@ nav a:hover {color: #eaedef;
 	margin-left: -4px;}
 
 /*заголовок*/
-.tire .first6 {font-family: Lucida Sans Unicode Regular;
+.tire .first6 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 19px;
 	color: #206988;
 	margin-left: 11px;
 	margin-top: 1px;}
 
-.tire .second6 {font-family: Lucida Sans Unicode Regular;
+.tire .second6 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 14px;
 	color: #1f2528;
 	margin-left: -5px;
@@ -605,7 +614,7 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third6 {font-family: Arial;
+.tire .third6 {font-family: "Arial";
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
@@ -616,13 +625,13 @@ nav a:hover {color: #eaedef;
 	margin-left: -3px;}
 
 /*заголовок*/
-.tire .first7 {font-family: Lucida Sans Unicode Regular;
+.tire .first7 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 19px;
 	color: #206988;
 	margin-left: 3px;
 	margin-top: 4px;}
 
-.tire .second7 {font-family: Lucida Sans Unicode Regular;
+.tire .second7 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 14px;
 	color: #1f2528;
 	margin-left: 0px;
@@ -642,7 +651,7 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third7 {font-family: Arial;
+.tire .third7 {font-family: "Arial";
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
@@ -653,13 +662,13 @@ nav a:hover {color: #eaedef;
 	margin-left: -4px;}
 
 /*заголовок*/
-.tire .first8 {font-family: Lucida Sans Unicode Regular;
+.tire .first8 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 19px;
 	color: #206988;
 	margin-left: 10px;
 	margin-top: 5px;}
 
-.tire .second8 {font-family: Lucida Sans Unicode Regular;
+.tire .second8 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 14px;
 	color: #1f2528;
 	margin-left: 2px;
@@ -679,7 +688,7 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third8 {font-family: Arial;
+.tire .third8 {font-family: "Arial";
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
@@ -690,13 +699,13 @@ nav a:hover {color: #eaedef;
 	margin-left:-3px;}
 
 /*заголовок*/
-.tire .first9 {font-family: Lucida Sans Unicode Regular;
+.tire .first9 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 19px;
 	color: #206988;
 	margin-left: 10px;
 	margin-top: 5px;}
 
-.tire .second9 {font-family: Lucida Sans Unicode Regular;
+.tire .second9 {font-family: "Lucida Sans Unicode Regular";
 	font-size: 14px;
 	color: #1f2528;
 	margin-left: -7px;
@@ -716,7 +725,7 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third9 {font-family: Arial;
+.tire .third9 {font-family: "Arial";
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
@@ -774,7 +783,7 @@ nav a:hover {color: #eaedef;
 	margin: 20px 45px;
 	text-align: center;
 	background: #213a4d;
-	font-family: Arial Regular;}
+	font-family: "Arial Regular";}
 
 .footer ul {padding-top: 10px;
 	margin-left: 4px;}
