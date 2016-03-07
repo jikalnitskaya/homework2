@@ -2,15 +2,15 @@
 @font-face {font-family: "Open Sans Light"; src: url(fonts/open-sans-light.ttf);}
 @font-face {font-family: "Open Sans Extrabold"; src: url(fonts/open_sans-extra_bold.ttf);}
 
-.body {width: 2400px;}
+/*.body {width: 2400px;}
 
 /*первый блок*/
 header {background-image: url(../img/bg.png);
 	background-position: center center;
-	width: 2400px;
+	/*width: 2400px;*/
 	height: 828px;
-	/*background-repeat: no-repeat;
-	/*background-size: cover;*/}
+	background-repeat: no-repeat;
+	background-size: cover;}
 
 .container {max-width: 960px;
 	text-align: center;
@@ -145,7 +145,7 @@ article {color: white;
 
 
 /*третий блок*/
-.violet {width: 2400px;
+.violet {/*width: 2400px;*/
 	background: linear-gradient(to top, #33263a, #745083);
     background-size: cover;
     border-top: 1px solid #33253a;
@@ -238,7 +238,7 @@ h4 {font-family: "League Gothic";
 
 
 /*четвертый блок*/
-.white {width: 2400px;
+.white {/*width: 2400px;*/
 	background-color: #f9f9f9;}
 
 .colm_left {float: left;
@@ -305,7 +305,7 @@ h4 {font-family: "League Gothic";
 	font-size: 16px;
     color: #454545;
     text-align: left;
-     margin-left: 17px;
+    margin-left: 17px;
     margin-top: 4px;
     margin-bottom: 8px;}
 
@@ -398,7 +398,7 @@ h4 {font-family: "League Gothic";
     height: 1px;}
 
 /*пятый блок*/
-.blue{width: 2400px;
+.blue{/*width: 2400px;*/
 	background-color: #ececec;}
 
 .colm_1 {float: left;
@@ -444,8 +444,9 @@ h4 {font-family: "League Gothic";
 
 
 /*футер*/
-footer {width: 2400px;
+footer {/*width: 2400px;*/
 	background-image: url(../img/bg_copy.png);
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;}
 
