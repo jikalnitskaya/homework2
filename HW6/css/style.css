@@ -1,4 +1,4 @@
-@font-face {font-family: "Lucida Sans Unicode Regular"; src: url(fonts/Lucida Sans Unicode Regular.ttf);}
+@font-face {font-family: "Lucida Sans Unicode Regular"; src: url(../fonts/lucida_sans_unicode_regular.ttf);}
 
 .wrapper {margin: 27px 45px 0px;
 	max-width: 910px;}
@@ -17,26 +17,27 @@
 	vertical-align: middle;}
 
 .phone {padding-left: 0px;
-	padding-top: 2px;
-	margin-top: 1px;
 	color: #949b9e;
-	font-family: "Arial Regular";
-	font-size: 20px;}
+	font-family: "Arial Regular", sans-serif;
+	font-size: 19px;
+	letter-spacing: -0.07px;
+    line-height: 23px;}
 
 .phone1 {float: left;
 	margin-left: 6px;}
 
 /*авторизация*/
 .login {float: left;
-	height: 22px;
-	margin-left: 22px;
-	/*margin-right: 1px;*/
+	height: 23px;
+	margin-left: 15px;
+	margin-top: -2px;
+	vertical-align: middle;
 	display: inline-block;
 	background: linear-gradient(to bottom, #1f6787, #0c3357);
 	border: 1px solid #1a5879;
 	border-radius: 4px;
 	box-shadow: 3px 3px 10px rgba(180, 180, 180, 0.5);
-	font-family: "Lucida Sans Unicode Regular";}
+	font-family: "Lucida Sans Unicode Regular", "Arial";}
 
 .avtor {width: 16px;
 	height: 17px;
@@ -45,7 +46,8 @@
 	vertical-align: middle;}
 
 .login form {display: inline-block;
-	margin-left: -5px;}
+	margin-left: -5px;
+	margin-top: 1px;}
 
 .login input {margin-left: 4px;
 	width: 108px;
@@ -54,23 +56,29 @@
 
 .login a {color: white;
 	text-decoration: none;
-	margin-left: 6px;
-	font-size: 12px;}
+	margin-left: 4px;
+	font-size: 11px;    
+	letter-spacing: -0.5px;}
 
-.login a.enter {padding-right: 5px;
-	border-right: 1px solid white;}
+.login a.enter {padding-right: 4px;
+	border-right: 1px solid white;    
+	letter-spacing: -0.3px;}
+
+.login a.reg {letter-spacing: -0.3px;
+	margin-left: 0px;}
 
 .login a.pass {color: #a8afb4;
 	text-decoration: underline;
-	font-size: 14px;
-	margin-right: 10px;
-	margin-left: 16px;}
+	font-size: 13px;
+	margin-right: 8px;
+	margin-left: 15px;
+	line-height: 24px;}
 
 /*картинки с навигацией*/
 .navi {float: right;
 	width: 76px;
 	height: 19px;
-	margin-right: 6px;
+	margin-right: 7px;
 	border: 1px solid #c1c8cb;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(193, 200, 203, 0.5);}
@@ -79,9 +87,9 @@
 	margin-top: 1px;}
 
 .navi .home {margin-left: 8px;
-	margin-right: 4px;}
+	margin-right: 5px;}
 
-.navi .letter {margin-left: 4px;
+.navi .letter {margin-left: 5px;
 	margin-right: 8px;}
 
 /*центральная картинка*/
@@ -94,7 +102,7 @@
 	display: inline-block;
 	background: linear-gradient(to bottom, #4d5663, #010101);
 	color: #b1bcc0;
-	font-family: "Lucida Sans Unicode Regular";
+	font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 13px;
 	border: 1px solid #010101;
 	border-radius: 4px;
@@ -107,36 +115,46 @@
 
 .menu_item {float: left;}
 
+.comp {margin-right: -5px;}
+
+.dost {margin-right: 1px;
+    margin-left: 1px;}
+
+.last {margin-right: 3px;
+    margin-left: -5px;}
+
 .koshik {float: right;
 	margin-right: 3px;
-	margin-left: 7%;
-	margin-top: 8px;}
+	margin-left: 6%;
+	margin-top: 7px;    
+	letter-spacing: -0.3px;
+    font-size: 12px;}
 
-.koshik img {vertical-align: middle;}
+.koshik img {vertical-align: middle;
+	margin-top: -1px;}
 
-.text {margin-left: 4px;
+.text {margin-left: 0px;
 	margin-right: 0px;}
 
 .fig1 {color: #0d5a8f;
-	margin-left: -1px;
-	margin-right: 10px;}
+	margin-left: 0px;
+	margin-right: 9px;}
 
 .fig2 {color: #0d5a8f;
-	margin-left: 5px;
-	margin-right: 12px;}
+	margin-left: 6px;
+	margin-right: 10px;}
 
-.navig {float: right;
-	/*margin-left: 136px;*/}
+.navig {float: right;}
 
 nav a {text-decoration: none;
-	font-family: "Lucida Sans Unicode Regular";
+	font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 13px;
 	color: #b1bcc0;
 	line-height: 30px;
-	padding: 5px 15px;
-	/*margin-right: 10px;*/}
+	padding: 5px 15px;    
+	letter-spacing: 0.4px;}
 
-nav a:last-child {margin-right: 0;}
+/*nav a:last-child {margin-right: 0;}*/
 
 nav a:hover {color: #eaedef;
 	background: linear-gradient(to bottom, #25617b, #0d3458);
@@ -188,7 +206,6 @@ nav a:hover {color: #eaedef;
 
 .left {float: left;
 	max-width: 205px;
-	/*padding: 0 10px;*/
 	padding-bottom: 20000px;
     margin-bottom: -20000px;}
 
@@ -211,19 +228,11 @@ nav a:hover {color: #eaedef;
     padding-right: 4px;}
 
 .left_position {margin-top: 10px;
-    /*margin-left: 3px;*/
     margin-right: 30px;
-    /*margin-bottom: 3px;*/
     padding-left: 2px;
-    padding-top: 2px;
-    /*padding-right: 10px;*/}
+    padding-top: 2px;}
 
-.br {/*margin-top: 1px;*/
-    margin-left: 1px;
-    margin-right: 82px;
-    margin-bottom: 1px;
-    padding-left: 1px;
-    padding-right: 1px;}
+
 
 /*стили для левой части*/
 .list {padding-top: 3px;
@@ -233,16 +242,23 @@ nav a:hover {color: #eaedef;
 	width: 20px;
 	margin-top: 1px;
 	margin-left: 1px;
-	margin-right: 1px;
+	margin-right: -1px;
 	margin-bottom: 1px;
 	display: inline-block;
 	background: #114165;
 	border: 1px solid #114165;
     border-radius: 11px;}
 
+.katalog {display: inline-block;
+    letter-spacing: -0.3px;
+    margin-bottom: 2px;
+    margin-top: -7px;
+    margin-right: 4px;
+    vertical-align: middle;}
+
 /*пункт меню с картинкой*/
 .kat {display: inline-block;
-	font-family: "Lucida Sans Unicode Regular";
+	font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 13px;
 	color: #114165;
 	border: 1px solid #114165;
@@ -256,56 +272,67 @@ nav a:hover {color: #eaedef;
     background: white;
     border: 6px solid #114165;
     border-radius: 11px;
-    margin-left: 2px;
+    margin-left: 1px;
     margin-bottom: 3px;
     margin-right: 1px;
     display: inline-block;
     vertical-align: middle;}
 
 /*пункт меню с кружком*/
-.punkt {font-family: "Lucida Sans Unicode Regular";
+.punkt {font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 13px;
 	color: #114165;
 	border: 1px solid #114165;
     border-radius: 15px;}
 
-.disk {margin-top: -6px;
-	margin-left: 0px;}
+.disk {display: inline;
+	margin-left: -1px;
+    letter-spacing: 0.4px;}
 
-.punkt .sh {margin-left: -2px;}
+.punkt .sh {margin-left: -2px;
+	letter-spacing: 0.5px;}
 
-.bolt {margin-left: 0px;
-	margin-top: -9px;}
+.bolt {display: inline;
+	margin-left: -1px;
+    margin-top: -8px;
+    letter-spacing: 0.3px;}
 
 /*стили пунктов меню*/
 .left ul {color: #114165;
-	margin-top: -5px;
+	margin-top: -6px;
 	margin-left: 46px;
-	/*margin-right: 1px;
-	margin-bottom: 1px;
-	padding-top: 1px;
-	padding-left: 1px;*/
-	font-size: 13px;}
+	font-size: 13px;    
+	margin-bottom: -7px;}
 
 .left ul li {list-style: circle;
     margin-top: 7px;
-	margin-left: 6px;
-	/*margin-right: 1px;*/
+	margin-left: 7px;
 	margin-bottom: 10px;
-	padding-top: 3px;
-	/*padding-left: 1px*/}
+	padding-top: 3px;}
 
-.left ul li a {text-decoration: none;}
+.left ul li a {text-decoration: none;
+    font-family: "Arial Regular", sans-serif; 
+    margin-left: -6px;
+    letter-spacing: 0.3px;}
 
 .left ul li a:hover {text-decoration: underline;
 	font-style: italic;
 	font-weight: bold;
+	font-size: 14px;
 	color: #0c3256;}
 
 /*стили для правой части*/
+.br {display: inline;
+	margin-left: 2px;
+    margin-right: 83px;
+    /*vertical-align: middle;*/}
+
 .right form {color: #465961;
 	margin-left: 25px;    
-	margin-top: 8px;}
+	margin-top: 8px;
+    font-family: "Arial Regular", sans-serif; 
+    letter-spacing: 0.3px;    
+    font-size: 13px;}
 
 
 /*стили для квадратиков инпутов*/
@@ -330,10 +357,9 @@ nav a:hover {color: #eaedef;
 .checkbox:checked + label:before {background: #1c4360;}
 
 
-.inn {/*margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;*/
-    margin-bottom: 10px;}
+.inn {margin-bottom: 12px;}
+
+.inn:last-child {margin-bottom: 16px;}
 
 /*стиль для кнопки*/
 .right .btn {background: linear-gradient(to bottom, #1f6787, #0c3357);
@@ -343,41 +369,48 @@ nav a:hover {color: #eaedef;
 	margin-top: 9px;
 	height: 24px;
 	width: 79px;
-	box-shadow: 3px 3px 3px rgba(213, 213, 213, 0.5);}
+	box-shadow: 3px 3px 3px rgba(213, 213, 213, 0.5);
+	letter-spacing: -0.2px;
+    font-size: 12px;}
 
 .right_position {margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     padding-left: 2px;
-    padding-right: 10px;
-    padding-bottom: 1px;}
+    padding-right: 10px;}
 
-.sh_right {margin-left: 13px;
-	margin-right: 30px;
+.right_position1 {margin-left: 14px;
+    margin-right: 30px;}
+
+.sh_right {display: inline;
+	margin-left: -1px;
+	/*margin-right: 30px;*/
 	margin-top: -2px;
-	margin-bottom: 4px;}
+	margin-bottom: 4px;    
+	letter-spacing: 0.5px;}
 
 .krug {margin-top: 1px;
 	margin-bottom: 2px;
 	margin-left: 4px;
 	margin-right: 1px;}
 
-.disk_right {margin-left: 14px;
-	margin-right: 30px;
-	margin-top: 1px;
-	margin-bottom: 4px;}
+.disk_right {display: inline;
+	margin-left: 1px;
+	letter-spacing: 0.3px;}
 
 .krug2 {margin-top: 1px;
 	margin-bottom: 2px;
-	margin-left: 4px;
+	margin-left: 1px;
 	margin-right: 1px;}
+
+.form2 {margin-bottom: 10px;}
 
 
 /*стили для блока*/
 .tire {margin-top: 9px;
 	margin-bottom: 1px;
-	margin-left: 10px;
-	margin-right: 1px;
+	margin-left: 9px;
+	margin-right: 2px;
 	text-align: center;}
 
 /*стили для центра*/
@@ -403,18 +436,20 @@ nav a:hover {color: #eaedef;
 	margin-bottom: 28px;}
 
 /*заголовок*/
-.tire .first {font-family: "Lucida Sans Unicode Regular";
-	font-size: 19px;
-	color: #206988;
-	margin-top: 2px;
-	margin-left: 4px;}
+.tire .first {font-family: "Lucida Sans Unicode Regular", "Arial";
+	font-size: 18px;
+    color: #206988;
+    margin-top: 2px;
+    margin-left: 2px;
+    letter-spacing: -1.5px;}
 
 /*бренд шины*/
-.tire .second {font-family: "Lucida Sans Unicode Regular";
+.tire .second {font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 14px;
 	color: #1f2528;
-    margin-left: 2px;
-    margin-top: -2px;}
+    margin-left: 8px;
+    margin-top: -2px;
+    letter-spacing: -0.5px;}
 
 /*Картинка*/
 .tire .trimg {height: 123px;
@@ -430,28 +465,31 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third {font-family: "Arial";
+.tire .third {font-family: "Arial", sans-serif;
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
 	margin-top: -2px;
-	margin-left: 17px;}
+	margin-left: 16px;
+	letter-spacing: -0.3px;}
 
 .shina1 {margin-top: 1px;
 	margin-left: -5px;}
 
 /*заголовок*/
-.tire .first2 {font-family: "Lucida Sans Unicode Regular";
+.tire .first2 {font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 19px;
 	color: #206988;
-	margin-left: 8px;
-	margin-top: 1px;}
+	margin-left: 5px;
+	margin-top: 1px;    
+	letter-spacing: -2px;}
 
-.tire .second2 {font-family: "Lucida Sans Unicode Regular";
+.tire .second2 {font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 14px;
 	color: #1f2528;    
-	margin-left: 2px;
-    margin-top: -1px;}
+	margin-left: 6px;
+    margin-top: -1px;
+    letter-spacing: -0.5px;}
 
 /*Картинка*/
 .tire .trimg2 {height: 121px;
@@ -467,27 +505,31 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third2 {font-family: "Arial";
+.tire .third2 {font-family: "Arial", sans-serif;
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
 	margin-top: -1px;
-	margin-left: 18px;}
+	margin-left: 19px;
+	letter-spacing: 0.2px;}
 
 .shina2 {margin-top: -2px;
 	margin-left: -2px;}
 
 /*заголовок*/
-.tire .first3 {font-family: "Lucida Sans Unicode Regular";
+.tire .first3 {font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 19px;
 	color: #206988;
-	margin-left: 10px;
-	margin-top: 1px;}
+	margin-left: 7px;
+	margin-top: 1px;    
+	letter-spacing: -2.3px;}
 
-.tire .second3 {font-family: "Lucida Sans Unicode Regular";
+.tire .second3 {font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 14px;
 	color: #1f2528;
-	margin-left: -5px;}
+	margin-left: 4px;
+    letter-spacing: -0.8px;
+    margin-top: -1px;}
 
 /*Картинка*/
 .tire .trimg3 {height: 121px;
@@ -503,28 +545,31 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third3 {font-family: "Arial";
+.tire .third3 {font-family: "Arial", sans-serif;
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
-	margin-top: -2px;
-	margin-left: 20px;}
+	margin-top: -3px;
+	margin-left: 20px;
+    letter-spacing: 0.2px;}
 
 .shina3 {margin-top: -2px;
 	margin-left: -1px;}
 
 /*заголовок*/
-.tire .first4 {font-family: "Lucida Sans Unicode Regular"
-	font-size: 19px;
+.tire .first4 {font-family: "Lucida Sans Unicode Regular", "Arial";
+	font-size: 18px;
 	color: #206988;
-	margin-left: 5px;
-	margin-top: 1px;}
+	margin-left: 2px;
+    margin-top: 1px;
+    letter-spacing: -1.7px;}
 
-.tire .second4 {font-family: "Lucida Sans Unicode Regular";
+.tire .second4 {font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 14px;
 	color: #1f2528;
-	margin-left: 2px;
-	margin-top: -2px;}
+	margin-left: 8px;
+    margin-top: -2px;
+    letter-spacing: -0.6px;}
 
 /*Картинка*/
 .tire .trimg4 {height: 123px;
@@ -540,28 +585,30 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third4 {font-family: "Arial";
+.tire .third4 {font-family: "Arial", sans-serif;
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
 	margin-top: -4px;
-	margin-left: 18px;}
+	margin-left: 20px;}
 
 .shina4 {margin-top: 0px;
 	margin-left: -4px;}
 
 /*заголовок*/
-.tire .first5 {font-family: "Lucida Sans Unicode Regular";
+.tire .first5 {font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 19px;
 	color: #206988;
-	margin-left: 10px;
-	margin-top: 1px;}
+	margin-left: 5px;
+    margin-top: 0px;
+    letter-spacing: -2px;}
 
-.tire .second5 {font-family: "Lucida Sans Unicode Regular";
+.tire .second5 {font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 14px;
 	color: #1f2528;
-	margin-left: 1px;
-	margin-top: -2px;}
+	margin-left: 4px;
+    margin-top: -2px;
+    letter-spacing: -0.6px;}
 
 /*Картинка*/
 .tire .trimg5 {height: 123px;
@@ -577,28 +624,31 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third5 {font-family: "Arial";
+.tire .third5 {font-family: "Arial", sans-serif;
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
 	margin-top: -3px;
-	margin-left: 20px;}
+    margin-left: 20px;
+    letter-spacing: 0.2px;}
 
 .shina5 {margin-top: 0px;
 	margin-left: -4px;}
 
 /*заголовок*/
-.tire .first6 {font-family: "Lucida Sans Unicode Regular";
+.tire .first6 {font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 19px;
 	color: #206988;
-	margin-left: 11px;
-	margin-top: 1px;}
+	margin-left: 7px;
+    margin-top: 0px;
+    letter-spacing: -2.5px;}
 
-.tire .second6 {font-family: "Lucida Sans Unicode Regular";
+.tire .second6 {font-family: "Lucida Sans Unicode Regular", "Arial";
 	font-size: 14px;
 	color: #1f2528;
-	margin-left: -5px;
-	margin-top: -2px;}
+	margin-left: 4px;
+    margin-top: -2px;
+    letter-spacing: -0.6px;}
 
 /*Картинка*/
 .tire .trimg6 {height: 123px;
@@ -614,28 +664,31 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third6 {font-family: "Arial";
+.tire .third6 {font-family: "Arial", sans-serif;
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
 	margin-top: -3px;
-	margin-left: 20px;}
+	margin-left: 22px;
+    letter-spacing: 0.2px;}
 
 .shina6 {margin-top: 0px;
 	margin-left: -3px;}
 
 /*заголовок*/
-.tire .first7 {font-family: "Lucida Sans Unicode Regular";
-	font-size: 19px;
+.tire .first7 {font-family: "Lucida Sans Unicode Regular", "Arial";
+	font-size: 18px;
 	color: #206988;
-	margin-left: 3px;
-	margin-top: 4px;}
+	margin-left: 1px;
+    margin-top: 5px;
+    letter-spacing: -1.5px;}
 
-.tire .second7 {font-family: "Lucida Sans Unicode Regular";
-	font-size: 14px;
+.tire .second7 {font-family: "Lucida Sans Unicode Regular", "Arial";
+	font-size: 13px;
 	color: #1f2528;
-	margin-left: 0px;
-	margin-top: -2px;}
+	margin-left: 9px;
+	margin-top: -1px;    
+	letter-spacing: -0.1px;}
 
 /*Картинка*/
 .tire .trimg7 {height: 123px;
@@ -651,7 +704,7 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third7 {font-family: "Arial";
+.tire .third7 {font-family: "Arial", sans-serif;
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
@@ -662,16 +715,17 @@ nav a:hover {color: #eaedef;
 	margin-left: -4px;}
 
 /*заголовок*/
-.tire .first8 {font-family: "Lucida Sans Unicode Regular";
-	font-size: 19px;
+.tire .first8 {font-family: "Lucida Sans Unicode Regular", "Arial";
+	font-size: 18px;
 	color: #206988;
-	margin-left: 10px;
-	margin-top: 5px;}
+	margin-left: 6px;
+	margin-top: 6px;
+	letter-spacing: -1.5px;}
 
-.tire .second8 {font-family: "Lucida Sans Unicode Regular";
-	font-size: 14px;
+.tire .second8 {font-family: "Lucida Sans Unicode Regular", "Arial";
+	font-size: 13px;
 	color: #1f2528;
-	margin-left: 2px;
+	margin-left: 8px;
 	margin-top: -2px;}
 
 /*Картинка*/
@@ -688,27 +742,29 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third8 {font-family: "Arial";
+.tire .third8 {font-family: "Arial", sans-serif;
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
 	margin-top: -3px;
-	margin-left: 20px;}
+	margin-left: 19px;    
+	letter-spacing: 0.3px;}
 
 .shina8 {margin-top: -1px;
 	margin-left:-3px;}
 
 /*заголовок*/
-.tire .first9 {font-family: "Lucida Sans Unicode Regular";
-	font-size: 19px;
+.tire .first9 {font-family: "Lucida Sans Unicode Regular", "Arial";
+	font-size: 18px;
 	color: #206988;
-	margin-left: 10px;
-	margin-top: 5px;}
+	margin-left: 9px;
+	margin-top: 6px;
+	letter-spacing: -1.5px;}
 
-.tire .second9 {font-family: "Lucida Sans Unicode Regular";
-	font-size: 14px;
+.tire .second9 {font-family: "Lucida Sans Unicode Regular", "Arial";
+	font-size: 13px;
 	color: #1f2528;
-	margin-left: -7px;
+	margin-left: 4px;
 	margin-top: -2px;}
 
 /*Картинка*/
@@ -725,7 +781,7 @@ nav a:hover {color: #eaedef;
 	padding-top: 5px;}
 
 /*цена*/
-.tire .third9 {font-family: "Arial";
+.tire .third9 {font-family: "Arial", sans-serif;
 	font-weight: bold;
 	font-style: italic;
 	color: #206988;
@@ -743,11 +799,11 @@ nav a:hover {color: #eaedef;
 	padding-right: 10px;}*/
 
 .logo1 {float: left;
-	margin-left: 116px;
+	margin-left: 117px;
 	margin-top: 21px;}
 
 .logo2 {float: left;
-	margin-left: 13px;
+	margin-left: 12px;
 	margin-top: 21px;}
 
 .logo3 {float: left;
@@ -783,10 +839,10 @@ nav a:hover {color: #eaedef;
 	margin: 20px 45px;
 	text-align: center;
 	background: #213a4d;
-	font-family: "Arial Regular";}
+	font-family: "Arial Regular", sans-serif;}
 
 .footer ul {padding-top: 10px;
-	margin-left: 4px;}
+	margin-left: 3px;}
 
 .footer ul li {display: inline;
 	border-right: 1px solid #bec6c9;}
@@ -796,13 +852,14 @@ nav a:hover {color: #eaedef;
 .footer ul li a {margin: 15px 10px;
 	text-decoration: none;
 	color: #bec6c9;
-	font-size: 14px;}
+	font-size: 13px;
+	letter-spacing: 0.1px;}
 
 .footer ul li a:hover {color: #4792af;}
 
 .footer p {margin-top: 12px;
 	padding-bottom: 50px;
 	color: #6b4444;
-	font-size: 12px;}
+	font-size: 11px;}
 
 
