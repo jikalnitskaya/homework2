@@ -1,15 +1,14 @@
-@font-face {font-family: "League Gothic"; src: url(fonts/LeagueGothicRegular.ttf);}
-@font-face {font-family: "Open Sans Light"; src: url(fonts/open-sans-light.ttf);}
-@font-face {font-family: "Open Sans Extrabold"; src: url(fonts/open_sans-extra_bold.ttf);}
+@font-face {font-family: "League Gothic"; src: url(../fonts/league_gothic_regular.ttf);}
+@font-face {font-family: "Open Sans Light"; src: url(../fonts/open-sans-light.ttf);}
+@font-face {font-family: "Open Sans Extrabold"; src: url(../fonts/open_sans-extra_bold.ttf);}
 
-/*.body {width: 2400px;}
 
 /*первый блок*/
 header {background-image: url(../img/bg.png);
 	background-position: center center;
-	height: 828px;
 	background-repeat: no-repeat;
-	background-size: cover;}
+	/*background-size: cover;*/
+	padding-bottom: 166px;}
 
 .container {max-width: 960px;
 	text-align: center;
@@ -17,10 +16,8 @@ header {background-image: url(../img/bg.png);
 
 /*заголовок в хедере*/
 .big_logo {float: left;
-	margin-top: 48px;
-    margin-left: 0%;
-    margin-bottom: 165px;
-    margin-right: 0%;}
+	padding-top: 48px;
+    margin-bottom: 165px;}
 
 h2 {color: white;
 	font-family: "League Gothic", Arial;
@@ -36,25 +33,24 @@ span {/*background-color: linear-gradient(to top, rgba(116, 80, 131, 1), rgba(52
 
 
 /*меню в хедере*/
-header nav {float: right;
-	margin-top: 56px;}
+header .nav_980 {float: right;
+	margin-top: 54px;}
 
-nav a {text-decoration: none;
+.nav_980 a {text-decoration: none;
  	color: white;
 	font-family: "League Gothic";
 	font-size: 24px;
 	text-shadow: 1px 1px 2px #9f9495;
-	padding: 0 3px;
-	margin-right: 41px;
+	margin-right: 47px;
 	letter-spacing: 0.03px;}
 
-nav a:last-child {margin-right: 0;}
+.nav_980 a:last-child {margin-right: 0;}
 
-nav a:hover {text-decoration-color: #edbfff;
-	text-decoration: underline;} /*цвет не поддерживается*/
+.nav_980 a:hover {text-decoration: underline;
+	text-decoration-color: #edbfff;} /*цвет не поддерживается*/
 
-
-
+.nav_480 {display: none;}
+.nav_480_item {display: none;}
 
 /*второй блок*/
 .content {background-image: url(../img/overlay.png);
@@ -81,14 +77,15 @@ h1 {color: white;
 	font-size: 58px;
 	text-shadow: -1px 1px 2px #9f9495;
 	text-align: left;
-	letter-spacing: 0.1px;}
+	letter-spacing: -0.3px;}
 
 h3 {color: #edbfff;
 	font-family: "League Gothic";
 	font-size: 32px;
 	text-shadow: -1px 1px 2px #9f9495;
 	text-align: left;
-	margin-bottom: 6px;}
+	margin-bottom: 6px;
+	letter-spacing: -0.35px;}
 
 article {color: white;
 	font-family: "Open Sans Light";
@@ -96,7 +93,7 @@ article {color: white;
 	text-shadow: -1px 1px 2px #9f9495;
 	text-align: left;
 	line-height: 24px;
-	letter-spacing: -0.04px;
+	letter-spacing: -0.07px;
 	word-wrap: break-word;}
 
 .ar2 {height: 42px;
@@ -127,11 +124,11 @@ article {color: white;
 	border: 2px solid rgba(62, 62, 71, 0.5);
 	border-radius: 12px;
     background: rgba(62, 62, 71, 0.5);
-    margin-right: 2px;}
+    margin-right: 3px;}
 
 .circle_f {position: absolute;
-	bottom: -113px;
-	left: 78px;}
+	bottom: -111px;
+	left: 27%;}
 
 .circle a {display: block;
 	width: 12px;
@@ -158,11 +155,18 @@ h4 {font-family: "League Gothic";
 
 .violet h4 {font-size: 30px;
 	color: white;
-	text-shadow: 1px 1px 2px #4f5356;}
+	text-shadow: 1px 1px 2px #4f5356;
+    letter-spacing: -0.2px;}
+
+.violet .colm_2_1_h {letter-spacing: -0.3px;}
+.violet .colm_3_1_h {letter-spacing: -0.17px;}
 
 .violet article {font-size: 16px;
     text-shadow: 1px 1px 2px #4f5356;
-    margin-top: 8px;}
+    margin-top: 8px;
+    letter-spacing: -0.1px;}
+
+.violet .colm_2_1_art {letter-spacing: -0.15px;}
 
 .a_colm_1 {float: right;
 	margin-top: 19px;
@@ -188,17 +192,17 @@ h4 {font-family: "League Gothic";
 .violet a:hover {text-shadow: 0px 0px 15px white;}
 
 .colm_1_1 {width: 80%;
-	margin-top: 75px;
+	padding-top: 78px;
 	margin-right: 0;
 	margin-left: 20%;}
 
 .colm_2_1 {width: 80%;
-	margin-top: 75px;
+	padding-top: 78px;
 	margin-right: 0;
 	margin-left: 20%;}
 
 .colm_3_1 {width: 79%;
-	margin-top: 75px;
+	padding-top: 78px;
 	margin-right: 0;
 	margin-left: 20%;
 	padding-left: 9px;}
@@ -223,18 +227,18 @@ h4 {font-family: "League Gothic";
 
 .colm_1_img {position: absolute;
 	width: 31px;
-	left: 10px;
+	left: 9px;
     top: 82px;}
 
 .colm_2_img {position: absolute;
 	width: 31px;
-	left: 11px;
-	top: 82px;}
+	left: 10px;
+	top: 85px;}
 
 .colm_3_img {position: absolute;
 	width: 31px;
-	left: 11px;
-    top: 82px;}
+	left: 12px;
+    top: 83px;}
 
 
 /*четвертый блок*/
@@ -242,47 +246,67 @@ h4 {font-family: "League Gothic";
 	background-color: #f9f9f9;}
 
 .colm_left {float: left;
-    max-width: 37%;
-    height: 256px;
-    background-image: url(../img/layer_60.png);
-    background-repeat: no-repeat;
+    max-width: 38%;
+    background: white;
     position: relative;
     margin-top: 100px;
     margin-bottom: 8%;
     margin-left: 24px;
-    padding: 3% 33px 8px 4%;}
+    padding: 3% 27px 36px 4%;}
 
-.colm_left h4 {/*font-size: 30px;*/
-	color: #454545;
+.triangle {width: 0;
+	height: 0;
+	border-top: 30px solid white; 
+	border-left: 30px solid transparent;
+	position: absolute;
+	bottom: -21px;
+    right: 44px;}
+
+.colm_left h4 {color: #454545;
 	text-transform: uppercase;
-	margin-bottom: 9px;
-	margin-left: 1px;}
+	margin-bottom: 8px;
+	margin-left: 1px;
+	letter-spacing: -0.07px;}
 
-.colm_left span {color: #edbfff;}
+.colm_left span {color: #edbfff;    
+	letter-spacing: -0.3px;
+    margin-left: -1px;}
 
 .colm_left article {color: #454545; 
-    letter-spacing: -0.05px;
+    letter-spacing: -1px;
     overflow: hidden;}
 
 .colm_left img {display: block;
 	position: absolute;
-	top: 18px;
-	left: -23px;}
+	top: 17px;
+	left: -26px;}
 
 .circle_2 {position: absolute;
-    bottom: -22px;
-    left: 173px;}
+    bottom: -43px;
+    left: 34%;
+    right: 34%;}
+
+.circle_2 div {background: white;}
+
+
+.circle_2_1 .a1:hover{background: #7a7a7a;}
+.circle_2_2 .a2:hover{background: #7a7a7a;}
+.circle_2_3 .a3:hover {background: #7a7a7a;}
+.circle_2_4 .a4:hover{background: #7a7a7a;}    
 
 .colm_right {float: left;    
 	margin-top: 129px;
-    margin-left: 6%;}
+    margin-left: 5%;
+    padding-left: 6px;}
 
 .colm_right>a:hover .colm_right>.sprite_3 {
     background-position: 0 18px;}
 
 .colm_right h4 {color: #454545;
 	font-size: 30px;
-	margin-bottom: 16px;}
+	margin-bottom: 16px;    
+	letter-spacing: -0.1px;
+    margin-left: 1px;}
 
 .row_1 .sprite_4 {width: 50px;
 	height: 50px;
@@ -315,7 +339,7 @@ h4 {font-family: "League Gothic";
     color: #454545;
     text-align: left;
     margin-left: 18px;
-    letter-spacing: 0.34px;
+    letter-spacing: 0.3px;
     overflow: hidden;}
 
 .sprite_4 {float: left;}
@@ -334,19 +358,19 @@ h4 {font-family: "League Gothic";
     text-decoration: none;
     float: right;
     margin-top: 21px;
-    margin-right: 6px;
+    margin-right: 5px;
     margin-bottom: 69px;}
 
 .a_colm_new {display: none;}
 
 .white .a_colm a:hover{text-shadow: 0px 0px 15px gray;}
 
- .logo:before {content: "";
+.logo:before {content: "";
     display: block;
     border-top: solid 1px #e6e6e6;
     width: 100%;
     height: 1px;
-    margin-top: 16px;
+    margin-top: 21px;
     margin-bottom: 24px;}
 
 .logo1 {float: left;
@@ -457,14 +481,13 @@ footer {/*width: 2400px;*/
 	background-repeat: no-repeat;
 	background-size: cover;}
 
-footer nav {float: left;
-	font-size: 10px;
-    margin-top: 46px;
+footer .nav_980 {float: left;
+	margin-top: 46px;
     margin-bottom: 48px;}
 
-footer a {font-size: 20px;
-	padding: 0;
-    letter-spacing: -0.1px;}
+footer .nav_980 a {font-size: 20px;
+	letter-spacing: -0.05px;
+    margin-right: 39px;}
 
 footer p {float: right;
 	color: white;
@@ -476,22 +499,24 @@ footer span {color: white;
 	font-family: "League Gothic";
 	font-weight: bold;
 	font-size: 12px;    
-	letter-spacing: 2.5px;}
+	letter-spacing: 2.7px;
+    padding-left: 1px;}
 
 
 
-/*ширина 768пх*/
+/*______________ширина 768пх____________________*/
 @media (max-width: 768px) {
+
 	.container {max-width: 728px;}
 
-	header {height: 791px;}
+	header {padding-bottom: 300px;}
 
 	.big_logo {margin-top: 60px;
         margin-left: 7px;
         letter-spacing: 0.6px;
         margin-bottom: 0;}
 
-	header nav {float: left;    
+	header .nav_980 {float: left;    
 		margin-top: 30px;
         margin-bottom: 77px;    
         margin-left: 3px;}
@@ -527,7 +552,260 @@ footer span {color: white;
         overflow: hidden;
         height: 25px;}  
 
-    .cont article {    font-size: 16px;
+    .cont article {font-size: 16px;
+        margin-top: 5px;
+        line-height: 26px;
+        letter-spacing: -0.11px;}  
+
+	.violet article {overflow: hidden; }
+
+    .violet_colm_1, .violet_colm_2, .violet_colm_3 {width: 21%;
+        margin-right: 0px;}
+
+    .violet h4 {font-size: 20px;}
+
+    .violet article {font-size: 14px;}
+
+    .violet 
+
+    .a_colm {display: none;}
+
+    .a_colm_new {display: inline;}
+    
+    .a_colm_new a:hover{text-shadow: 0px 0px 15px gray;}
+
+    .colm_1 h2, p {display: none;}
+
+    .colm_1, .colm_2, .colm_3 {width: 20%;}
+
+    .blue h2, .blue h3 {display: none;}
+
+    .new {display: inline;}
+
+    footer .nav_980 {width: 100%;
+    	margin-left: 0;
+    	margin-bottom: 0px;}
+
+    footer p {width: 100%;
+    	margin-right: 0;
+        margin-top: 0;
+        display: inline;}
+
+
+}
+
+
+
+
+/*______________ширина 480пх___________________*/
+@media (max-width: 480px) {
+	.container {max-width: 440px;}
+
+	header {padding-bottom: 300px;}
+
+	.big_logo {float: none;
+		margin-top: 0;
+		padding-top: 60px;
+        text-align: center;
+        letter-spacing: 0.6px;}
+
+    .nav_980 {display: none;}
+
+    .nav_480 {display: block;
+    	color: white;
+	    font-family: "League Gothic";
+	    font-size: 24px;
+	    text-shadow: 1px 1px 2px #9f9495;
+	    padding: 0 3px;
+	    margin-bottom: 50px;
+	    margin-top: 50px:;
+	    text-align: center;
+	    letter-spacing: 0.03px;}
+
+	.relat {position: relative;}
+
+	.nav_480_item {display: none;
+		position: absolute;
+	    top: 0;
+	    /*left: auto;
+	    right: auto;*/}
+
+	.nav_480_item {border: 1px solid #0f191f;
+		border-radius: 3px;
+		border-bottom: none;
+		border-top: none;
+	    background: rgba(72, 61, 79, 0.5);}
+
+	.nav_480_item li {border-top: 1px solid #513e59;
+	    border-bottom: 1px solid #36283e;
+	    text-align: center;}
+
+	.nav_480_item li a {text-decoration: none;
+ 	    color: white;
+	    font-family: "League Gothic";
+	    font-size: 24px;
+	    text-shadow: 1px 1px 2px #9f9495;
+	    padding: 0 3px;
+	    margin-right: 41px;
+	    letter-spacing: 0.03px;
+	    margin: 2px auto;
+	    width: 100%;}
+
+    .nav_480:hover .nav_480_item{display: block;}
+
+    .nav_480:hover {text-decoration: underline;
+    	text-decoration-color: #edbfff;}
+
+    .nav_480_item li:hover {background: rgba(44, 35, 50, 0.5);
+        text-decoration: underline;}
+
+    .cont article {display: none;}
+
+    .violet_colm_1, .violet_colm_2,.violet_colm_3 {
+    	float: none;
+    	width: 90%;
+    	margin-right: 0;}
+
+    .colm_left, .colm_right {float: none;}
+
+    .a_colm {display: none;}
+
+    .colm_1, .colm_2, .colm_3 {float: none;
+    	width: 100%;}
+
+    footer .nav_980 {display: inline-block;}
+
+	/*
+
+    .cont {height: 190px;
+        overflow: hidden;
+        width: 38%;
+        margin-left: 20px;
+        margin-top: 98px;
+        padding-left: 13px;}
+
+    .ar1 {top: 178px;
+    	left: -20px;}
+
+    .ar2 {top: 178px;
+    	right: -32px;}
+    
+    .iphone {width: 39%;
+		margin-right: -3px;    
+		top: -8px;}
+
+	.circle_f {bottom: -64px;
+        left: 85px;}
+
+    .cont h1 {font-size: 47px;
+        letter-spacing: -0.05px;}    
+
+    .cont h3 {font-size: 24px;
+        margin-top: 8px;
+        overflow: hidden;
+        height: 25px;}  
+
+    .cont article {font-size: 16px;
+        margin-top: 5px;
+        line-height: 26px;
+        letter-spacing: -0.11px;}  
+
+	.violet article {overflow: hidden; }
+
+    .violet_colm_1, .violet_colm_2, .violet_colm_3 {width: 21%;
+        margin-right: 0px;}
+
+    .violet h4 {font-size: 20px;}
+
+    .violet article {font-size: 14px;}
+
+    .violet 
+
+    .a_colm {display: none;}
+
+    .a_colm_new {display: inline;}
+    
+    .a_colm_new a:hover{text-shadow: 0px 0px 15px gray;}
+
+    .colm_1 h2, p {display: none;}
+
+    .colm_1, .colm_2, .colm_3 {width: 20%;}
+
+    .blue h2, .blue h3 {display: none;}
+
+    .new {display: inline;}
+
+    footer nav {width: 100%;
+    	margin-left: 0;
+    	margin-bottom: 0px;}
+
+    footer p {width: 100%;
+    	margin-right: 0;
+        margin-top: 0;
+        display: inline;}
+
+
+}
+
+
+
+/*-----------------ширина 320пх*-----------------*/
+@media (max-width: 320px) {
+	.container {max-width: 280px;}
+
+/*	.big_logo {margin-top: 60px;
+        margin-left: 7px;
+        letter-spacing: 0.6px;
+        margin-bottom: 0;}*/
+
+	header .nav_980 {display: none;}
+
+	header .nav_480 {display: block;
+	}
+
+	.nav_480:hover .nav_480_item{display: block;}
+
+    .content {background: none;}
+
+	.cont {overflow: hidden;
+        width: 100%;
+        text-align: center;
+        margin-left: 20px;
+        margin-top: 98px;
+        padding-left: 13px;}
+
+    .iphone {display: none;}
+
+    .blue {display: none;}
+
+    footer .nav_980 {display: none;}
+
+
+/*    header a {margin-left: 2px;
+        letter-spacing: -0.16px;}
+
+    .ar1 {top: 178px;
+    	left: -20px;}
+
+    .ar2 {top: 178px;
+    	right: -32px;}
+    
+    .iphone {width: 39%;
+		margin-right: -3px;    
+		top: -8px;}
+
+	.circle_f {bottom: -64px;
+        left: 85px;}
+
+    .cont h1 {font-size: 47px;
+        letter-spacing: -0.05px;}    
+
+    .cont h3 {font-size: 24px;
+        margin-top: 8px;
+        overflow: hidden;
+        height: 25px;}  
+
+    .cont article {font-size: 16px;
         margin-top: 5px;
         line-height: 26px;
         letter-spacing: -0.11px;}  
