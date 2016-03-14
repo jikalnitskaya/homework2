@@ -8,8 +8,19 @@ function pow (a, b) {
 
 var a = prompt ('Введите число', '')
 var b = prompt ('Введите степень числа', '')
-console.log (pow (a, b));
 
+do {
+    if (b < 0) {
+	    alert ('Введите положительное число для степени числа');
+	    var b = prompt ('Введите степень числа');  
+    } else {console.log (pow (a, b));}
+} while (b < 0);
+
+
+console.log (pow (a, b));
+//var obj = {
+//	pow: function(a, b){}
+//}
 
 
 //вторая часть
@@ -32,8 +43,9 @@ console.log ( userNames.some (findTrueName));
 var mesName = userNames.some (findTrueName)
 
 if (mesName){
-  sayHallo (newName);
-  alert (arrMes);
+
+  
+  alert (sayHallo (newName));
 }
   else {
   	alert( 'Такое имя пользователя отсутствует' );
@@ -41,10 +53,10 @@ if (mesName){
 
 
 function sayHallo (newName) {
-	arrMes = ['Андрей ', ', вы ', 'успешно ', 'вошли!'] //пробелы, запятые
+	arrMes = ['Андрей ', ', вы ', 'успешно ', 'вошли!']; //пробелы, запятые
 	console.log (arrMes);
 	arrMes.splice(0, 1, newName);
 	console.log (arrMes);
-	return arrMes;
+	return arrMes.join(' ');
 	}
 
