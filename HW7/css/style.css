@@ -5,7 +5,7 @@
 
 /*первый блок*/
 header {background-image: url(../img/bg.png);
-	background-position: center center;
+	background-position: top center;
 	background-repeat: no-repeat;
 	/*background-size: cover;*/
 	padding-bottom: 166px;}
@@ -239,6 +239,8 @@ h4 {font-family: "League Gothic";
 	width: 31px;
 	left: 12px;
     top: 83px;}
+
+.colm_2_img_768, .colm_3_img_768 {display: none;}
 
 
 /*четвертый блок*/
@@ -509,64 +511,114 @@ footer span {color: white;
 
 	.container {max-width: 728px;}
 
-	header {padding-bottom: 300px;}
+	header {/*height: 800px;*/
+        padding-bottom: 154px;}
 
-	.big_logo {margin-top: 60px;
-        margin-left: 7px;
+	.big_logo {padding-top: 69px;
+        margin-left: -2px;
         letter-spacing: 0.6px;
         margin-bottom: 0;}
 
 	header .nav_980 {float: left;    
-		margin-top: 30px;
+		margin-top: 28px;
         margin-bottom: 77px;    
-        margin-left: 3px;}
+        margin-left: -1px;}
 
-    header a {margin-left: 2px;
-        letter-spacing: -0.16px;}
+    header .nav_980 a {letter-spacing: 0.05px;}
 
     .cont {height: 190px;
         overflow: hidden;
         width: 38%;
-        margin-left: 20px;
-        margin-top: 98px;
-        padding-left: 13px;}
+        margin-left: 24px;
+        margin-top: 99px;}
 
     .ar1 {top: 178px;
-    	left: -20px;}
+    	left: -26px;}
 
     .ar2 {top: 178px;
-    	right: -32px;}
+    	right: -25px;}
     
     .iphone {width: 39%;
-		margin-right: -3px;    
-		top: -8px;}
+		margin-right: 6px;    
+		top: -6px;}
 
-	.circle_f {bottom: -64px;
-        left: 85px;}
+	.circle_f {bottom: -62px;
+        left: 29%;}
 
     .cont h1 {font-size: 47px;
-        letter-spacing: -0.05px;}    
+        letter-spacing: -0.3px;}    
 
     .cont h3 {font-size: 24px;
         margin-top: 8px;
         overflow: hidden;
-        height: 25px;}  
+        height: 25px;    
+        letter-spacing: -0.27px;}  
 
     .cont article {font-size: 16px;
         margin-top: 5px;
         line-height: 26px;
         letter-spacing: -0.11px;}  
 
-	.violet article {overflow: hidden; }
+    
 
-    .violet_colm_1, .violet_colm_2, .violet_colm_3 {width: 21%;
+    .violet_colm_1 {width: 32%;
+        margin-right: 0px;
+        padding-left: 17px;}
+
+    .violet_colm_2 {padding-left: 10px;
+    	width: 32%;
         margin-right: 0px;}
 
-    .violet h4 {font-size: 20px;}
+    .violet_colm_3 {padding-left: 0;
+    	width: 27%;}
 
-    .violet article {font-size: 14px;}
+    .violet .colm_1_1 {width: 69%;}
 
-    .violet 
+    .violet .colm_2_1 {width: 69%;
+        margin-left: 23%;}
+
+    .violet .colm_3_1 {width: 76%;}
+
+    .violet h4 {font-size: 23px;
+        letter-spacing: 0.1px;}
+
+    .violet .colm_2_1_h {letter-spacing: 0.3px;}
+    
+    .violet .colm_3_1_h {letter-spacing: 0.25px;
+        margin-left: -5px;}
+
+    .violet article {overflow: hidden;
+    	font-size: 16px;
+    	margin-top: 3px;
+        height: 146px;}
+
+    .violet .colm_2_1_art {letter-spacing: 0.01px;
+        margin-left: 1px;}
+
+    .colm_3_1_art {margin-left: -4px;}
+
+    /*.violet .violet_colm_1 */.colm_1_img {
+    	left: 10px;
+    	top: 78px;}
+
+    .violet .colm_2_img, .colm_3_img {display: none;}
+
+    .violet .colm_2_img_768 {display: inline-block;
+    	position: absolute;
+    	left: 12px;
+    	top: 78px;}
+
+    .violet .colm_3_img_768 {display: inline-block;
+    	position: absolute;
+    	left: -7px;
+    	top: 78px;}
+
+    .a_colm_1 {margin-top: 7px;}
+
+    .a_colm_2 {margin-top: 7px;
+    	margin-right: 13px;}
+
+    .a_colm_3 {margin-top: 7px;}
 
     .a_colm {display: none;}
 
