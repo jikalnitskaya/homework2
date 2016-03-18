@@ -16,11 +16,13 @@ createP : function () {                      //создаем заголовок
 
 createForm : function () {                    //создаем форму
     form = document.createElement('form');
+    form.style.textAlign = "center"; 
     body.appendChild(form); 
     return form;},
 
 createOl : function() {                      //создаем нум. список в form
 	ol = document.createElement('ol');
+    ol.style.textAlign = "left"; 
     form.appendChild(ol);
     return this.ol; }, 
 
@@ -48,7 +50,6 @@ createButton : function () {                    //создаем кнопку
     var button = document.createElement('button');
     button.innerHTML = 'Проверить мои результаты';
     button.type = 'submit';
-    button.style.textAlign = "center"; //кнопка не равняется по центру
     button.style.padding = '7px';
     button.style.fontSize = '14px';
     form.appendChild(button); }
