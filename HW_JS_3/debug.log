@@ -1,0 +1,3 @@
+[0323/220628:ERROR:process_reader_win.cc(232)] ReadMemory at 0x506000 of 40960 bytes failed: «апрос ReadProcessMemory или WriteProcessMemory был выполнен только частично. (0x12B)
+[0323/220628:ERROR:crash_report_exception_handler.cc(102)] WriteEverything failed
+[0323/220628:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess, ntstatus=-1073741558
