@@ -1,0 +1,80 @@
+body {font-family: Open Sans Light;
+	font-size: 16px;
+    box-sizing: border-box;}
+
+.left_wrapper {float: left;
+	width: 49%;
+	height: 279px;
+	margin-top: 15px;
+	margin-left: 5px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;}
+
+ul {list-style: none;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #e2e2e2, #cccccc);
+    padding-top: 15px;
+    padding-left: 5px;
+    margin: 5px 5px 0;
+    height: 29px;}
+
+ul li {display: inline;
+    background: #eeeeee;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom-color: #aaaaaa; 
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px 10px 10px;}
+
+.active {background: white;
+    border-bottom-color: transparent;}
+
+ul li a {text-decoration: none;
+    color: black;}
+
+.left_wrapper p {padding: 10px 15px 0;
+    text-align: justify;}
+
+.third {padding:  10px 0;}
+
+.third p {padding: 0 15px;}
+
+.block {display: none;}
+
+.visible {display: block;}
+
+.right_wrapper {float: right;
+    width: 49%;
+    margin-top: 15px;
+    margin-right: 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding-bottom: 103px;}
+
+form {border: 1px solid #6c6c6c;
+	outline: 1px solid #c0c0c0;
+    margin: 10px;}
+
+label {display: block;
+    padding: 10px;}
+
+input {margin-left: 18px;}
+
+.last {margin-left: 31px;}
+
+.help {display: none;
+	width: auto;
+	border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    padding: 3px 7px;
+    margin-left: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);}
+
+.view_help {display: inline;}
+
+button {margin: 5px 10px;}
+
+
+
