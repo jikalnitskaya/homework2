@@ -1,0 +1,32 @@
+.box-radius {border-radius: 12px;
+    behavior: url(../border-radius.htc);}
+
+.circle {display: none;}
+
+.circle_ie {display: block;
+	position: absolute;
+    bottom: -111px;
+    right: 17%;}
+
+.circle_ie a {height: 18px;
+	width: 18px;
+	color: transparent;
+	background-image: url(../img/circle_top_black.png);
+	background-repeat: no-repeat;}
+
+.circle_ie a:hover {background-image: url(../img/circle_top.png);
+	background-repeat: no-repeat;}
+
+.circle_ie_bottom {display: block;
+	position: absolute;
+    bottom: -46px;
+    left: 40%;}
+
+.circle_ie_bottom a {height: 18px;
+	width: 18px;
+	color: transparent;
+	background-image: url(../img/circle_bottom_white.png);
+	background-repeat: no-repeat;}
+
+.circle_ie_bottom a:hover {background-image: url(../img/circle_bottom.png);
+	background-repeat: no-repeat;}

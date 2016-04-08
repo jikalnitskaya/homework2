@@ -18,6 +18,17 @@ $(function() {
         	$(this).closest('form').find('span.help').eq(j).removeClass('view_help');
         });
     });
+
+    //функция для кнопки
+    var $help = $('span');
+    var $buttonMode = 'of';
+    console.log ($help);
+    $('button').on('click', function(e){
+        var $buttonMode = 'on';
+        e.preventDefault();
+        $help.addClass('view_help');    
+    });
+   
 });
 
 
