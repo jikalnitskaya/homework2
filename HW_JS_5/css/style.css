@@ -1,61 +1,64 @@
-.carousel-wrapper {margin: 20px auto;
-	width: 640px;
-    position: relative;
-    border: 10px solid #fff;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+body {background: #FFE4C4;}
+
+h2 {font-family: Arial;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 10px auto;
+    text-align: center;}
+
+.wrapper {width: 57%;
+    margin: 10px auto;
+    padding: 5px;
+    border: 2px solid black;
     border-radius: 5px;
-    -webkit-box-shadow: 0 0 2px #999;
-    -moz-box-shadow: 0 0 2px #999;
-    box-shadow: 0 0 2px #999;}
+    background: white;}
 
-.carousel-wrapper .photo-credits {position: absolute;
-    right: 15px;
-    bottom: 0;
-    font-size: 13px;
-    color: #fff;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
-    opacity: .66;}
+a {text-decoration: none;}
 
-.carousel-wrapper .photo-credits a {color: #fff;}
+.checkboxes {width: 100%;}
 
-/** <a href="http://www.jqueryscript.net/tags.php?/Carousel/">Carousel</a> **/
+.left {width: 49%;
+    float: left;
+    text-align: center;}
 
-.carousel {position: relative;
-	overflow: hidden;
-    width: 600px;
-    height: 400px;}
+.right {width: 49%;
+    float: right;
+    text-align: center;}
 
-.carousel ul {width: 20000em;
+.clearfix {content: " ";
+    display: table;
+    clear: both;}
+
+.left p, .right p {text-align: left;
+    margin: 20px 10px;}
+
+.left label, .right label {float: none;
+    top: 0;}
+
+.left label {margin-left: 22px;}
+
+.left .stylized {cursor: pointer;}
+
+.left .stylized + label {cursor: pointer;}
+
+.left .stylized:not(checked) {position: absolute;
+    opacity: 0.5;
+    z-index: 2;
+    left: -22px;}
+
+.left input:not(checked) + label {position: relative;
+    margin-left: 22px;}
+
+.left input:not(checked) + label:before {content: '';
     position: absolute;
-    list-style: none;
-    margin: 0;
-    padding: 0;}
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background: gray;
+    border-radius: 5px;}
 
-.carousel li {float: left;}
-
-/** Carousel Controls **/
-.carousel-control-prev, .carousel-control-next {
-    position: absolute;
-    top: 200px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background: #4E443C;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 0 0 1px #000;
-    font: 24px/27px Arial, sans-serif;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    -webkit-box-shadow: 0 0 2px #999;
-    -moz-box-shadow: 0 0 2px #999;
-    box-shadow: 0 0 2px #999;}
-
-.carousel-control-prev {left: -50px;}
-
-.carousel-control-next {right: -50px;}
-
-.carousel-control-prev:hover span, .carousel-control-next:hover span {
-    display: block;}
+.left input:checked + label:before {background: green;}
+ 
+.left input:checked + label {color: red;}

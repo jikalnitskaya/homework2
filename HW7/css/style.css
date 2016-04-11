@@ -17,8 +17,7 @@ header {/*background: -ms-url (../img/bg.png) no-repeat;*/
 	margin: 0 auto;}
 
 /*заголовок в хедере*/
-.big_logo {-moz-float: left;
-    float: left;
+.big_logo {float: left;
 	padding-top: 68px;
     margin-bottom: 165px;}
 
@@ -33,8 +32,7 @@ span {color: #674774;
 
 
 /*меню в хедере*/
-.nav_980 {-moz-float: right;
-    float: right;
+.nav_980 {float: right;
     margin-top: 74px;
     margin-right: -3px;}
 
@@ -104,7 +102,7 @@ article {color: white;
 .ar2 {height: 42px;
 	position: absolute;
 	top: 185px;
-	right: 0px;}
+	right: 20px;}
 
 .ar2 a {display: block;}
 
@@ -249,7 +247,6 @@ h4 {font-family: "League Gothic";
 .white {background-color: #f9f9f9;}
 
 .white_colm_left {float: left;
-    -moz-max-width: 38%;
     max-width: 38%;
     height: 239px;
     background: white;
@@ -262,8 +259,7 @@ h4 {font-family: "League Gothic";
 .triangle {width: 0;
 	height: 0;
 	border-top: 30px solid white; 
-    -moz-border-left-colors: transparent;
-	border-left: 30px solid transparent;
+    border-left: 30px solid transparent;
 	position: absolute;
 	bottom: -21px;
     right: 9%;}
@@ -306,7 +302,6 @@ h4 {font-family: "League Gothic";
 
 .white_colm_right {float: right;    
 	margin-top: 129px;
-    -moz-max-width: 47%;
     max-width: 47%;
     margin-right: 14px;}
 
@@ -523,20 +518,17 @@ footer span {color: white;
 @media (max-width: 950px) { 
 	.white_colm_right {margin-left: 2%;
         margin-right: 0;
-        -moz-max-width: 46%;
         max-width: 46%;}
 
     .white_colm_right h4 {margin-left: 3px;
         letter-spacing: -0.3px;}
 
     .white_row_1_block {margin-bottom: 24px;
-        -moz-max-width: 84%;
         max-width: 84%;}
 
     .white_row_1_block p {margin-left: 18px;}
 
     .white_row_2_block {margin-bottom: 22px;
-        -moz-max-width: 84%;
         max-width: 84%;}
 
     .white_row_2_block h5 {margin-left: 18px;}    
@@ -544,8 +536,7 @@ footer span {color: white;
     .white_row_2_block p {margin-left: 18px;
         letter-spacing: 0.37px;}    
 
-    .white_row_3_block {-moz-max-width: 84%;
-        max-width: 84%;}
+    .white_row_3_block {max-width: 84%;}
 
     .white_row_3_block p {letter-spacing: 0.4px;}
 
@@ -577,8 +568,7 @@ footer span {color: white;
         clear: both;}    
 
  	.nav_980 {float: none;  
-        -moz-max-width: 100%; 
- 		max-width: 100%;
+        max-width: 100%;
 		margin-top: 28px;
         margin-bottom: 77px;    
         margin-left: 0px;
@@ -606,8 +596,7 @@ footer span {color: white;
 /*______________ширина 768пх____________________*/
 @media (max-width: 768px) {
 
-	.container {-moz-max-width: 728px;
-        max-width: 728px;}
+	.container {max-width: 728px;}
 	
     .block {margin-left: 3%;
         padding-left: 2px;
@@ -616,10 +605,10 @@ footer span {color: white;
         padding-bottom: 109px;}
 
     .ar1 {top: 178px;
-    	left: -3%;}
+    	left: -1%;}
 
     .ar2 {top: 178px;
-    	right: -3%;}
+    	right: -1%;}
     
     .iphone {right: 3%;
         top: -35px;}
@@ -703,8 +692,7 @@ footer span {color: white;
     .blue_colm_1, .blue_colm_2 {margin-right: 3%;}  
 
     /*блок white*/
-    .white_colm_left {-moz-max-width: 35%;
-        max-width: 35%;
+    .white_colm_left {max-width: 35%;
         padding-top: 29px;
         padding-left: 45px;
         padding-right: 18px;
@@ -715,7 +703,6 @@ footer span {color: white;
         left: -7%;}
 
     .white_colm_left h4 {font-size: 24px;
-        -moz-max-width: 50%;
         max-width: 50%;}
 
     .white_colm_left span {letter-spacing: 0.05px;}
@@ -800,7 +787,6 @@ footer span {color: white;
 	.white_colm_left, .white_colm_right {float: none;}
 
     .white_colm_left {margin-top: 0px;
-        -moz-max-width: 82%;
         max-width: 82%;
         padding-bottom: 2px; 
         margin-left: 5%;
@@ -812,7 +798,6 @@ footer span {color: white;
     .white_colm_left h4 {margin-left: 1px;
         font-size: 28px;
         margin-top: -1px;
-        -moz-max-width: 100%;
         max-width: 100%;
         letter-spacing: 0.65px;
         margin-bottom: 13px;}  
@@ -822,8 +807,7 @@ footer span {color: white;
     
     .circle_bottom_position {left: 39%;}    
 
-    .white_colm_right {-moz-max-width: 79%;
-        max-width: 79%;
+    .white_colm_right {max-width: 79%;
     	margin-top: 90px;    
     	margin-left: 12%;
         padding-left: 8px;}
@@ -972,8 +956,7 @@ footer span {color: white;
 
 /*______________ширина 480пх___________________*/
 @media (max-width: 480px) {
-	.container {-moz-max-width: 440px;
-        max-width: 440px;}
+	.container {max-width: 440px;}
 
 	header {padding-bottom: 100px;}
 
@@ -1000,10 +983,10 @@ footer span {color: white;
         width: 70%;}
 
     .ar1 {top: 100px;
-        left: -5%;}
+        left: -3%;}
 
     .ar2 {top: 101px;
-        right: -6%;}
+        right: -3%;}
 
     .circle_position {bottom: -42px;
         left: 41%;}
@@ -1060,11 +1043,9 @@ footer span {color: white;
     .white_colm_right {margin-left: -1%;
         padding-left: 0;
         margin-top: 88px;
-        -moz-max-width: 100%;
         max-width: 100%;} 
 
-    .white_row_1_block {-moz-max-width: 75%;
-        max-width: 75%;
+    .white_row_1_block {max-width: 75%;
         margin-left: 6%;
         margin-bottom: 20px;}
     
@@ -1075,13 +1056,11 @@ footer span {color: white;
     .white_colm_right p {letter-spacing: 0.4px;
     	margin-left: 0px;}
 
-    .white_row_2_block {-moz-max-width: 75%;
-        max-width: 75%;
+    .white_row_2_block {max-width: 75%;
         margin-left: 6%;
         margin-bottom: 25px;}
 
-    .white_row_3_block {-moz-max-width: 75%;
-        max-width: 75%;
+    .white_row_3_block {max-width: 75%;
         margin-left: 6%;}
  
     .white_link_new a {margin-right: 1%;}
@@ -1109,10 +1088,10 @@ footer span {color: white;
     .block h3 {letter-spacing: -0.5px;}
 
 	.ar1 {top: 100px;
-        left: -8%;} 
+        left: -3%;} 
 
     .ar2 {top: 101px;
-        right: -8%;}   
+        right: -3%;}   
 
     .iphone {display: none;}
 
@@ -1145,9 +1124,8 @@ footer span {color: white;
 
 	
 /*--------------ширина 320пх*--------------*/
-@media (max-width: 320px) {
-	.container {-moz-max-width: 280px;
-        max-width: 280px;}
+@media (max-width: 340px) {
+	.container {max-width: 280px;}
 
     .violet_colm_1 {margin-top: 72px;
         margin-left: 20%;
@@ -1181,7 +1159,6 @@ footer span {color: white;
     
     .white_colm_left h4 {font-size: 23px;
         letter-spacing: 0.5px;
-        -moz-max-width: 50%;
         max-width: 50%;
         margin-bottom: 5px;
         margin-top: -3px;}
