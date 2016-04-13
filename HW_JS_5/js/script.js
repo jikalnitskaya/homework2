@@ -1,10 +1,9 @@
+/*ф-ция Fancybox*/
 $(document).ready(function() {
 		$(".fancybox").fancybox();
 	});
 
-
-
-
+/*ф-ция cuSel*/
 jQuery(document).ready(function(){
 var params = {
 		changedEl: ".lineForm select",
@@ -18,11 +17,8 @@ var params = {
 		scrollArrows: false
 	}
 	cuSel(params);
-	
-	
-	/*
-		динамическое добавление селекта
-	*/
+		
+	/*динамическое добавление селекта	*/
 jQuery("#addSelect").click(
 function()
 {
@@ -42,11 +38,9 @@ function()
 		visRows: 4
 	}
 	cuSel(params);
-	
 });
-/*
-	показ скрытого селекта
- */
+
+/*	показ скрытого селекта */
 jQuery("#showSel").click(
 function()
 {
@@ -57,9 +51,7 @@ function()
 	}
 	cuSelRefresh(params);
 });
-/*
-	динамическое добавление оптионов
-*/
+/*	динамическое добавление оптионов*/
 jQuery("#addAnimals").click(
 function()
 {
@@ -68,15 +60,14 @@ function()
 	jQuery("#cusel-scroll-animals").append(newAnimals);
 	
 	/* обновлеям селект, чтобы перинициализировать сроллинг */
-		
 	
 	var params = {
 		refreshEl: "#animals",
 		visRows: 4
 	}
 	cuSelRefresh(params);
-	
 });
+
 jQuery("#butTest").click(
 function()
 {
