@@ -87,8 +87,6 @@ h2 {font-family: Arial;
     border-radius: 15px;
     background: darkgray;}
 
-
-
 .submenu {display: none;
     position: absolute;
     bottom: -154px;
@@ -121,7 +119,7 @@ h2 {font-family: Arial;
     position: absolute;}
 
 .pos_1 {top: 10px;
-    right: -18px;}
+    right: 5px;}
 
 .pos_2 {top: 12px;
-    right: -12px;}
+    right: 7px;}

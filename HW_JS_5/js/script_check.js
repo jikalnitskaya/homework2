@@ -43,21 +43,15 @@ function changeCheckStart(el) {
     return true;
 }
 
-$(function(){
-    var $links = $('.menu a');
-    $links.on('click', function(event) {
-        var $submenu = $(this).siblings('.submenu');
-        event.preventDefault();
-        $submenu.show();
-    });
-});
+
 
 /*ф-ция для выпадающего меню*/
+$(function(){
 var $links = $('.menu a');
     $links.on('click', function(event) {
         var $submenu = $(this).siblings('.submenu');
         event.preventDefault();
-        $submenu.slideToggle(1000);
+        $submenu.fadeToggle(1000);
     });
 
     var $sublinks = $('.submenu a');

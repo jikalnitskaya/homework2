@@ -15,3 +15,129 @@ h2 {font-family: Arial;
 
 a {text-decoration: none;}
 
+body {background: #FFE4C4;}
+
+h2 {font-family: Arial;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 10px auto;
+    text-align: center;}
+
+.checkboxes {width: 100%;}
+
+.left {width: 49%;
+    float: left;
+    text-align: center;}
+
+.right {width: 49%;
+    float: right;
+    text-align: center;}
+
+.clearfix {content: " ";
+    display: table;
+    clear: both;}
+
+.left p, .right p {text-align: left;
+    margin: 20px 10px;}
+
+.left label, .right label {float: none;
+    top: 0;}
+
+.left label {margin-left: 22px;
+    cursor: pointer;
+    position: relative;}
+
+.left input {cursor: pointer;}
+
+.left input:not(checked) {position: absolute;
+    opacity: 0;
+    z-index: 2;
+    left: 0px;}
+
+.left label:before {content: '';
+    position: absolute;
+    top: 4px;
+    left: -28px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background: #FF4500;
+    border-radius: 5px;}
+
+.left input:checked + label:before {background: brown;}
+ 
+.left input:checked + label {color: #B22222;
+    font-style: italic;}
+
+.niceCheck {width: 200px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox-sprite.png);
+    background-repeat: no-repeat;}
+
+.niceCheck input {display: none;}
+
+.right label {margin-left: 25px;}
+
+.menu_block {box-sizing: border-box;}
+
+.menu {margin: 10px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    background: silver;}
+
+.menu>li {display: inline-block;
+    margin: 10px 30px;}
+
+.menu li {list-style: none;}
+
+.menu a {text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 20px;}
+
+.rel {position: relative;}
+
+.menu a:hover {border: 1px solid darkgray;
+    border-radius: 15px;
+    background: darkgray;}
+
+.submenu {display: none;
+    position: absolute;
+    bottom: -154px;
+    left: 341px;
+    border: 1px solid silver;
+    border-radius: 15px;
+    background: silver;}
+
+.submenu a {font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+    width: 100%;}
+
+.target_menu {display: none;
+    position: absolute;
+    bottom: -70px;
+    left: 119px;
+    width: 120px;
+    border: 1px solid silver;
+    border-radius: 15px;
+    background: silver;}
+
+.target_menu a {font-size: 15px;}
+
+.triangle {content: " ";
+    border: 5px solid transparent;
+    border-top-color: black;
+    background-color: transparent;
+    margin: 0 auto;
+    position: absolute;}
+
+.pos_1 {top: 10px;
+    right: 5px;}
+
+.pos_2 {top: 12px;
+    right: 7px;}
+
