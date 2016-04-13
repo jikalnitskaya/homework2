@@ -80,7 +80,8 @@ h2 {font-family: Arial;
 
 .right label {margin-left: 25px;}
 
-.menu_block {box-sizing: border-box;}
+.menu_block {box-sizing: border-box;
+    padding-bottom: 250px;}
 
 .menu {margin: 10px;
     border: 1px solid silver;
