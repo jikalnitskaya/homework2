@@ -1,0 +1,44 @@
+body {background: #ADFF2F;}
+
+h2 {font-family: Arial;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 10px auto;
+    text-align: center;}
+
+.wrapper {width: 990px;
+    margin: 10px auto;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;}
+
+a {text-decoration: none;}
+
+.small {height: 120px;
+    width: 120px;}
+
+.fancybox_modal {position: absolute;
+    width: 800px;
+    height: 510px;
+    top: 50%;
+    left: 50%;
+    margin: -255px 0 0 -420px;
+    text-align: center;
+    background-color: white;}
+
+.fancybox_modal img {width: 800px;
+    height: 480px;}
+
+.fancybox_overlay {position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);}
+
+h1 {font-family: Arial;
+	font-size: 24px;
+    background-color: #ADFF2F;
+    line-height: 30px;
+    margin-top: -3px;}
