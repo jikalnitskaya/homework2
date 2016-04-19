@@ -1,3 +1,4 @@
 $(function() {
     $('a.fancybox').fancybox();
 });
+

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>homework 6*</title>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/video_.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	
+</head>
+
+<body>
+sdf
+<script type="text/template" id="test">
+    <% for (var i=0; i<users.length; i++) { %>
+        <p> <%= users[i].name %> </p>
+        <p> <%= users[i].work %> </p>
+        <hr>
+        <p> <%= users[i].question_1 %></p>
+        <li> <%= users[i].li_1 %></li>
+        <li> <%= users[i].li_2 %></li>
+        <li> <%= users[i].li_3 %></li>
+        <hr>
+        <p> <%= users[i].text_1 %></p>
+        <p> <%= users[i].number %></p>
+        <p> <%= users[i].text_2 %></p>
+        <p> <%= users[i].link %></p>
+        <p> <%= users[i].question_2 %></p>
+        <p> <%= users[i].answer %></p> 
+    <% }; %>
+</script>
+
+</body>
+</html>
