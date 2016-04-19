@@ -10,26 +10,27 @@
 	<script type="text/javascript" src="js/video_.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	
+	<link rel="stylesheet" type="text/css" href="css/style_v.css">
 </head>
 
 <body>
-sdf
 <script type="text/template" id="test">
     <% for (var i=0; i<users.length; i++) { %>
-        <p> <%= users[i].name %> </p>
+        <h1> <%= users[i].name %> </h1>
         <p> <%= users[i].work %> </p>
         <hr>
-        <p> <%= users[i].question_1 %></p>
+        <h2> <%= users[i].question_1 %></h2>
         <li> <%= users[i].li_1 %></li>
         <li> <%= users[i].li_2 %></li>
         <li> <%= users[i].li_3 %></li>
         <hr>
-        <p> <%= users[i].text_1 %></p>
+        <h2> <%= users[i].text_1 %></h2>
         <p> <%= users[i].number %></p>
-        <p> <%= users[i].text_2 %></p>
+        <hr>
+        <h2> <%= users[i].text_2 %></h2>
         <p> <%= users[i].link %></p>
-        <p> <%= users[i].question_2 %></p>
+        <hr>
+        <h2> <%= users[i].question_2 %></h2>
         <p> <%= users[i].answer %></p> 
     <% }; %>
 </script>

@@ -1,0 +1,16 @@
+body {margin: 20px;
+    font-family: Arial;
+    background: #ADFF2F;}
+
+h1 {font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0 30px;}
+
+h2 {font-weight: bold;
+    margin-bottom: 10px;}
+
+hr {margin-bottom: 25px;
+    margin-top:  25px;}
+
+p {margin-bottom: 10px;}
