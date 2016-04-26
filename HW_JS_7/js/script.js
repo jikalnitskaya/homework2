@@ -1,39 +1,40 @@
 'use strict';
 
 $(function () {
-	var profile = {
+	var questions = [{
+        question: "Какого цвета трава?",
+        answers: ["красная", "зеленая", "фиолетовая"],
+        correct: "зеленая"
+    }, {
+        question: "Где живет мышка?",
+        answers: ["в норе", "в сыре", "в скворечнике"],
+        correct: "в норе"
+    }, {
+        question: "Как зовут крокодила?",
+        answers: ["Семен Семеныч", "Гена", "Вася"],
+        correct: "Гена"
+    }];
+    var profile = {
 		title : "Тест по программированию",
-		question_1 : "Какого цвета трава?",
-		answer_1_1 : "красная",
-		answer_1_2 : "зеленая",
-		answer_1_3 : "фиолетовая",
-		question_2 : "Где живет мышка?",
-		answer_2_1 : "в норе",
-		answer_2_2 : "в сыре",
-		answer_2_3 : "в скворечнике",
-	    question_3 : "Как зовут крокодила?",
-		answer_3_1 : "Семен Семеныч",
-		answer_3_2 : "Гена",
-		answer_3_3 : "Вася",
-	    buttonCheck : "Проверить мои результаты",
+		que : questions,
+		buttonCheck : "Проверить мои результаты",
 	    buttonReset : "Сбросить все"
 	};
-
 //сохраняем и достаем объект из localStorage
 	localStorage.clear;
 	var str = JSON.stringify (profile);
+	localStorage.setItem('data',str);
+	console.log (localStorage);
 	//console.log (str);
 	var obj = JSON.parse (str);
 	//console.log (obj);
 
 //рендерим html
-	profile = [obj];
+	profile = obj;
 	var html = $('#test').html();
-	var users = [];
 	var content = tmpl (html, {users : profile});
 	$('body').append(content);
-
-//сброс результатов
+	//сброс результатов
 	function clear() {
 		$('input:checked').removeAttr('checked');
 	};
@@ -45,6 +46,7 @@ $(function () {
     var $modal;
     var $overlay;
     var $body = $('body');
+    var ansNum;
     
     function isCorrect () {
         var $answers = $('input:checked').map(function (indx, el) {
@@ -52,7 +54,7 @@ $(function () {
         });
         var count = 0;
         for (var i = 0; i<$answers.length; i++) {
-            if ($answers[i]==$correct[i]) {
+            if ($answers[i]==$correct[i]-1) {
         	    count++;
             };
         };
@@ -60,16 +62,25 @@ $(function () {
         var text;
         var color;
         var background;
-        
+        var text2;
+        ansNum = count;
+        text2 = 'You have '+count+'&nbsp;right answers';
+        if (count==1) {
+        	text2 = 'You have '+count+'&nbsp;right answer';
+        } else {
+        	text2 = 'You have '+count+'&nbsp;right answers';
+        };
+
         if (count==3) {
-            text = 'You are right!!';
+            text = 'You are right!!'          
             color = '#228B22';
-            background = '#7FFF00';} else {
+            background = '#7FFF00';
+        } else {
             	text = 'You are wrong!!';
             	color = 'red';
             	background = 'darkred';
             }
-        $modal = $('<div class="modal">'+text+'</div>');
+        $modal = $('<div class="modal"><p>'+text+'</p><p class="text2">'+text2+'</p></div>');
         $overlay = $('<div class="overlay"></div>');
         $body.append($overlay);
     	$body.append($modal);
@@ -85,5 +96,4 @@ $(function () {
 
     var check = $('#check');
 	check.on('click', isCorrect);
-    
 });

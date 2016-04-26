@@ -15,63 +15,27 @@
 
 <body>
     <script type="text/template" id="test">
-    <% for (var i=0; i<users.length; i++) { %>
-        <h1> <%= users[i].title %> </h1>
+           <h1> <%= users.title %> </h1>
+ 
+
         <form>
             <ol>
-                <li> <%= users[i].question_1 %> </li>
+            <% for (var j=0; j<users.que.length; j++) { %>
+            
+                <li> <%= users.que[j].question %> </li>
+                <% for (var k=0; k<users.que[j].answers.length; k++ ) { %>
                     <label>
-                        <input type="radio" name="qu_1" value="1">
-                            <%= users[i].answer_1_1 %>
+                        <input type="radio" name="qu_<%= j %>" value=<%= k %>>
+                            <%= users.que[j].answers[k] %>
                         </input>
                     </label>
-                    <label>
-                        <input type="radio" name="qu_1" value="2">
-                            <%= users[i].answer_1_2 %>
-                        </input>
-                    </label>
-                    <label>
-                        <input type="radio" name="qu_1" value="3"> 
-                            <%= users[i].answer_1_3 %>
-                        </input>
-                    </label>
-                <li> <%= users[i].question_2 %> </li>
-                    <label>
-                        <input type="radio" name="qu_2" value="1"> 
-                            <%= users[i].answer_2_1 %>
-                        </input>
-                    </label>
-                    <label>
-                        <input type="radio" name="qu_2" value="2"> 
-                            <%= users[i].answer_2_2 %>
-                        </input>
-                    </label>
-                    <label>
-                    	<input type="radio" name="qu_2" value="3"> 
-                    	    <%= users[i].answer_2_3 %>
-                    	</input>
-                    </label>
-                <li> <%= users[i].question_3 %> </li>
-                    <label>
-                        <input type="radio" name="qu_3" value="1"> 
-                            <%= users[i].answer_3_1 %>
-                        </input>
-                    </label>
-                    <label>
-                        <input type="radio" name="qu_3" value="2"> 
-                            <%= users[i].answer_3_2 %>
-                        </input>
-                    </label>
-                    <label>
-                        <input type="radio" name="qu_3" value="3"> 
-                            <%= users[i].answer_3_3 %>
-                        </input>
-                    </label>
+                    <% }; %>
+            
+            <% }; %>
             </ol>
         </form>
-        <button id="check"> <%= users[i].buttonCheck %> </button>
-        <button type="reset" id="reset"> <%= users[i].buttonReset %> </button>
-    <% }; %>
+        <button id="check"> <%= users.buttonCheck %> </button>
+        <button type="reset" id="reset"> <%= users.buttonReset %> </button>
 </script>
 </body>
 </html>
