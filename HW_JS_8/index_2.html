@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>homework 8</title>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/tmpl.js"></script>
+    <script type="text/javascript" src="js/script_2.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style_2.css">
+</head>
+
+<body>
+    <h1>human</h1>
+    <div class="first">
+        <ul>
+	        <li>name</li>
+	        <li>surname</li>
+	        <li>age</li>
+	        <li>sex</li>
+	        <li>height</li>
+	        <li>weight</li>
+	        <li>sleep</li>
+        </ul>
+    </div>	
+    
+    <script type="text/template" id="test">
+        <div class="second">
+            <ul>
+                <% for (var i=0; i<users.length; i++) { %>
+	                <li> <%= users[i].name %> </li>
+	                <li> <%= users[i].surname %> </li>
+	                <li> <%= users[i].age %> </li>
+	                <li> <%= users[i].sex %> </li>
+	                <li> <%= users[i].height %> </li>
+	                <li> <%= users[i].weight %> </li>
+	                <li> <button id="sleep">Sleep</button> </li>
+	            <% }; %>
+            </ul>
+        </div>
+    </script>
+</body>
+</html>

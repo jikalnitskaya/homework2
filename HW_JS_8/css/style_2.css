@@ -1,0 +1,9 @@
+body {font-family: Arial;}
+
+h1 {font-size: 30px;
+    margin: 10px;}
+
+.first, .second {float: left;
+    margin: 10px;}
+
+li {margin-top: 5px;}
