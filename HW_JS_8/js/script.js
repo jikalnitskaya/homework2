@@ -1,33 +1,28 @@
 $(function (){
 	//смена картинок
-	/*var $img; //= $('img').attr('src');
+	var timerId;
+	var $img;
 	var $pImg = $('.img');
 	$img = $('<img src="img/google0.jpg" alt="google.com">');
     $pImg.append($img); 
+    var i = 1;
 
-    function changeImg (){
-	    for (var i=1; i<4; i++) {
-		    setInterval (function(){
-		        $img.remove();
-		        $img = $('<img src="img/google'+i+'.jpg" alt="google.com">');
-		        $pImg.append($img);
-		        console.log ($img);
-		        if (i==2) {
-		        	i=0;
-		        };
-		    }, 5000);
-	    };
-	    
+    function changeImg (){ 	
+		timerId = setInterval (function(){   	
+		    $img.remove();
+		    $img = $('<img src="img/google'+i+'.jpg" alt="google.com">');
+		    $pImg.append($img);
+		    i++;
+		    if (i==25) {
+		       	i=0;
+		    };
+		}, 5000);    
 	};
-
-    //for (var j=0; j<1; j++) {
-    	changeImg ();
-    	//console.log ($img);
-    };*/
-
+   	changeImg ();
     
     //ф-ция смены внешнего вида 
     function changeView (){
+    	clearInterval(timerId);
     	$('#wrapper').removeClass('wrapper').addClass('wrapper_change');
     	$('.img').removeClass('img').addClass('img_change');
         $('img').attr('src', 'img/googlemini.jpg');
@@ -39,62 +34,49 @@ $(function (){
     };
     $('#in').keypress(function(eventObject){
         changeView();
-        /*console.log (eventObject);
-        if (eventObject.charCode == 13) {
-        	search();
-        };*/
+        //search(); //при отправке запроса при изменении каждой
+        // буквы через раз выдается ошибка
     });
 
     //запрос
-    
+    var $input = $('#in').val();
+    //var request;
+
     function search (e) {
-    	e.preventDefault;
+    	e && e.preventDefault();
         var url='';
-        var $input = $('#in').val(); 
+        var $input = $('#in').val();
         $input = $input.replace(' ','+');
         url = 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=' + $input;
-        console.log(url);
-    
-        $.ajax({
+        /*if (request) {
+        	request.abort();
+        };*/
+        /*request = */$.ajax({
             url: url,
             dataType: "jsonp",
             success: function(data) {
                 console.log("Here");
                 console.log(data);
-                var result = data.responseData.results[0].content;
-                console.log (result);
                 var html="";
-                $(".wrapResult").children().remove()
+                $(".result").children().remove();
                 var obj=data.responseData.results;
                 obj.forEach(function(item, i){
-                    var j=i+1;
-                    html = html + "<h2>"+j +". "+item.title +"</h2>" + "<h4>" +item.content+"</h4>"+"<h4>" +item.url+"</h4>"
-           
-              
-            })
-            },
+                	html = html+'<h2>'+item.title+'</h2>'+'<p>'+item.content+'</p>'+'<a href="#">'+item.url+'</a>';            
+                    $('a').attr('url', item.url);
+                });
+                $(".result").append(html);
+           } ,
             error: function(error) {
                 console.log("error");
                 console.log(error);
-            }
-            /*var obj=data.responseData.results;
-            var html="";
-            $(".wrapResult").children().remove()
-            obj.forEach(function(item, i){
-             var j=i+1;
-            html = html + "<h2>"+j +". "+item.title +"</h2>" + "<h4>" +item.content+"</h4>"+"<h4>" +item.url+"</h4>"
-           
-              
-            })
-            $(".wrapResult").append(html)*/
+            }/*,
+            complete: function(){
+                request = 0;
+            }*/
         });
     };
     
     $("#search").on("click", search);
     $('form').submit(search);
-
-    
-  
-
-	
+ 
 });

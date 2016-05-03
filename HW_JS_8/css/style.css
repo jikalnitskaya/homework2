@@ -1,3 +1,5 @@
+body {font-family: Arial;}
+
 .wrapper {text-align: center;
     height: 60%;
     width: 40%;
@@ -35,6 +37,16 @@ button {width: 30%;
     text-align: left;
     margin-left: 10px;}
 
-.result {width: 100%;}
+.result {width: 80%;
+    margin: 0px auto;}
+
+.result h2 {margin-bottom: 10px;
+	margin-top: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    color: blue;}
+
+.result p {margin-bottom: 5px;
+    text-align: left;}
 
 

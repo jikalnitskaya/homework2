@@ -1,5 +1,7 @@
 $(function (){
-var human = [{
+//alert ('Please, open console!');
+
+var human = {
     name : 'John',
     surname : 'Black',
     age : 28,
@@ -9,7 +11,7 @@ var human = [{
     sleep : function () {
     	alert ('Tss! I am sleeping!');
     }
-}];
+};
 
 var worker = {
     company : 'Pepsi',
@@ -30,18 +32,39 @@ var student = {
 };
 
 worker.__proto__= human;
-console.log (worker.name, worker.age);
-//human.sleep();
+student.__proto__= human;
+console.log (worker.name, worker.age, worker.company);
+//worker.sleep();
+console.log (student.height, student.weight, student.university);
+//student.sleep();
+//student.study();
 
-var html = $('#test').html();
-var content = tmpl (html, {users : human});
-console.log (tmpl);
-$('body').append(content);
+var workerSecond = {
+    company : 'Cola',
+    job : 'engeneer',
+    salary : '5000$',
+    work : function () {
+        alert ('I am doing something now!');
+    }
+};
+workerSecond.__proto__= human;
+console.log (workerSecond.name, workerSecond.age, workerSecond.company);
 
-var s= $('#sleep');
+function shop() {
+    this.goods = 'apples';
+    this.quantity = 1000;
+    this.sellApples = function() {
+        var apple = prompt ('How many apples do you want?');
+        var restApples = this.quantity - apple;
+        console.log (restApples);
+        alert ('Hello');
+    };
+};
 
-console.log (s);
-$('#sleep').on('click', human.sleep);
+
+shop.sellApples();
+
+
 
 });
 
