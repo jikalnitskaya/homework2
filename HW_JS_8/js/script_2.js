@@ -57,12 +57,11 @@ function shop() {
         var apple = prompt ('How many apples do you want?');
         var restApples = this.quantity - apple;
         console.log (restApples);
-        alert ('Hello');
     };
 };
 
-
-shop.sellApples();
+var newShop = new shop ();
+newShop.sellApples();
 
 
 
