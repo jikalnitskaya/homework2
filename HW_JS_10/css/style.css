@@ -22,6 +22,7 @@ body {font-family: Arial;
 
 .net a {width: 18px;
     height: 18px;
+    font-size: 15px;
     color: transparent;
     margin-left: 5px;}
 
@@ -226,42 +227,32 @@ input {height: 30px;
     margin-left: 180px;
     height: 170px;}
 
-.block, .invisible {display: none;}
+.block {display: none;
+    margin: 30px 0 44px 46px;
+    color: #999999;
+    font-family: "Arial";
+    font-size: 13px;}
 
-.visible {display: block;}
-
-.plus {content: "";
-    height: 37px;
-    width: 37px;
-    float: left;
-    border-right: 2px solid #e8e8e8;
-	background: url(../img/accoordeon_.png) no-repeat;
-    background-position: -43px 0px;}
-
-.minus {content: "";
-    height: 37px;
-    width: 37px;
-    float: left;
-    border-right: 2px solid #f6c53d;
-    background: url(../img/accoordeon_.png) no-repeat;
-    background-position: 0px 0px;}  
-
-.two_colms_second a {text-decoration: none;
-    font-size: 13px;
-    text-transform: uppercase;
-    float: left;
-    padding: 12px 10px;
-    color: #2a2d32;
-    text-shadow: 0px 0px 2px #c6c7c8;}
-
-/*.view*/.accordion {width: 562px;
+.accord {width: 562px;
     height: 37px;
     margin-bottom: 5px;
     border: 1px solid #e8e8e8;
-    background: white;}
+    background: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #2a2d32;
+    text-shadow: 0px 0px 2px #c6c7c8;
+    position: relative;
+    padding-left: 46px;
+    line-height: 37px;}
+
+.accord span {position: absolute;
+    left: -1px;
+    top: -1px;}
 
 .active {border: 1px solid #f6c53d;
-    background: #f4b60d;}
+    background: #f4b60d;
+    color: white;}
 
 .logo {content: "";
     float: left;

@@ -16,13 +16,13 @@
 		var settings = $.extend({
 			rlAccordion: "rlAccordion", 		// add class in the same level of a parent statement for avoid styles conflict
 			signTag: "<span></span>", 			// html tag parent signs
-			titles: "h3",			 							// html tag parent of minus and plus, this may replaced also for a class
+			titles: "div",			 							// html tag parent of minus and plus, this may replaced also for a class
 			titlesChild: "span",						// html child titles and parent signs
-			container: "div",								// html tag adjacent sibling of titles
+			container: "article",								// html tag adjacent sibling of titles
 			childNum: 0,										// number of the children start open
 			classOpen: "opened",						// add class to the titles option adjacent sibling
-			open: "&#x2b;",  								// unicode plus sign
-			close: "&#x2212;",							// unicode minus sign
+			open: '<img src="img/plus.png">',  								// unicode plus sign
+			close: '<img src="img/minus.png">',							// unicode minus sign
 			rlOpen: "rl-open", 							// class for a plus sign
 			rlClose: "rl-close" 						// class for a minus sign
 		}, options);
@@ -38,18 +38,19 @@
 
 		// parse code to assign the corresponding unicode and class
 		if ( $element.next().hasClass(settings.classOpen) ) {
-			$element.children().html(settings.close).addClass(settings.rlClose);
+			$element.children().html(settings.close).addClass(settings.rlClose);//*
 		}
 		else {
-			$element.children().html(settings.open).addClass(settings.rlOpen);
+			$element.children().html(settings.open).addClass(settings.rlOpen);//*
+			//$element.addClass('active');
 		}
 
 		var methods = {
 			init : function() { // defaults settings
 				return this.each(function() {
 
-					$(this).children(settings.container).eq(settings.childNum).addClass(settings.classOpen).slideDown()
-								 .prev().children().html(settings.close).removeClass(settings.rlOpen).addClass(settings.rlClose); // assign the children start open
+					//$(this).children(settings.container).eq(settings.childNum).addClass(settings.classOpen).slideDown()
+								 //.prev().children().html(settings.close).removeClass(settings.rlOpen).addClass(settings.rlClose); // assign the children start open
 
 					$element.on('click', function() {
 						$(this).parent().children(settings.container).removeClass(settings.classOpen).slideUp();
@@ -74,22 +75,24 @@
 			single : function() {
 				return this.each(function() {
 
-					$(this).children(settings.container).eq(settings.childNum).addClass(settings.classOpen).slideDown()
-								 .prev().children().html(settings.close).removeClass(settings.rlOpen).addClass(settings.rlClose); // assign the children start open
+					//$(this).children(settings.container).eq(settings.childNum).addClass(settings.classOpen).slideDown()
+								 //.prev().children().html(settings.close).removeClass(settings.rlOpen).addClass(settings.rlClose); // assign the children start open
 
 					$element.on('click', function() {
 						$(this).next().slideToggle().toggleClass(settings.classOpen);
 						if ($(this).next().hasClass(settings.classOpen)) {
 								$(this).children().html(settings.close).removeClass(settings.rlOpen).addClass(settings.rlClose);
+							$(this).addClass('active');	
 						}
 						else {
 							$(this).children().html(settings.open).removeClass(settings.rlClose).addClass(settings.rlOpen);
+							$(this).removeClass('active');
 						}
 					});
 				});
 			},
 
-			mix : function() {
+			/*mix : function() {
 				return this.each(function() {
 
 					$(this).children(settings.container).eq(settings.childNum).addClass(settings.classOpen).slideDown()
@@ -109,7 +112,7 @@
 						}
 					});
 				});
-			}
+			}*/
 		};
 
 		// Method calling logic
