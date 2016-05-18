@@ -28,5 +28,5 @@ $(function() {
         rlOpen: "rl-open",              // class for a plus sign
         rlClose: "rl-close"             // class for a minus sign
 
-      });*/
+    });*/
 });

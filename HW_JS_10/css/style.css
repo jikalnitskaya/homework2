@@ -81,9 +81,58 @@ input {height: 30px;
     padding-left: 10px;
     padding-right: 30px;
     background: url("../img/search.png") 95% 50% no-repeat;}
+/**/
+.slider {z-index: 9;
+    width: 1160px;
+    height: 470px;
+    overflow: hidden;
+    margin: 0 0 7px;
+    position: relative;}
 
-.jcarousel img {width: 1160px;
+.slider ul, .slider li {padding: 0;
+    margin: 0;
+    list-style-type: none;}
+
+.slider ul {width: 9999px;}
+ 
+.slider ul li {list-style-type: none;
+    float: left;
+    width: 1160px;
     height: 470px;}
+
+.slider .nav {position: absolute;
+    left: 50%;
+    bottom: 12px;}
+
+.slider .nav span {opacity: 0.9;
+    background: #fff;
+    margin: 0 8px 0 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    float: left;
+    box-shadow: 0 1px 2px #000;}
+
+ .slider .nav span.on {background: black;}
+
+/*.squares {position: absolute;
+    left: 45%;
+    bottom: 15px;}
+
+.white_square {content: "";
+    height: 16px;
+    width: 16px;
+    margin-left: 10px;
+    background: white;
+    display: inline-block;}
+
+.white_square a {margin-left: 2px;
+	height: 12px;
+    width: 12px;
+    font-size: 10px;
+    color: transparent;}*/
 
 .three_colms {margin-top: 70px;
     font-family: "Ubuntu Condensed";}
