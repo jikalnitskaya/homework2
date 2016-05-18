@@ -82,6 +82,9 @@ input {height: 30px;
     padding-right: 30px;
     background: url("../img/search.png") 95% 50% no-repeat;}
 
+.jcarousel img {width: 1160px;
+    height: 470px;}
+
 .three_colms {margin-top: 70px;
     font-family: "Ubuntu Condensed";}
 
