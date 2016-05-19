@@ -1,0 +1,33 @@
+body, .three_colms article, .two_colms_first h5, .block, .footer {
+  font-family: "Arial"; }
+
+.wrapper {
+  width: 1160px; }
+
+nav a, .three_colms {
+  font-family: "Ubuntu Condensed"; }
+
+.net {
+  float: right; }
+  .net a {
+    width: 18px;
+    height: 18px;
+    font-size: 15px;
+    color: transparent;
+    margin-left: 5px; }
+
+.three_colms {
+  margin-top: 70px; }
+  .three_colms h3 {
+    font-size: 20px;
+    margin: 28px 0; }
+  .three_colms article {
+    font-size: 13px;
+    color: #cecece;
+    margin-bottom: 23px; }
+  .three_colms a {
+    text-decoration: none;
+    font-size: 13px;
+    text-shadow: 0px 1px black; }
+
+/*# sourceMappingURL=stylemain.css.map */

@@ -1,0 +1,36 @@
+$font-main: "Ubuntu Condensed";
+$font:      "Arial";
+$wrapper:   1160px;
+
+body, .three_colms article, .two_colms_first h5, .block, .footer {font-family: $font;}
+
+.wrapper {width: $wrapper;}
+
+nav a, .three_colms {font-family: $font-main;}
+
+.net {
+	float: right;
+
+	a {
+		width: 18px;
+	    height: 18px;
+	    font-size: 15px;
+	    color: transparent;
+	    margin-left: 5px;
+    }
+}
+
+.three_colms {
+    margin-top: 70px;
+
+    h3 {font-size: 20px;
+    margin: 28px 0;}
+
+    article {font-size: 13px;
+    color: #cecece;
+    margin-bottom: 23px;}
+
+   a {text-decoration: none;
+    font-size: 13px;
+    text-shadow: 0px 1px black;}
+}
