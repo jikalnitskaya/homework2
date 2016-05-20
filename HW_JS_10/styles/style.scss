@@ -1,12 +1,22 @@
 $font-main: "Ubuntu Condensed";
 $font:      "Arial";
 $wrapper:   1160px;
+$size_13:   13px;
+$size_16:   16px;
+
+@mixin links {text-decoration: none;}
 
 body, .three_colms article, .two_colms_first h5, .block, .footer {font-family: $font;}
+
+body, .three_colms article, .three_colms a, .two_colms_first h5, .block, .accord, .dark a {font-size: $size_13;}
+
+.black h4, .four_colms h4, .two_colms_first h4, .dark h4 {font-size: $size_16;}
 
 .wrapper {width: $wrapper;}
 
 nav a, .three_colms {font-family: $font-main;}
+
+nav a, .three_colms a, .dark a {@include links;}
 
 .net {
 	float: right;
@@ -24,13 +34,29 @@ nav a, .three_colms {font-family: $font-main;}
     margin-top: 70px;
 
     h3 {font-size: 20px;
-    margin: 28px 0;}
+        margin: 28px 0;}
 
-    article {font-size: 13px;
-    color: #cecece;
-    margin-bottom: 23px;}
+    article {color: #cecece;
+        margin-bottom: 23px;}
 
-   a {text-decoration: none;
-    font-size: 13px;
-    text-shadow: 0px 1px black;}
+    a {/*text-decoration: none;*/
+        text-shadow: 0px 1px black;}
 }
+
+.footer {
+	background: #35383c;
+    color: #616365;
+    font-size: 12px;
+
+    ul {
+        float: left;
+        margin-top: 25px;
+        margin-bottom: 25px; 
+
+        li {
+            margin-right: 30px; 
+	        display: inline-block;
+        }
+    }
+}
+

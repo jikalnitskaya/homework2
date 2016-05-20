@@ -1,7 +1,7 @@
 @font-face {font-family: "Ubuntu Condensed"; src: url(../fonts/ubuntu_condensed_regular.ttf);}
 
-body {/*font-family: Arial;*/
-    font-size: 13px;
+body {/*font-family: Arial;
+    font-size: 13px;*/
     box-sizing: border-box;
     width: 100%;
     cursor: pointer;}
@@ -60,7 +60,7 @@ nav {background: #2a2d32;
 nav a {vertical-align: middle;
     /*font-family: "Ubuntu Condensed";*/
     font-size: 14px;
-    text-decoration: none;
+    /*text-decoration: none;*/
     text-transform: uppercase;
     color: white;
     line-height: 60px;
@@ -189,7 +189,7 @@ input {height: 30px;
     padding-top: 46px;
     margin-bottom: 60px;}
 
-.black h4 {font-size: 16px;
+.black h4 {/*font-size: 16px;*/
     color: white;}
 
 .four_colms_pic {content: "";
@@ -220,7 +220,7 @@ input {height: 30px;
 .four:hover {background-position: -800px 0px;} 
 
 .four_colms h4 {margin-bottom: 70px;
-    font-size: 16px;
+    /*font-size: 16px;*/
     text-align: center;}
 
 .four_colms_pic:hover~h4 {color: #f4b60d;}
@@ -241,12 +241,12 @@ input {height: 30px;
 .two_colms_second {float: right;
     width: 49%;}
 
-.two_colms_first h4 {font-size: 16px;
+.two_colms_first h4 {/*font-size: 16px;*/
     margin-bottom: 12px;
     font-weight: bold;}
 
-.two_colms_first h5 {/*font-family: "Arial";*/
-	font-size: 13px;
+.two_colms_first h5 {/*font-family: "Arial";
+	font-size: 13px;*/
 	color: #a3a3a3;
     margin-bottom: 30px;}
 
@@ -281,15 +281,15 @@ input {height: 30px;
 .block {display: none;
     margin: 30px 0 44px 46px;
     color: #999999;
-    /*font-family: "Arial";*/
-    font-size: 13px;}
+    /*font-family: "Arial";
+    font-size: 13px;*/}
 
 .accord {width: 562px;
     height: 37px;
     margin-bottom: 5px;
     border: 1px solid #e8e8e8;
     background: white;
-    font-size: 13px;
+    /*font-size: 13px;*/
     text-transform: uppercase;
     color: #2a2d32;
     text-shadow: 0px 0px 2px #c6c7c8;
@@ -334,34 +334,34 @@ input {height: 30px;
 .dark h4 {margin-top: 60px;
 	margin-bottom: 50px;
     color: white;
-    font-size: 16px;
+    /*font-size: 16px;*/
     text-transform: uppercase;
     text-align: left;}
 
 .dark a {display: block;
-    text-decoration: none;
+    /*text-decoration: none;*/
     padding-top: 5px;
     padding-bottom: 5px;
     color: #595b5e;
     font-family: "Arial";
-    font-size: 13px;
+    /*font-size: 13px;*/
     border-bottom: 1px solid #393c40;}
 
 .dark a:last-child {border-bottom: none;}
 
 .dark a:hover {color: #2582da;}
 
-.footer {background: #35383c;
+.footer {/*background: #35383c;
     color: #616365;
-    /*font-family: "Arial";*/
-    font-size: 12px;}
+    /*font-family: "Arial";
+    font-size: 12px;*/}
 
-.footer ul {float: left;
+.footer ul {/*float: left;
     margin-top: 25px;
-    margin-bottom: 25px;}
+    margin-bottom: 25px;*/}
 
-.footer li {margin-right: 30px; 
-	display: inline-block;}
+.footer li {/*margin-right: 30px; 
+	display: inline-block;*/}
 
 .footer span {vertical-align: middle;
 	line-height: 20px;}	
