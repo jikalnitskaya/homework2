@@ -16,6 +16,9 @@ nav a, .three_colms {
 nav a, .three_colms a, .dark a {
   text-decoration: none; }
 
+nav a, .accord, .dark h4 {
+  text-transform: uppercase; }
+
 .net {
   float: right; }
   .net a {
@@ -34,7 +37,6 @@ nav a, .three_colms a, .dark a {
     color: #cecece;
     margin-bottom: 23px; }
   .three_colms a {
-    /*text-decoration: none;*/
     text-shadow: 0px 1px black; }
 
 .footer {

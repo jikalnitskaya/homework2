@@ -5,6 +5,7 @@ $size_13:   13px;
 $size_16:   16px;
 
 @mixin links {text-decoration: none;}
+@mixin big_letters {text-transform: uppercase;}
 
 body, .three_colms article, .two_colms_first h5, .block, .footer {font-family: $font;}
 
@@ -17,6 +18,8 @@ body, .three_colms article, .three_colms a, .two_colms_first h5, .block, .accord
 nav a, .three_colms {font-family: $font-main;}
 
 nav a, .three_colms a, .dark a {@include links;}
+
+nav a, .accord, .dark h4 {@include big_letters;}
 
 .net {
 	float: right;
@@ -33,14 +36,19 @@ nav a, .three_colms a, .dark a {@include links;}
 .three_colms {
     margin-top: 70px;
 
-    h3 {font-size: 20px;
-        margin: 28px 0;}
+    h3 {
+    	font-size: 20px;
+        margin: 28px 0;
+    }
 
-    article {color: #cecece;
-        margin-bottom: 23px;}
+    article {
+    	color: #cecece;
+        margin-bottom: 23px;
+    }
 
-    a {/*text-decoration: none;*/
-        text-shadow: 0px 1px black;}
+    a {
+    	text-shadow: 0px 1px black;
+    }
 }
 
 .footer {
