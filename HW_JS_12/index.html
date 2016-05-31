@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/script.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -27,7 +27,11 @@
     </script>
     <script type="text/template" id="list_tmpl">
     	<% for (var i = 0; i < data.length; i++) { %>
-        <li> <%= data[i] %> <span data-value=" <%= data[i] %> " class="item_delete">x</span></li>
+    	<div>
+	        <li> <%= data[i] %> </li>
+	        <button class="item_delete" data-value=" <%= data[i] %> ">x</button>
+	        <button class="item_edit" data-value="<%= data[i] %>">Edit</button>
+        </div>
     	<% }; %>
     </script>
 </body>

@@ -9,17 +9,20 @@ function Model(data) {
 
     	self.data.push(item);
     	return self.data;
-    }
+    };
 
     self.removeItem = function (item) {
+    	console.log (item);
+    	console.log ('self.data:', self.data);
     	var index = self.data.indexOf(item);
-    	if (index === -1) {
-    		return;
-    	}
-
+    	console.log ('index:', index);
+    	/*if (index === -1) {
+    		return self.data;
+    	}*/
+        
     	self.data.splice(index, 1);
     	return self.data;
-    }
+    };
 }
 
 
@@ -52,7 +55,8 @@ function Controller (model, view) {
     var self = this;
     
     view.elements.addBtn.on('click', addItem);
-    view.elements.listContainer.on('click', 'item_delete', removeItem);
+    view.elements.listContainer.on('click', '.item_delete', removeItem);
+    view.elements.listContainer.on('click', '.item_edit', editItem);
 
     function addItem() {
     	var newItem = view.elements.input.val();
@@ -65,6 +69,12 @@ function Controller (model, view) {
     	var item = $(this).attr('data-value');
     	console.log (item);
     	model.removeItem(item);
+    	view.renderList(model.data);
+    }
+
+    function editItem() {
+    	var item = $(this)//.attr('data-value');
+    	console.log ('item', item);
     	view.renderList(model.data);
     }
 }
