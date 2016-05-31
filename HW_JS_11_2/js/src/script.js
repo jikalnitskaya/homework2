@@ -1,7 +1,7 @@
 'use strict';
 
-(function () {
-	var questions = [{
+$(function () {
+	let questions = [{
         question: "Какого цвета трава?",
         answers: ["красная", "зеленая", "фиолетовая"],
         correct: "зеленая"
@@ -14,7 +14,7 @@
         answers: ["Семен Семеныч", "Гена", "Вася"],
         correct: "Гена"
     }];
-    var profile = {
+    let profile = {
 		title : "Тест по программированию",
 		que : questions,
 		buttonCheck : "Проверить мои результаты",
@@ -22,53 +22,53 @@
 	};
 //сохраняем и достаем объект из localStorage
 	localStorage.clear;
-	var str = JSON.stringify (profile);
+	let str = JSON.stringify (profile);
 	localStorage.setItem('data',str);
 	console.log (localStorage);
 	//console.log (str);
-	var obj = JSON.parse (str);
+	let obj = JSON.parse (str);
 	//console.log (obj);
 
 //рендерим html
 	profile = obj;
-	var html = $('#test').html();
-	var content = tmpl (html, {users : profile});
+	let html = $('#test').html();
+	let content = tmpl (html, {users : profile});
 	$('body').append(content);
 	//сброс результатов
 	function clear() {
 		$('input:checked').removeAttr('checked');
 	};
-	var reset = $('#reset');з
+	let reset = $('#reset');
 	reset.on('click', clear);
 
 //прооверка правильности
-    var $correct = [2, 1, 2];
-    var $modal;
-    var $overlay;
-    var $body = $('body');
-    var ansNum;
+    let $correct = [2, 1, 2];
+    let $modal;
+    let $overlay;
+    let $body = $('body');
+    let ansNum;
     
     function isCorrect () {
-        var $answers = $('input:checked').map(function (indx, el) {
-        	return $(el).val();
+        let $answers = $('input:checked').map(function (indx, el) {
+            return $(el).val();
         });
-        var count = 0;
-        for (var i = 0; i<$answers.length; i++) {
-            if ($answers[i]==$correct[i]-1) {
-        	    count++;
+        let count = 0;
+        for (let i of $answers) {
+            if (i == $correct[i]-1) {
+                count++;
             };
         };
         console.log (count);
-        var text;
-        var color;
-        var background;
-        var text2;
+        let text;
+        let color;
+        let background;
+        let text2;
         ansNum = count;
-        text2 = 'You have '+count+'&nbsp;right answers';
+        text2 = `You have ${count} &nbsp;right answers`;
         if (count==1) {
-        	text2 = 'You have '+count+'&nbsp;right answer';
+        	text2 = `You have ${count} &nbsp;right answer`;
         } else {
-        	text2 = 'You have '+count+'&nbsp;right answers';
+        	text2 = `You have ${count} &nbsp;right answers`;
         };
 
         if (count==3) {
@@ -80,7 +80,7 @@
             	color = 'red';
             	background = 'darkred';
             }
-        $modal = $('<div class="modal"><p>'+text+'</p><p class="text2">'+text2+'</p></div>');
+        $modal = $(`<div class="modal"><p>${text}</p><p class="text2">${text2}</p></div>`);
         $overlay = $('<div class="overlay"></div>');
         $body.append($overlay);
     	$body.append($modal);
@@ -94,7 +94,7 @@
     	$overlay.remove();
     };
 
-    var check = $('#check');
+    let check = $('#check');
 	check.on('click', isCorrect);
 });
 

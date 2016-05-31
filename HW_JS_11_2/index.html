@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>homework 7</title>
+
+	<script src="js/src/jquery.js"></script>
+	<script src="js/src/tmpl.js"></script>
+    <script type="text/javascript" src="js/dist/script.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <script type="text/template" id="test">
+           <h1> <%= users.title %> </h1>
+ 
+
+        <form>
+            <ol>
+            <% for (var j=0; j<users.que.length; j++) { %>
+            
+                <li> <%= users.que[j].question %> </li>
+                <% for (var k=0; k<users.que[j].answers.length; k++ ) { %>
+                    <label>
+                        <input type="radio" name="qu_<%= j %>" value=<%= k %>>
+                            <%= users.que[j].answers[k] %>
+                        </input>
+                    </label>
+                    <% }; %>
+            
+            <% }; %>
+            </ol>
+        </form>
+        <button id="check"> <%= users.buttonCheck %> </button>
+        <button type="reset" id="reset"> <%= users.buttonReset %> </button>
+</script>
+</body>
+</html>

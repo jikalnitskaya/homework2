@@ -320,3 +320,38 @@ $(function() {
 	console.log (objM);
 
 });
+
+/*function myCustomSort(a, b) {
+  return (a.toLowerCase() > b.toLowerCase()) ? 1 : -1;
+}
+
+var skills =
+  _.union( // оставляем только уникальные 
+    _.flatMap( //склеиваем в один большой массив
+      _.map(obj, 'skills') //получаем массивы скиллов
+    )
+
+    //после выполнения всего на свете на почти готовый массив попадает в функцию сорт. тут для каждого элемента в массиве применится функция для сортировки по именам.
+  ).sort(myCustomSort);
+var friends = _.union(
+  _.sortBy(
+    _.flatMap(_.map(obj, function(o) {
+      return _.map(o.friends, 'name')
+    }))
+  )
+);
+var sort = _.chain(obj).mapValues(function(o) {
+  return o.skills;
+}).values().flatten().uniq(); //.flatten().uniq();
+
+
+
+var objTest = _.map(obj,function(o){
+  return _.pick(o,['name','friends'])
+});
+
+var count = _.forEach(objTest, function(o){
+  o.friends = o.friends.length;
+});
+
+document.write(JSON.stringify(objTest));

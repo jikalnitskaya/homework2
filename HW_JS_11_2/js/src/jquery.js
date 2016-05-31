@@ -10306,7 +10306,3 @@
     return jQuery;
 
 }));
-
-try {
-    module.exports = jquery;
-} catch (e) {}

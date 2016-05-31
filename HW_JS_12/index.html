@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>homework 12</title>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/tmpl.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+</head>
+
+<body>
+    <script type="text/template" id="wrapper_tmpl">
+    	<div class="wrapper">
+    		<ul class="item_list">
+    			
+    		</ul>
+    		<div class="controlls">
+    			<input type="text" class="item_value"></input>
+    			<button class="item_add">Add</button>
+    		</div>
+    	</div>
+    </script>
+    <script type="text/template" id="list_tmpl">
+    	<% for (var i = 0; i < data.length; i++) { %>
+        <li> <%= data[i] %> <span data-value=" <%= data[i] %> " class="item_delete">x</span></li>
+    	<% }; %>
+    </script>
+</body>
+</html>
