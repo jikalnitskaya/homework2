@@ -16,6 +16,7 @@
 <body>
     <script type="text/template" id="wrapper_tmpl">
     	<div class="wrapper">
+            <h1>ToDo List</h1>
     		<ul class="item_list">
     			
     		</ul>
@@ -29,8 +30,8 @@
     	<% for (var i = 0; i < data.length; i++) { %>
     	<div>
 	        <li> <%= data[i] %> </li>
-	        <button class="item_delete" data-value=" <%= data[i] %> ">x</button>
-	        <button class="item_edit" data-value="<%= data[i] %>">Edit</button>
+	        <button class="item_delete" data-value="<%=data[i]%>">x</button>
+	        <button class="item_edit" data-value="<%=data[i]%>">Edit</button>
         </div>
     	<% }; %>
     </script>

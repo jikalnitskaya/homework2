@@ -1,5 +1,21 @@
-.wrapper {margin: 20px;}
+.wrapper {margin: 20px;
+    box-sizing: border-box;
+   font: 16px Arial;}
+
+h1 {font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;}
 
 li {margin-bottom: 20px;
- 	display: inline-block;}
+ 	display: inline-block;
+    width: 170px;}
+
+input {width: 170px;
+    margin-bottom: 20px;}
+
+.item_value {margin-top: 20px;}
+
+.item_save {margin-left: 5px;}
+
+.item_delete, .item_add {margin-left: 10px;}
 
