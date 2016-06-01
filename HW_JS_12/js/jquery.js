@@ -1,3 +1,6 @@
+define (
+    'jquery',
+    [],
 /*!
  * jQuery JavaScript Library v1.11.1
  * http://jquery.com/
@@ -11,8 +14,10 @@
  *
  * Date: 2014-05-01T17:42Z
  */
-
+function(){
+    console.log ('jquery is ready');
 (function( global, factory ) {
+    
 
     if ( typeof module === "object" && typeof module.exports === "object" ) {
         // For CommonJS and CommonJS-like environments where a proper window is present,
@@ -10306,7 +10311,5 @@
     return jQuery;
 
 }));
-
-try {
-    module.exports = jquery;
-} catch (e) {}
+}
+)

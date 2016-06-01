@@ -1,4 +1,7 @@
-function Model(data) {
+define (
+    'script',
+    [],
+    /*function Model(data) {
     var self = this;
     self.data = data;
 
@@ -88,12 +91,15 @@ function Controller (model, view) {
             $('.item_save').remove();
         };
     }
-}
+}*/
 
-
-$(function(){
-    var firstToDoList = ['text 1', 'text 2', 'text 3'];
-    var model = new Model(firstToDoList);
-    var view = new View(model);
-    var controller = new Controller(model, view);
-});
+    function(){
+    	console.log ('script is ready');
+    	
+		$(function(){
+			var firstToDoList = ['text 1', 'text 2', 'text 3'];
+		    var model = new Model(firstToDoList);
+		    var view = new View(model);
+		    var controller = new Controller(model, view);
+		});
+})
