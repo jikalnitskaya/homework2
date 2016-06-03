@@ -7,7 +7,7 @@ define (
     'view'],
 
     function ($, tmpl, model, view) {
-        return function Controller (model, view) {
+        var controller = function Controller (model, view) {
         console.log ('controller is ready');
         var self = this;
         
@@ -48,6 +48,7 @@ define (
                 $('.item_save').remove();
             };
         }
-    }  
+    }
+    return controller;  
     }
 )

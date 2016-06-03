@@ -5,7 +5,7 @@ define (
 
     function () {
         console.log ('model is ready');
-        return function Model(data) {
+        var model = function Model(data) {
         var self = this;
         //data = ['text 1', 'text 2', 'text 3'];
         self.data = data;
@@ -29,6 +29,6 @@ define (
         	self.data.splice(index, 1);
         	return self.data;
         };}
-    
+    return model;
     }
 )
