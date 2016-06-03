@@ -51,7 +51,7 @@ $(function () {
     function isCorrect () {
         let $answers = $('input:checked').map(function (indx, el) {
             return $(el).val();
-        });
+        }).get();
         let count = 0;
         for (let i of $answers) {
             if (i == $correct[i]-1) {

@@ -1,7 +1,13 @@
 define (
     'controller',
-    [],
-    function Controller (model, view) {
+
+    ['jquery',
+    'tmpl',
+    'model',
+    'view'],
+
+    function ($, tmpl, model, view) {
+        return function Controller (model, view) {
         console.log ('controller is ready');
         var self = this;
         
@@ -42,5 +48,6 @@ define (
                 $('.item_save').remove();
             };
         }
+    }  
     }
 )

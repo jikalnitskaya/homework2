@@ -1,7 +1,11 @@
 define (
     'script',
-    [],
-    /*function Model(data) {
+
+    ['jquery', 'tmpl', 'model', 'view', 'controller'],
+
+    /*function(jquery, tmpl) {
+    	
+    function Model(data) {
     var self = this;
     self.data = data;
 
@@ -93,13 +97,15 @@ function Controller (model, view) {
     }
 }*/
 
-    function(){
+    function(jquery, tmpl, model, view, controller) {
     	console.log ('script is ready');
     	
 		$(function(){
-			var firstToDoList = ['text 1', 'text 2', 'text 3'];
-		    var model = new Model(firstToDoList);
+			var firstToDoList = ['text 1', 'text 2'/*, 'text 3', 'text 4'*/];
+		    var model = new model.Model(firstToDoList);
 		    var view = new View(model);
 		    var controller = new Controller(model, view);
+		    return;
 		});
-})
+	}
+)

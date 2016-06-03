@@ -51,7 +51,7 @@ $(function () {
     function isCorrect() {
         var $answers = $('input:checked').map(function (indx, el) {
             return $(el).val();
-        });
+        }).get();
         var count = 0;
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;

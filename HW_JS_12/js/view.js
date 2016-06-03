@@ -1,7 +1,12 @@
 define (
     'view',
-    [],
-    function View(model) {
+
+    ['jquery',
+    'tmpl',
+    'model'],
+
+    function($, tmpl, model){
+        return function View(model) {
         console.log ('view is ready');
         var self = this;
 
@@ -25,4 +30,5 @@ define (
 
         init();
     }
+}
 )
