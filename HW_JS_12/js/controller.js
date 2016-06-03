@@ -49,6 +49,6 @@ define (
             };
         }
     }
-    return Controller;  
+    return {controller : Controller};  
     }
 )

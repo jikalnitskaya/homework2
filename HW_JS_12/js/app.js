@@ -11,15 +11,15 @@ requirejs.config({
 
 
 require(
-	['jquery', 'tmpl', 'model', 'view', 'controller', 'script'],
+	['jquery', 'tmpl', 'model', 'view', 'controller'/*, 'script'*/],
 
-	function($, tmpl, model, view, controller, script){
-		/*$(function(){
+	function($, tmpl, model, view, controller/*, script*/){
+		$(function(){
 			var firstToDoList = ['text 1', 'text 2', 'text 3'];
-		    var model = new model.Model(firstToDoList);
-		    var view = new view.View(model);
-		    var controller = new controller.Controller(model, view);
-		});*/
+		    var model = new model(firstToDoList);
+		    var view = new view(model);
+		    var controller = new controller(model, view);
+		});
 
 	}
 );

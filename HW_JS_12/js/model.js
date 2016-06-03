@@ -29,6 +29,6 @@ define (
         	self.data.splice(index, 1);
         	return self.data;
         };}
-    return Model;
+    return {model : Model};
     }
 )

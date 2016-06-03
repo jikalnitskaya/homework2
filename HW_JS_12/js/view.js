@@ -30,6 +30,6 @@ define (
 
         init();
     }
-    return View;
+    return {view : View};
 }
 )

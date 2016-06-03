@@ -106,6 +106,6 @@ function Controller (model, view) {
 		    var view_new = new view.View(model);
 		    var controller_new = new controller.Controller(model, view);
 		});
-        return script;
+        return {script : script};
 	}
 )
