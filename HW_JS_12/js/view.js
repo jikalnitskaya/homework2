@@ -6,7 +6,7 @@ define (
     'model'],
 
     function($, tmpl, model){
-        var view = function View(model) {
+        function View(model) {
         console.log ('view is ready');
         var self = this;
 
@@ -30,6 +30,6 @@ define (
 
         init();
     }
-    return view;
+    return View;
 }
 )

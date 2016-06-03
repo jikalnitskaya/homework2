@@ -15,10 +15,10 @@ require(
 
 	function($, tmpl, model, view, controller, script){
 		/*$(function(){
-			var firstToDoList = ['text 1', 'text 2', 'text 3'/*, 'text 4'];
-		    /*var model = new Model(firstToDoList);
-		    var view = new View(model);
-		    var controller = new Controller(model, view);
+			var firstToDoList = ['text 1', 'text 2', 'text 3'];
+		    var model = new model.Model(firstToDoList);
+		    var view = new view.View(model);
+		    var controller = new controller.Controller(model, view);
 		});*/
 
 	}

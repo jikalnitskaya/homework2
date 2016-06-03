@@ -7,7 +7,7 @@ define (
     'view'],
 
     function ($, tmpl, model, view) {
-        var controller = function Controller (model, view) {
+        function Controller (model, view) {
         console.log ('controller is ready');
         var self = this;
         
@@ -49,6 +49,6 @@ define (
             };
         }
     }
-    return controller;  
+    return Controller;  
     }
 )

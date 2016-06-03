@@ -97,10 +97,10 @@ function Controller (model, view) {
     }
 }*/
 
-    function(jquery, tmpl, model, view, controller) {
+    function (jquery, tmpl, model, view, controller) {
     	console.log ('script is ready');
     	
-		var script = $(function(){
+		$(function script(){
 			var firstToDoList = ['text 1', 'text 2'/*, 'text 3', 'text 4'*/];
 		    var model_new = new model.Model(firstToDoList);
 		    var view_new = new view.View(model);
