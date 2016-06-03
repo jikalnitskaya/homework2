@@ -1,111 +1,117 @@
-define (
-    'script',
+requirejs.config({
+    paths:{
+        'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery'
+    },
+    shim: {
+        'jquery': {
+            exports: 'jQuery',
+        }
+    }
+});
 
-    ['jquery', 'tmpl', 'model', 'view', 'controller'],
 
-    /*function(jquery, tmpl) {
+require(
+    ['jquery', 'tmpl'],
+
+    function(jquery, tmpl) {
     	
-    function Model(data) {
-    var self = this;
-    self.data = data;
+        function Model(data) {
+            var self = this;
+            self.data = data;
 
-    self.addItem = function (item) {
-    	if (item.length === 0) {
-    		return;
-    	}
+            self.addItem = function (item) {
+            	if (item.length === 0) {
+            		return;
+            	}
 
-    	self.data.push(item);
-    	return self.data;
-    };
+            	self.data.push(item);
+            	return self.data;
+            };
 
-    self.removeItem = function (item) {
-    	var index = self.data.indexOf(item);
-    	if (index === -1) {
-    		return self.data;
-    	}
-        
-    	self.data.splice(index, 1);
-    	return self.data;
-    };
-}
-
-
-function View(model) {
-    var self = this;
-
-    function init() {
-    	var wrapper = tmpl($('#wrapper_tmpl').html());
-    	$('body').append(wrapper);
-
-    	self.elements = {
-    		input         : $('.item_value'),
-    		addBtn        : $('.item_add'),
-    		listContainer : $('.item_list')
-    	};
-
-    	self.renderList(model.data);
-    };
-
-    self.renderList = function(data) {
-    	var list = tmpl($('#list_tmpl').html(), {data : data});
-    	self.elements.listContainer.html(list);
-    };
-
-    init();
-}
+            self.removeItem = function (item) {
+            	var index = self.data.indexOf(item);
+            	if (index === -1) {
+            		return self.data;
+            	}
+                
+            	self.data.splice(index, 1);
+            	return self.data;
+            };
+        }
 
 
-function Controller (model, view) {
-    var self = this;
-    
-    view.elements.addBtn.on('click', addItem);
-    view.elements.listContainer.on('click', '.item_delete', removeItem);
-    view.elements.listContainer.on('click', '.item_edit', editItem);
+        function View(model) {
+            var self = this;
 
-    function addItem() {
-    	var newItem = view.elements.input.val();
-    	model.addItem(newItem);
-    	view.renderList(model.data);
-    	view.elements.input.val('');
-    }
+            function init() {
+            	var wrapper = tmpl($('#wrapper_tmpl').html());
+            	$('body').append(wrapper);
 
-    function removeItem() {
-    	var item = $(this).attr('data-value');
-    	model.removeItem(item);
-    	view.renderList(model.data);
-    }
+            	self.elements = {
+            		input         : $('.item_value'),
+            		addBtn        : $('.item_add'),
+            		listContainer : $('.item_list')
+            	};
 
-    function editItem() {
-    	var index = $('.item_edit').index(this);
-    	console.log (index);
-        var item = $('li').eq(index).html();
-        var li = $('li').eq(index);
-        var input = '<input type="text" class="new" value="'+item+'"></input>';
-        li.after(input);
-        li.hide();
-        var btnSave = '<button class="item_save">Save</button>';
-        $(this).after(btnSave);
-        $('.item_save').on('click', saveItem);
+            	self.renderList(model.data);
+            };
 
-        function saveItem () {
-           	item = $('.new').val();
-        	console.log (item);
-        	li.html(item).show();
-        	$('.new').remove();
-            $('.item_save').remove();
-        };
-    }
-}*/
+            self.renderList = function(data) {
+            	var list = tmpl($('#list_tmpl').html(), {data : data});
+            	self.elements.listContainer.html(list);
+            };
 
-    function (jquery, tmpl, model, view, controller) {
-    	console.log ('script is ready');
+            init();
+        }
+
+
+        function Controller (model, view) {
+            var self = this;
+            
+            view.elements.addBtn.on('click', addItem);
+            view.elements.listContainer.on('click', '.item_delete', removeItem);
+            view.elements.listContainer.on('click', '.item_edit', editItem);
+
+            function addItem() {
+            	var newItem = view.elements.input.val();
+            	model.addItem(newItem);
+            	view.renderList(model.data);
+            	view.elements.input.val('');
+            }
+
+            function removeItem() {
+            	var item = $(this).attr('data-value');
+            	model.removeItem(item);
+            	view.renderList(model.data);
+            }
+
+            function editItem() {
+            	var index = $('.item_edit').index(this);
+            	console.log (index);
+                var item = $('li').eq(index).html();
+                var li = $('li').eq(index);
+                var input = '<input type="text" class="new" value="'+item+'"></input>';
+                li.after(input);
+                li.hide();
+                var btnSave = '<button class="item_save">Save</button>';
+                $(this).after(btnSave);
+                $('.item_save').on('click', saveItem);
+
+                function saveItem () {
+                   	item = $('.new').val();
+                	console.log (item);
+                	li.html(item).show();
+                	$('.new').remove();
+                    $('.item_save').remove();
+                };
+            }
+        }
     	
-		$(function script(){
-			var firstToDoList = ['text 1', 'text 2'/*, 'text 3', 'text 4'*/];
-		    var model_new = new model.Model(firstToDoList);
-		    var view_new = new view.View(model);
-		    var controller_new = new controller.Controller(model, view);
+		$(function (){
+			var firstToDoList = ['text 1', 'text 2', 'text 3'];
+		    var model_new = new Model(firstToDoList);
+		    var view_new = new View(model);
+		    var controller_new = new Controller(model, view);
 		});
-        return {script : script};
-	}
+    }
 )
