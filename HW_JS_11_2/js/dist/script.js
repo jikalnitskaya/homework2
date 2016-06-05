@@ -24,7 +24,7 @@ $(function () {
     localStorage.clear;
     var str = JSON.stringify(profile);
     localStorage.setItem('data', str);
-    console.log(localStorage);
+    //console.log (localStorage);
     //console.log (str);
     var obj = JSON.parse(str);
     //console.log (obj);
@@ -52,6 +52,7 @@ $(function () {
         var $answers = $('input:checked').map(function (indx, el) {
             return $(el).val();
         }).get();
+        console.log($answers);
         var count = 0;
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
@@ -64,6 +65,7 @@ $(function () {
                 if (i == $correct[i] - 1) {
                     count++;
                 };
+                console.log(count);
             }
         } catch (err) {
             _didIteratorError = true;
@@ -108,7 +110,7 @@ $(function () {
         $body.append($overlay);
         $body.append($modal);
         $modal.css({ 'color': color, 'background': background });
-        console.log(text);
+        //console.log (text);
         $overlay.one('click', removeModal);
     };
 
