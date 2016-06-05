@@ -11,9 +11,9 @@ requirejs.config({
 
 
 require(
-	['jquery', 'tmpl', 'model', 'view', 'controller'/*, 'script'*/],
+	['jquery', 'vendor/lodash', 'modules/model', 'modules/view', 'modules/controller'/*, 'script'*/],
 
-	function($, tmpl, model, view, controller/*, script*/){
+	function($, _, model, view, controller){
 		$(function(){
 			var firstToDoList = ['text 1', 'text 2', 'text 3'];
 		    var model = new model(firstToDoList);

@@ -1,17 +1,15 @@
 define (
-    'view',
+    'model',
 
-    ['jquery',
-    'tmpl',
-    'model'],
+    [],
 
-    function($, tmpl, model){
-        function View(model) {
-        console.log ('view is ready');
+
+    function View(model) {
+        console.log ('View is ready');
         var self = this;
 
         function init() {
-        	var wrapper = tmpl($('#wrapper_tmpl').html());
+        	var wrapper =_.template($('#wrapper_tmpl').html());
         	$('body').append(wrapper);
 
         	self.elements = {
@@ -24,12 +22,11 @@ define (
         };
 
         self.renderList = function(data) {
-        	var list = tmpl($('#list_tmpl').html(), {data : data});
-        	self.elements.listContainer.html(list);
+            var tmpl = _.template($('#list_tmpl').html());
+            var list = tmpl({data : data});
+            self.elements.listContainer.html(list);
         };
 
         init();
     }
-    return {view : View};
-}
-)
+);

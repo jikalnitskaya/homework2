@@ -1,14 +1,10 @@
 define (
-    'controller',
-
-    ['jquery',
-    'tmpl',
     'model',
-    'view'],
 
-    function ($, tmpl, model, view) {
-        function Controller (model, view) {
-        console.log ('controller is ready');
+    [],
+
+    function Controller (model, view) {
+        console.log ('Controller is ready');
         var self = this;
         
         view.elements.addBtn.on('click', addItem);
@@ -49,6 +45,4 @@ define (
             };
         }
     }
-    return {controller : Controller};  
-    }
-)
+);
