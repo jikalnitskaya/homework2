@@ -49,9 +49,10 @@ $(function () {
     var ansNum;
     
     function isCorrect () {
-        var $answers = $('input:checked').each/*!!!!!!map(function (indx, el) {
+        var $answers = [];
+        $answers = $('input:checked').map(function (indx, el) {
         	return $(el).val();
-        }).get();*/
+        });
         console.log ($answers);
         var count = 0;
         for (var i = 0; i<$answers.length; i++) {

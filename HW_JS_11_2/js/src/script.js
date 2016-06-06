@@ -49,16 +49,16 @@ $(function () {
     let ansNum;
     
     function isCorrect () {
-        let $answers = $('input:checked').map(function (indx, el) {
+        let $answers = [];
+        $answers = $('input:checked').map(function (indx, el) {
             return $(el).val();
-        }).get();
-        console.log($answers);
+        });
+        console.log ($answers);
         let count = 0;
-        for (var i = 0; i<$answers.length; i++) {
+        for (let i = 0; i<$answers.length; i++) {
             if ($answers[i]==$correct[i]-1) {
                 count++;
             };
-            console.log (count);
         };
         console.log (count);
         let text;

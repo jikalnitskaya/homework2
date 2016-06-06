@@ -49,40 +49,17 @@ $(function () {
     var ansNum = void 0;
 
     function isCorrect() {
-        var $answers = $('input:checked').map(function (indx, el) {
+        var $answers = [];
+        $answers = $('input:checked').map(function (indx, el) {
             return $(el).val();
-        }).get();
+        });
         console.log($answers);
         var count = 0;
-        var _iteratorNormalCompletion = true;
-        var _didIteratorError = false;
-        var _iteratorError = undefined;
-
-        try {
-            for (var _iterator = $answers[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                var i = _step.value;
-
-                if (i == $correct[i] - 1) {
-                    count++;
-                };
-                console.log(count);
-            }
-        } catch (err) {
-            _didIteratorError = true;
-            _iteratorError = err;
-        } finally {
-            try {
-                if (!_iteratorNormalCompletion && _iterator.return) {
-                    _iterator.return();
-                }
-            } finally {
-                if (_didIteratorError) {
-                    throw _iteratorError;
-                }
-            }
-        }
-
-        ;
+        for (var i = 0; i < $answers.length; i++) {
+            if ($answers[i] == $correct[i] - 1) {
+                count++;
+            };
+        };
         console.log(count);
         var text = void 0;
         var color = void 0;
