@@ -1,9 +1,10 @@
 define (
-    'model',
+    'Model',
 
     [],
     
-    function Model(data) {
+    function (){
+    return function Model(data) {
         console.log ('Model is ready');
         var self = this;
         self.data = data;
@@ -27,4 +28,5 @@ define (
            	return self.data;
         };
     }
-);
+  
+});

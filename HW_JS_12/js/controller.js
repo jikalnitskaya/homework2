@@ -2,12 +2,12 @@ define (
     'controller',
 
     ['jquery',
-    'tmpl',
+    'lodash',
     'model',
     'view'],
 
-    function ($, tmpl, model, view) {
-        function Controller (model, view) {
+    function ($, _, model, view) {
+        function controller (model, view) {
         console.log ('controller is ready');
         var self = this;
         
@@ -49,6 +49,6 @@ define (
             };
         }
     }
-    return {controller : Controller};  
+    return {controller : controller};  
     }
 )

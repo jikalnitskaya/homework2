@@ -13,12 +13,13 @@ requirejs.config({
 require(
 	['jquery', 'vendor/lodash', 'modules/model', 'modules/view', 'modules/controller'/*, 'script'*/],
 
-	function($, _, model, view, controller){
+	function($, _, Model, View, Controller){
 		$(function(){
+			console.log (Model);
 			var firstToDoList = ['text 1', 'text 2', 'text 3'];
-		    var model = new model(firstToDoList);
-		    var view = new view(model);
-		    var controller = new controller(model, view);
+		    var model = new Model(firstToDoList);
+		    var view = new View(Model);
+		    var controller = new Controller(Model, View);
 		});
 
 	}

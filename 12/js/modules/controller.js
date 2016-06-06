@@ -1,9 +1,11 @@
 define (
-    'model',
+    'Controller',
 
     [],
 
-    function Controller (model, view) {
+    function (Model, View) {
+
+    return function Controller (Model, View) {
         console.log ('Controller is ready');
         var self = this;
         
@@ -45,4 +47,4 @@ define (
             };
         }
     }
-);
+});

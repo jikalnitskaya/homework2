@@ -2,11 +2,11 @@ define (
     'view',
 
     ['jquery',
-    'tmpl',
+    'lodash',
     'model'],
 
-    function($, tmpl, model){
-        function View(model) {
+    function($, _, model){
+        function view(model) {
         console.log ('view is ready');
         var self = this;
 
@@ -30,6 +30,6 @@ define (
 
         init();
     }
-    return {view : View};
+    return {view : view};
 }
 )

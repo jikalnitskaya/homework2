@@ -1,3 +1,4 @@
+var script = function() {
 function pow(a, b) {
     result = a;
 
@@ -12,14 +13,14 @@ function pow(a, b) {
     return result;
 }
 
-var a = prompt ('Введите число', '');
-var b = prompt ('Введите степень числа', '');
+var a = prompt ('Введите число');
+var b = prompt ('Введите степень числа');
 var result;
 
 do {
     if (b < 0) {
 	    alert ('Введите положительное число для степени числа');
-	    b = prompt ('Введите степень числа', '');  
+	    b = prompt ('Введите степень числа');  
 	    pow(a, b);
 	} else { 	
     	pow(a, b);
@@ -28,4 +29,8 @@ do {
 } while (b < 0);
 
 
-console.log (result);
+console.log (result);};
+
+script();
+
+module.exports = script;

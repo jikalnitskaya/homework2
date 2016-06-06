@@ -1,10 +1,10 @@
 define (
-    'model',
+    'View',
 
     [],
 
-
-    function View(model) {
+    function (Model) {
+    return function View(Model) {
         console.log ('View is ready');
         var self = this;
 
@@ -29,4 +29,4 @@ define (
 
         init();
     }
-);
+});
