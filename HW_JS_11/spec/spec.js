@@ -1,5 +1,5 @@
-var script = require ('../js/script.js');
-console.log (script);
+//var script = require ('../js/script.js');
+//console.log (script);
 
 
 describe("Jasmine", function() {
@@ -12,6 +12,7 @@ describe("pow", function() {
   it("возводит a в степень b", function() {
   	var a = 2;
   	var b = 2;
+    //var pow = script.pow;
     expect(pow(a, b)).toBe(4);
   });
 });
@@ -23,10 +24,10 @@ xdescribe("Jasmine", function() {
   });
 });
 
-describe("Jasmine", function() {
-  it("makes testing JavaScript awesome!", function() {
-  	var func = script.pow();
-    expect(pow).toBeDefined();
+describe("Is function pow", function() {
+  it("defined", function() {
+  	var func = pow(a, b);
+    expect(func).toBeDefined();
   });
 });
 

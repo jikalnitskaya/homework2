@@ -1,6 +1,6 @@
 requirejs.config({
     paths:{
-        'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery'
+        'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery'
     },
     shim: {
         'jquery': {
@@ -11,14 +11,15 @@ requirejs.config({
 
 
 require(
-	['jquery', 'tmpl', 'model', 'view', 'controller'/*, 'script'*/],
+	['jquery', 'vendor/lodash', 'modules/Model', 'modules/View', 'modules/Controller'/*, 'script'*/],
 
-	function($, tmpl, model, view, controller/*, script*/){
+	function($, _, Model, View, Controller){
 		$(function(){
 			var firstToDoList = ['text 1', 'text 2', 'text 3'];
-		    var model = new model(firstToDoList);
-		    var view = new view(model);
-		    var controller = new controller(model, view);
+		    var model = new Model(firstToDoList);
+		    var view = new View(model);
+		    console.log (view);
+		    var controller = new Controller(model, view);
 		});
 
 	}

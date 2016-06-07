@@ -1,6 +1,6 @@
 'use strict';
 
-(function () {
+$(function () {
 	var questions = [{
         question: "Какого цвета трава?",
         answers: ["красная", "зеленая", "фиолетовая"],
@@ -24,7 +24,7 @@
 	localStorage.clear;
 	var str = JSON.stringify (profile);
 	localStorage.setItem('data',str);
-	console.log (localStorage);
+	//console.log (localStorage);
 	//console.log (str);
 	var obj = JSON.parse (str);
 	//console.log (obj);
@@ -38,7 +38,7 @@
 	function clear() {
 		$('input:checked').removeAttr('checked');
 	};
-	var reset = $('#reset');з
+	var reset = $('#reset');
 	reset.on('click', clear);
 
 //прооверка правильности
@@ -49,9 +49,11 @@
     var ansNum;
     
     function isCorrect () {
-        var $answers = $('input:checked').map(function (indx, el) {
+        var $answers = [];
+        $answers = $('input:checked').map(function (indx, el) {
         	return $(el).val();
         });
+        console.log ($answers);
         var count = 0;
         for (var i = 0; i<$answers.length; i++) {
             if ($answers[i]==$correct[i]-1) {
@@ -97,7 +99,3 @@
     var check = $('#check');
 	check.on('click', isCorrect);
 });
-
-try {
-    module.exports = script;
-} catch (e) {}
