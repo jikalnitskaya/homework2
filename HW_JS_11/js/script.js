@@ -1,5 +1,5 @@
-
-var pow = function pow(a, b) {
+//var script = {
+function pow(a, b) {
     result = a;
 
     if (b == 0) {
@@ -13,10 +13,11 @@ var pow = function pow(a, b) {
     return result;
 }
 
-
-function check(a, b) {
+function check (a, b) {
     do {
         if (b < 0) {
+            result = 'error';
+            console.log (result);
             alert ('Введите положительное число для степени числа');
             b = prompt ('Введите степень числа');  
             pow(a, b);
@@ -27,13 +28,16 @@ function check(a, b) {
     } while (b < 0);
 };
 
-var a = prompt ('Введите число', '');
-var b = prompt ('Введите степень числа', '');
+var a //= prompt ('Введите число', '');
+var b //= prompt ('Введите степень числа', '');
 var result;
 
-check(a, b);
+check (a, b);
 
-console.log (result);
+var str = 'Результат = '+ result
+
+//alert (str);
+//};
 
 //export {pow};
 

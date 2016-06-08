@@ -2,41 +2,55 @@
 //console.log (script);
 
 
-describe("Jasmine", function() {
-  it("makes testing JavaScript awesome!", function() {
-    expect(true).toBe(true);
-  });
-});
-
-describe("pow", function() {
+describe("Функция pow", function() {
   it("возводит a в степень b", function() {
-  	var a = 2;
-  	var b = 2;
-    //var pow = script.pow;
-    expect(pow(a, b)).toBe(4);
+     a = 2;
+     b = 2;
+     pow (a, b);
+    expect(result).toBe(4);
   });
 });
 
-xdescribe("Jasmine", function() {
-  it("makes testing JavaScript awesome!", function() {
-  	a = 5;
+describe("Функция pow", function() {
+  it("при возведении в 0 степень дает 1", function() {
+    a = 3;
+    b = 0;
+    pow (a, b);
+   expect(result).toBe(1);
+  });
+});
+describe("Функция pow", function() {
+  it("возводит -a в степень b", function() {
+   a = -2;
+   b = 2;
+   pow (a, b);
+   expect(result).toBe(4);
+  });
+});
+
+describe("Определены ли", function() {
+  it("a, b, result", function() {
+  
     expect(a).toBeDefined();
+    expect(b).toBeDefined();
+    expect(result).toBeDefined();
   });
 });
-
-describe("Is function pow", function() {
-  it("defined", function() {
-  	var func = pow(a, b);
-    expect(func).toBeDefined();
+describe("Определены ли", function() {
+  it("функции", function() {
+    expect(pow).toBeDefined();
+    expect(check).toBeDefined();
   });
 });
-
-
-xdescribe("Jasmine", function() {
-  it("makes testing JavaScript awesome!", function() {
-  	a = 2;
-  	b = 0;
-  	result = pow(a, b);
-    expect(result).toBe(1);
+describe("b > 0", function() {
+  it("значение должно быть верно", function() {
+    expect(b).toBeGreaterThan(0);
+  });
+});
+describe("str", function() {
+  it("значение должно соответствовать", function() {
+    result = 8;
+    str = 'Результат = '+ result;
+   expect(str).toMatch('Результат = 8');
   });
 });
