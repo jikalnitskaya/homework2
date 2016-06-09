@@ -31,6 +31,10 @@ header {
 			margin-top: 12px;
 		}
 
+		a:hover {
+			text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+		}
+
 		.button {
 			border: 2px solid white;
 			border-radius: 20px;
@@ -41,6 +45,9 @@ header {
 		    line-height: 35px;
 		    float: right;
 		}
+		.button:hover {
+			box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+		}
 
 		@include clearfix;
 	}
@@ -48,7 +55,8 @@ header {
 	.topic {
 		margin: 0 auto;
 
-		h1 {text-transform: uppercase;
+		h1 {
+			text-transform: uppercase;
 			}
 
 		p {
@@ -64,6 +72,9 @@ header {
 			border-color: transparent;
      		color: white;
      		font-family: $font-main;
+		}
+		button:hover {
+			box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 		}
 	}
 }
@@ -165,6 +176,10 @@ header {
 
 	}
 
+	h4:hover {
+		text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
+	}
+
 	p {
 		font-family: $font-rob;
 		font-size: 14px;
@@ -184,6 +199,9 @@ header {
 		margin-bottom: 20px;	
 		background: white;
 		font-family: $font-main;	
+	}
+	button:hover {
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 	}
 }
 
@@ -235,4 +253,83 @@ header {
 		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
         background-position: 0px -756px; 
 	}
+}
+
+.search {
+
+	h2 {
+		padding-top: 40px;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 18px;
+		font-family: $font-rob;
+		margin-bottom: 20px;
+	}
+	input {
+		border-radius: 5px;
+		width: 280px;
+		height: 40px;
+		padding: 10px;
+		font-size: 14px;
+		font-family: $font-rob;
+		margin-bottom: 10px;
+	}
+	input:hover {
+		box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+	}
+	button {
+		width: 280px;
+		height: 40px;
+		border-radius: 20px;
+		color: white;
+		background: $button-color;
+		border-color: $button-color;
+		margin-bottom: 40px;
+	}
+	button:hover {
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+	}
+}
+
+footer:before {
+	content: "";
+	display: block;
+	border-top: 2px solid $button-color;
+}
+
+footer {
+	h3 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color: $button-color;
+		font-size: 16px;
+	}
+	a {
+		text-decoration: none;
+		font-size: 14px;
+		color: black;
+		margin-bottom: 10px;
+	}
+	a:hover {
+		text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
+	}
+	nav {
+		a {
+			font-family: $font-rob;
+			color: #8f8f8f;
+			margin-bottom: 20px;
+		}
+	}
+	p {
+		text-transform: uppercase;
+		font-size: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		color: #cccccc;
+	}
+	img {
+		margin-bottom: 20px;
+	}
+
 }
