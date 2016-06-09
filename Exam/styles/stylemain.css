@@ -1,0 +1,160 @@
+body {
+  font-family: "Montserrat Bold";
+  font-size: 22px;
+  box-sizing: border-box;
+  text-align: center; }
+
+header {
+  color: white;
+  background-size: cover; }
+  header .login {
+    font-size: 14px;
+    content: "";
+    display: table;
+    clear: both; }
+    header .login a {
+      text-decoration: none;
+      color: white;
+      float: left;
+      margin-right: 20px;
+      margin-top: 12px; }
+    header .login .button {
+      border: 2px solid white;
+      border-radius: 20px;
+      width: 90px;
+      height: 35px;
+      background: transparent;
+      text-align: center;
+      line-height: 35px;
+      float: right; }
+  header .topic {
+    margin: 0 auto; }
+    header .topic h1 {
+      text-transform: uppercase; }
+    header .topic p {
+      font-family: "Roboto Light";
+      font-size: 18px; }
+    header .topic button {
+      border-radius: 20px;
+      background: #ff4e50;
+      height: 40px;
+      font-size: 14px;
+      border-color: transparent;
+      color: white;
+      font-family: "Montserrat Bold"; }
+
+.steps {
+  padding-top: 40px;
+  color: white;
+  text-align: left; }
+  .steps h2 {
+    color: black;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center; }
+  .steps .step_1, .steps .step_2, .steps .step_3 {
+    width: 300px;
+    height: 241px;
+    margin-bottom: 10px; }
+    .steps .step_1 .step_item, .steps .step_2 .step_item, .steps .step_3 .step_item {
+      margin: 0 6.67% 20px 6.67%; }
+      .steps .step_1 .step_item div, .steps .step_2 .step_item div, .steps .step_3 .step_item div {
+        border-radius: 20px;
+        background: #ff4e50;
+        width: 70px;
+        height: 20px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: "Montserrat Regular";
+        margin-bottom: 20px;
+        line-height: 20px;
+        text-align: center; }
+      .steps .step_1 .step_item h3, .steps .step_2 .step_item h3, .steps .step_3 .step_item h3 {
+        font-size: 24px;
+        line-height: 28px; }
+      .steps .step_1 .step_item p, .steps .step_2 .step_item p, .steps .step_3 .step_item p {
+        font-family: "Roboto Light";
+        font-size: 14px;
+        color: #c5c5c5;
+        line-height: 20px; }
+  .steps .step_1 {
+    background: url(../img/mobile_images/steps_sprite.png) no-repeat;
+    background-position: 0px 0px; }
+    .steps .step_1 .step_item {
+      padding-top: 70px; }
+  .steps .step_2 {
+    background: url(../img/mobile_images/steps_sprite.png) no-repeat;
+    background-position: 0px -250px; }
+    .steps .step_2 .step_item {
+      padding-top: 100px; }
+  .steps .step_3 {
+    background: url(../img/mobile_images/steps_sprite.png) no-repeat;
+    background-position: 0px -500px; }
+    .steps .step_3 .step_item {
+      padding-top: 70px; }
+
+.partners {
+  padding-top: 40px;
+  margin-bottom: 20px; }
+  .partners h2 {
+    margin-bottom: 20px; }
+  .partners .partners_container {
+    position: relative;
+    margin-bottom: 20px; }
+    .partners .partners_container .pictogram {
+      position: absolute;
+      bottom: 0px;
+      right: 30%; }
+  .partners h4 {
+    font-size: 14px;
+    margin-bottom: 20px; }
+  .partners p {
+    font-family: "Roboto Light";
+    font-size: 14px;
+    width: 75%;
+    margin-bottom: 20px;
+    margin-left: 15%; }
+  .partners button {
+    width: 276px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #ff4e50;
+    vertical-align: middle;
+    text-align: center;
+    color: #ff4e50;
+    margin-bottom: 20px;
+    background: white;
+    font-family: "Montserrat Bold"; }
+
+.ideas .h2 {
+  margin-bottom: 20px; }
+.ideas .tile_1, .ideas .tile_2, .ideas .tile_3, .ideas .tile_4, .ideas .tile_5, .ideas .tile_6, .ideas .tile_7 {
+  width: 300px;
+  height: 120px;
+  margin-bottom: 10px; }
+  .ideas .tile_1 h3, .ideas .tile_2 h3, .ideas .tile_3 h3, .ideas .tile_4 h3, .ideas .tile_5 h3, .ideas .tile_6 h3, .ideas .tile_7 h3 {
+    color: white;
+    padding-top: 40px; }
+.ideas .tile_1 {
+  background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+  background-position: 0px 0px; }
+.ideas .tile_2 {
+  background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+  background-position: 0px -122px; }
+.ideas .tile_3 {
+  background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+  background-position: 0px -249px; }
+.ideas .tile_4 {
+  background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+  background-position: 0px -375px; }
+.ideas .tile_5 {
+  background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+  background-position: 0px -502px; }
+.ideas .tile_6 {
+  background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+  background-position: 0px -629px; }
+.ideas .tile_7 {
+  background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+  background-position: 0px -756px; }
+
+/*# sourceMappingURL=stylemain.css.map */

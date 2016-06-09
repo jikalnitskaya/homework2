@@ -5,14 +5,17 @@
 	<meta charset="UTF-8">
 	<title>Final exam</title>
 
-	<script type="text/javascript" src="js/script.js"></script>
+	<!---<script type="text/javascript" src="js/script.js"></script>-->
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/stylemain.css">
 
 </head>
 <body>
-<div class="header">
+<header>
 	<div class="login">
 		<a href="#">Log in</a>
-		<button>Sign up</button>
+		<div class="button">Sign up</div>
 	</div>
 	<div class="logo">
 		<h3>URLAUBSGLÜCK</h3>
@@ -22,82 +25,89 @@
 		<p>And find the perfect partner to fullfill it</p>
 		<button>Find your holiday partner</button>
 	</div>
-</div>
+</header>
+<div class="wrapper">
 <div class="steps">
 	<h2>How Urlaubsglück works?</h2>
 	<div class="step_1">
-		<div>step 1</div>
-		<h2>Sed leo enim, condimentum</h2>
-		<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+		<div class="step_item">
+			<div>step 1</div>
+			<h3>Sed leo enim, condimentum</h2>
+			<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+		</div>
 	</div>
 	<div class="step_2">
-		<div>step 2</div>
-		<h2>Morbi velit risus</h2>
-		<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+		<div class="step_item">
+			<div>step 2</div>
+			<h3>Morbi velit risus</h2>
+			<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+		</div>
 	</div>
 	<div class="step_3">
-		<div>step 3</div>
-		<h2>Sed leo enim, condimentum</h2>
-		<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+		<div class="step_item">
+			<div>step 3</div>
+			<h3>Sed leo enim, condimentum</h2>
+			<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+		</div>
 	</div>
 </div>
 <div class="partners">
 	<h2>Meet a partner for your best holiday</h2>
 	<div class="img">
-		<div>
-			<img src="img/" alt="img">
-			<img src="img/" alt="elipse">
+		<div class="partners_container">
+			<img src="img/mobile_images/partner_1.png" alt="img">
+			<img class="pictogram" src="img/mobile_images/ellipse_tv.png" alt="elipse">
 		</div>
-		<h4>name</h4>
-		<p>history</p>
+		<h4>Bradley Hunter</h4>
+		<p>Based in Chicago. I love playing tennis and loud music.</p>
 	</div>
 	<div class="img">
-		<div>
-			<img src="img/" alt="img">
-			<img src="img/" alt="elipse">
+		<div class="partners_container">
+			<img src="img/mobile_images/partner_2.png" alt="img">
+			<img class="pictogram" src="img/mobile_images/ellipse_chem.png" alt="elipse">
 		</div>
-		<h4>name</h4>
-		<p>history</p>
+		<h4>Lucas Marsha</h4>
+		<p>I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
 	</div>
 	<div class="img">
-		<div>
-			<img src="img/" alt="img">
-			<img src="img/" alt="elipse">
+		<div class="partners_container">
+			<img src="img/mobile_images/partner_3.png" alt="img">
+			<img class="pictogram" src="img/mobile_images/ellipse_coffie.png" alt="elipse">
 		</div>
-		<h4>name</h4>
-		<p>history</p>
+		<h4>Heather Walker</h4>
+		<p>I'm a happy person that loves cats and climbing on mountains.</p>
 	</div>
 	<div class="img">
-		<div>
-			<img src="img/" alt="img">
-			<img src="img/" alt="elipse">
+		<div class="partners_container">
+			<img src="img/mobile_images/partner_4.png" alt="img">
+			<img class="pictogram" src="img/mobile_images/ellipse_fly.png" alt="elipse">
 		</div>
-		<h4>name</h4>
-		<p>history</p>
+		<h4>Bradley Hunter</h4>
+		<p>Based in Chicago. I love playing tennis and loud music.</p>
 	</div>
 	<button>See other partners</button>
 </div>
 <div class="ideas">
 	<h2>Discover holiday activity ideas</h2>
-	<div class="tile">
+	<div class="tile_1">
 		<h3>Sport and Activity</h3>
 	</div>
-	<div class="tile">
+	<div class="tile_2">
 		<h3>Wellnes and Health</h3>
 	</div>
-	<div class="tile">
+	<div class="tile_3">
 		<h3>Extreme Sports and Expeditions</h3>
 	</div>
-	<div class="tile">
+	<div class="tile_4">
 		<h3>Games</h3>
 	</div>
-	<div class="tile">
+	<div class="tile_5">
 		<h3>Culture and Education</h3>
 	</div>
-	<div class="tile">
+	<div class="tile_6">
 		<h3>Relaxation</h3>
 	</div>
-	<div class="tile">
+	<div class="tile_7">
 		<h3>Travelling</h3>
 	</div>
 </div>
@@ -113,7 +123,17 @@
 <div class="footer">
 	<h3>URLAUBSGLÜCK</h3>
 	<a href="#">Company</a>
+	<nav>
+		<a href="#">About</a>
+		<a href="#">Contacts</a>
+		<a href="#">Press</a>
+		<a href="#">Blog</a>
+	</nav>
+	<a href="#">Partners</a>
+	<p>Designed by</p>
+	<img src="img/mobile_images/logo.png">
 	
+</div>
 </div>
 </body>
 </html>

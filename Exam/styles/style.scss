@@ -1,0 +1,238 @@
+$font-main: "Montserrat Bold";
+$font-main_reg: "Montserrat Regular";
+$font-rob: "Roboto Light";
+$button-color: #ff4e50;
+
+@mixin clearfix {
+	content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+	font-family: $font-main;
+    font-size: 22px;
+	box-sizing: border-box;
+    text-align: center;
+}
+
+header {
+	color: white;
+	background-size: cover;
+
+	.login {
+		font-size: 14px;
+
+		a {
+			text-decoration: none;
+			color: white;
+			float: left;
+			margin-right: 20px;
+			margin-top: 12px;
+		}
+
+		.button {
+			border: 2px solid white;
+			border-radius: 20px;
+		    width: 90px;
+		    height: 35px;
+		    background: transparent;
+		    text-align: center;
+		    line-height: 35px;
+		    float: right;
+		}
+
+		@include clearfix;
+	}
+
+	.topic {
+		margin: 0 auto;
+
+		h1 {text-transform: uppercase;
+			}
+
+		p {
+			font-family: $font-rob;
+			font-size: 18px;
+		}
+
+		button {
+			border-radius: 20px;
+			background: $button-color;
+			height: 40px;
+			font-size: 14px;
+			border-color: transparent;
+     		color: white;
+     		font-family: $font-main;
+		}
+	}
+}
+
+.steps {
+	padding-top: 40px;
+	color: white;
+	text-align: left;
+
+	h2 {
+		color: black;
+		margin-bottom: 20px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.step_1, .step_2, .step_3 {
+		width: 300px;
+		height: 241px;
+		margin-bottom: 10px;
+
+		.step_item {
+			margin: 0 6.67% 20px 6.67%;
+
+			div {
+				border-radius: 20px;
+				background: $button-color;
+				width: 70px;
+				height: 20px;
+				text-transform: uppercase;
+				font-size: 10px;
+				font-family: $font-main_reg;
+				margin-bottom: 20px;
+				line-height: 20px;
+				text-align: center;
+			}
+
+			h3 {
+				font-size: 24px;
+				line-height: 28px;
+			}
+
+			p {
+				font-family: $font-rob;
+				font-size: 14px;
+				color: #c5c5c5;
+				line-height: 20px;
+			}
+		}
+	}
+ 
+	.step_1 {
+		background: url(../img/mobile_images/steps_sprite.png) no-repeat;
+        background-position: 0px 0px; 
+        .step_item {
+        	padding-top: 70px;
+        }
+    }
+
+    .step_2 {
+		background: url(../img/mobile_images/steps_sprite.png) no-repeat;
+        background-position: 0px -250px; 
+        .step_item {
+        	padding-top: 100px;
+        }
+    }
+
+    .step_3 {
+		background: url(../img/mobile_images/steps_sprite.png) no-repeat;
+        background-position: 0px -500px; 
+        .step_item {
+        	padding-top: 70px;
+        }
+    }
+}
+
+.partners {
+	padding-top: 40px;
+	margin-bottom: 20px;
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	.partners_container {
+		position: relative;
+		margin-bottom: 20px;
+
+		.pictogram {
+			position: absolute;
+			bottom: 0px;
+			right: 30%;
+		}
+	}
+	
+	h4 {
+		font-size: 14px;
+		margin-bottom: 20px;
+
+	}
+
+	p {
+		font-family: $font-rob;
+		font-size: 14px;
+		width: 75%;
+		margin-bottom: 20px;
+		margin-left: 15%;
+	}
+	
+	button {
+		width: 276px;
+		height: 40px;
+		border-radius: 20px;
+		border: 2px solid $button-color;
+		vertical-align: middle;
+		text-align: center;
+		color: $button-color;
+		margin-bottom: 20px;	
+		background: white;
+		font-family: $font-main;	
+	}
+}
+
+.ideas {
+	.h2 {margin-bottom: 20px;}
+
+	.tile_1, .tile_2, .tile_3, .tile_4, .tile_5, .tile_6, .tile_7 {
+		width: 300px;
+		height: 120px;
+		margin-bottom: 10px;
+
+		h3 {
+			color: white;
+			padding-top: 40px;
+		}
+	}
+
+	.tile_1 {
+		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+        background-position: 0px 0px; 
+	}
+	
+	.tile_2 {
+		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+        background-position: 0px -122px; 
+	}
+
+	.tile_3 {
+		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+        background-position: 0px -249px; 
+	}
+
+	.tile_4 {
+		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+        background-position: 0px -375px; 
+	}
+
+	.tile_5 {
+		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+        background-position: 0px -502px; 
+	}
+
+	.tile_6 {
+		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+        background-position: 0px -629px; 
+	}
+
+	.tile_7 {
+		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
+        background-position: 0px -756px; 
+	}
+}
