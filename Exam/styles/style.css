@@ -2,34 +2,48 @@
 @font-face {font-family: "Montserrat Regular"; src: url(../fonts/montserrat_regular.ttf);}
 @font-face {font-family: "Roboto Light"; src: url(../fonts/roboto_light.ttf);}
 
-header {background-image: url(../img/mobile_images/header.png);
-    background-repeat: no-repeat;}
+header {
+	background-image: url(../img/mobile_images/header.png);
+    background-repeat: no-repeat;
+}
 
-.logo {font-size: 20px;
-    text-transform: uppercase;}
+header {
+	width: 100%;
+    text-align: center;
+}
 
-/*@media (max-width: 320px) {*/
-	header {width: 100%;
-	    text-align: center;}
+.wrapper {
+	max-width: 300px;
+	padding: 0 3.125%;
+}
 
-	.wrapper {max-width: 300px;
-		padding: 0 3.125%;
-	}
+.login {
+	margin: 0 auto;
+    padding-top: 23px;
+}
 
-	.login {margin: 0 auto;
-	    padding-top: 20px;}
+.logo {
+	margin: 118px auto 28px;
+}
 
-	.logo {margin: 118px auto 40px;}
+.topic h1 {
+	font-size: 30px;
+	margin-bottom: 11px;
+}
 
-	.topic h1 {font-size: 30px;
-		margin-bottom: 20px;}
+.topic p {
+	margin: 0 auto 18px;
+   	max-width: 74%;
+}
 
-    .topic p {margin: 0 auto 20px;
-    	max-width: 75%;}
+.topic button {
+	margin-bottom: 138px;
+   	width: 282px;
+}
 
-    .topic button {margin-bottom: 138px;
-    	width: 280px;}
+.steps p {
+	max-width: 95%;
+}
 
-    .steps p {max-width: 95%;}
-
-/*}
+/*@media (min-width: 321px) {
+}
