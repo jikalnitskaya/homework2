@@ -1,3 +1,7 @@
+@font-face {font-family: "Montserrat Bold"; src: url(../fonts/montserrat_bold.ttf);}
+@font-face {font-family: "Montserrat Regular"; src: url(../fonts/montserrat_regular.ttf);}
+@font-face {font-family: "Roboto Light"; src: url(../fonts/roboto_light.ttf);}
+
 $font-main: "Montserrat Bold";
 $font-main_reg: "Montserrat Regular";
 $font-rob: "Roboto Light";
@@ -16,60 +20,100 @@ body {
     text-align: center;
 }
 
+.clearfix {
+	@include clearfix;
+}
+
 header {
+	background-image: url(../img/mobile_images/header.png);
+    background-repeat: no-repeat;
+	width: 100%;
+    text-align: center;
 	color: white;
 	background-size: cover;
+	@media (min-width: 336px) {
+		background-image: url(../img/tablet_images/header.png);
+	}
 
-	.login {
-		font-size: 14px;
+	.top {
 
-		a {
-			text-decoration: none;
-			color: white;
-			float: left;
-			margin-right: 20px;
-			margin-top: 12px;
+		.login {
+			font-size: 14px;
+            float: none;	
+			margin: 0 auto;
+            padding-top: 23px;
+            
+            @media (min-width: 336px) {
+            	float: right;
+				padding-top: 40px;
+				margin-right: 50px;
+			}
+
+			a {
+				text-decoration: none;
+				color: white;
+				float: left;
+				margin-right: 20px;
+				margin-top: 12px;
+			}
+
+			a:hover {
+				text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+			}
+
+			.button {
+				border: 2px solid white;
+				border-radius: 20px;
+			    width: 86px;
+			    height: 33px;
+			    background: transparent;
+			    text-align: center;
+			    line-height: 35px;
+			    float: right;
+			}
+			.button:hover {
+				box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+			}
+		/*@include clearfix;	*/
 		}
 
-		a:hover {
-			text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
-		}
-
-		.button {
-			border: 2px solid white;
-			border-radius: 20px;
-		    width: 86px;
-		    height: 33px;
-		    background: transparent;
-		    text-align: center;
-		    line-height: 35px;
-		    float: right;
-		}
-		.button:hover {
-			box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-		}
-
+		.logo {
+			font-size: 21px;
+	    	text-transform: uppercase;
+	    	margin: 118px auto 28px;
+	    	float: none;
+	    	@media (min-width: 336px) {
+	    		float: left;
+				margin-top: 50px;
+				margin-left: 50px;
+			}
+	    }
+	}
+	
+	.top:after {
 		@include clearfix;
 	}
 
-	.logo {
-		font-size: 21px;
-    	text-transform: uppercase;
-    }
-
 	.topic {
 		margin: 0 auto;
+		@media (min-width: 336px) {
+			margin-top: 220px;
+		}
 
 		h1 {
 			text-transform: uppercase;
 			line-height: 36px;
     		padding-left: 4px;
+    		font-size: 30px;
+			margin-bottom: 11px;
 			}
 
 		p {
 			font-family: $font-rob;
 			font-size: 18px;
 			line-height: 20px;
+			margin: 0 auto 18px;
+   			max-width: 74%;
 		}
 
 		button {
@@ -80,11 +124,22 @@ header {
 			border-color: transparent;
      		color: white;
      		font-family: $font-main;
+     		margin-bottom: 138px;
+   			width: 282px;
 		}
 		button:hover {
 			box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 		}
 	}
+}
+
+.wrapper {
+	max-width: 300px;
+	padding: 0 3.125%;
+	@media (min-width: 336px) {
+		max-width: 748px;
+	}
+
 }
 
 .steps {
@@ -104,6 +159,11 @@ header {
 		width: 300px;
 		height: 241px;
 		margin-bottom: 9px;
+		border-radius: 6px;
+		@media (min-width: 336px) {
+			width: 239px;
+			height: 402px;
+		}
 
 		.step_item {
 			margin: 0 2% 20px 7%;
@@ -116,7 +176,7 @@ header {
 				text-transform: uppercase;
 				font-size: 10px;
 				font-family: $font-main_reg;
-				margin-bottom: 16px;
+				margin-bottom: 15px;
 				line-height: 20px;
 				text-align: center;
 				letter-spacing: 1.5px;
@@ -125,7 +185,7 @@ header {
 
 			h3 {
 				font-size: 24px;
-				line-height: 28px;
+				line-height: 29px;
 				margin-bottom: 13px;
 			}
 
@@ -133,7 +193,8 @@ header {
 				font-family: $font-rob;
 				font-size: 14px;
 				color: #c5c5c5;
-				line-height: 18px;
+				line-height: 16px;
+				max-width: 95%;
 			}
 		}
 	}
@@ -141,6 +202,11 @@ header {
 	.step_1 {
 		background: url(../img/mobile_images/steps_sprite.png) no-repeat;
         background-position: 0px 0px; 
+        @media (min-width: 336px) {
+        	background: url(../img/tablet_images/steps_sprite.png) no-repeat;
+        	background-position: 0px 0px; 
+        	float: left;
+        }
         .step_item {
         	padding-top: 70px;
         }
@@ -149,6 +215,11 @@ header {
     .step_2 {
 		background: url(../img/mobile_images/steps_sprite.png) no-repeat;
         background-position: 0px -250px; 
+        @media (min-width: 336px) {
+        	background: url(../img/tablet_images/steps_sprite.png) no-repeat;
+        	background-position: -245px 0px; 
+        	float: left;
+        }
         .step_item {
         	padding-top: 100px;
         }
@@ -157,6 +228,11 @@ header {
     .step_3 {
 		background: url(../img/mobile_images/steps_sprite.png) no-repeat;
         background-position: 0px -500px; 
+        @media (min-width: 336px) {
+        	background: url(../img/tablet_images/steps_sprite.png) no-repeat;
+        	background-position: -493px 0px; 
+        	float: left;
+        }
         .step_item {
         	padding-top: 70px;
         }
@@ -164,13 +240,13 @@ header {
 }
 
 .partners {
-	padding-top: 26px;
+	padding-top: 25px;
 	margin-bottom: 20px;
 
 	h2 {
 		line-height: 26px;
    		margin-left: -4px;
-		margin-bottom: 14px;
+		margin-bottom: 15px;
 	}
 
 	.partners_container {

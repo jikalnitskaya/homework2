@@ -1,13 +1,10 @@
-@font-face {font-family: "Montserrat Bold"; src: url(../fonts/montserrat_bold.ttf);}
+/*@font-face {font-family: "Montserrat Bold"; src: url(../fonts/montserrat_bold.ttf);}
 @font-face {font-family: "Montserrat Regular"; src: url(../fonts/montserrat_regular.ttf);}
 @font-face {font-family: "Roboto Light"; src: url(../fonts/roboto_light.ttf);}
 
-header {
+/*header {
 	background-image: url(../img/mobile_images/header.png);
     background-repeat: no-repeat;
-}
-
-header {
 	width: 100%;
     text-align: center;
 }
@@ -45,5 +42,25 @@ header {
 	max-width: 95%;
 }
 
-/*@media (min-width: 321px) {
-}
+@media (min-width: 321px) {
+
+	/*header {
+		background-image: url(../img/tablet_images/header.png);
+	}
+
+	.login {
+		float: right;
+		margin-top: 40px;
+		margin-right: 50px;
+	}
+
+	.logo {
+		float: left;
+		margin-top: 50px;
+		margin-left: 50px;
+	}
+
+	.topic {
+		margin-top: 228px;
+	}
+}*/
