@@ -97,7 +97,7 @@ header {
 	.topic {
 		margin: 0 auto;
 		@media (min-width: 336px) {
-			margin-top: 220px;
+			margin-top: 130px;
 		}
 
 		h1 {
@@ -106,7 +106,11 @@ header {
     		padding-left: 4px;
     		font-size: 30px;
 			margin-bottom: 11px;
+			@media (min-width: 336px) {
+				font-size: 52px;
+				width: 60%;
 			}
+		}
 
 		p {
 			font-family: $font-rob;
@@ -114,6 +118,9 @@ header {
 			line-height: 20px;
 			margin: 0 auto 18px;
    			max-width: 74%;
+   			@media (min-width: 336px) {
+				font-size: 24px;
+			}
 		}
 
 		button {
@@ -510,47 +517,85 @@ footer:before {
 	content: "";
 	display: block;
 	border-top: 2px solid $button-color;
+	@media (min-width: 336px) {
+		margin-bottom: 40px;
+	}
 }
 
 footer {
-	h3 {
-		margin-top: 18px;
-		margin-bottom: 9px;
-		color: $button-color;
-		font-size: 16px;
-		letter-spacing: 0.7px;
-	}
-	a {
-		text-decoration: none;
-		font-size: 14px;
-		color: black;
-		margin-bottom: 10px;
-	}
-	a:hover {
-		text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
-	}
-	nav {
-		    margin-bottom: 7px;
-		a {
-			font-family: $font-rob;
-			color: #8f8f8f;
-			margin-bottom: 20px;
-			margin-right: 8px;
+	width: 100%;
+	@include clearfix;
+
+	.footer_items_1 {
+		@media (min-width: 336px) {
+			float: left;
+			margin-left: 40px;
+			margin-right: 80px;			
 		}
-		a:last-child {
-			margin-right: 0;
+
+		h3 {
+			margin-top: 18px;
+			margin-bottom: 9px;
+			color: $button-color;
+			font-size: 16px;
+			letter-spacing: 0.7px;
 		}
-	}
-	p {
-		text-transform: uppercase;
-		font-size: 10px;
-		margin-top: 14px;
-		margin-bottom: 10px;
-		color: #cccccc;
-		letter-spacing: 1.2px;
-	}
-	img {
-		margin-bottom: 20px;
 	}
 
+	.footer_items_2 {
+		@media (min-width: 336px) {
+			float: left;
+			margin-right: 40px;	
+		}
+		a {
+			text-decoration: none;
+			font-size: 14px;
+			color: black;
+			margin-bottom: 10px;
+		}
+		a:hover {
+			text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
+		}
+		nav {
+			    margin-bottom: 7px;
+			a {
+				font-family: $font-rob;
+				color: #8f8f8f;
+				margin-bottom: 20px;
+				margin-right: 8px;
+			}
+			a:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.footer_items_3 {
+		@media (min-width: 336px) {
+			float: left;
+			margin-right: 40px;	
+		}
+		a {
+			text-decoration: none;
+			font-size: 14px;
+			color: black;
+			margin-bottom: 10px;
+		}
+	}
+	.footer_items_4 {
+		@media (min-width: 336px) {
+			float: left;
+			margin-right: 40px;	
+		}
+		p {
+			text-transform: uppercase;
+			font-size: 10px;
+			margin-top: 14px;
+			margin-bottom: 10px;
+			color: #cccccc;
+			letter-spacing: 1.2px;
+		}
+		img {
+			margin-bottom: 20px;
+		}
+	}
 }
