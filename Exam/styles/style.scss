@@ -138,6 +138,7 @@ header {
 	padding: 0 3.125%;
 	@media (min-width: 336px) {
 		max-width: 748px;
+		padding: 0 1.5%;
 	}
 
 }
@@ -147,6 +148,10 @@ header {
 	color: white;
 	text-align: left;
 	padding-left: 1px;
+	width: 100%;
+	@media (min-width: 336px) {
+		padding-left: 0px;
+	}
 
 	h2 {
 		color: black;
@@ -160,13 +165,39 @@ header {
 		height: 241px;
 		margin-bottom: 9px;
 		border-radius: 6px;
+		position: relative;
 		@media (min-width: 336px) {
 			width: 239px;
 			height: 402px;
 		}
 
+		.arrow_left {
+			display: none;
+			width: 30px;
+     		height: 55px;
+			position: absolute;
+			top: 5px;
+			left: 1px;
+			@media (min-width: 336px) {
+				display: block;
+			}
+		}
+
+		.arrow_right {
+			display: none;
+			width: 30px;
+    		height: 55px;
+			position: absolute;
+			top: 5px;
+			right: 1px;
+			@media (min-width: 336px) {
+				display: block;
+			}
+		}
+
 		.step_item {
 			margin: 0 2% 20px 7%;
+
 
 			div {
 				border-radius: 20px;
@@ -206,9 +237,13 @@ header {
         	background: url(../img/tablet_images/steps_sprite.png) no-repeat;
         	background-position: 0px 0px; 
         	float: left;
+        	margin-right: 1%;
         }
         .step_item {
         	padding-top: 70px;
+        	@media (min-width: 336px) {
+        		padding-top: 212px;
+        	}
         }
     }
 
@@ -219,9 +254,13 @@ header {
         	background: url(../img/tablet_images/steps_sprite.png) no-repeat;
         	background-position: -245px 0px; 
         	float: left;
+        	margin-right: 1%;
         }
         .step_item {
         	padding-top: 100px;
+        	@media (min-width: 336px) {
+        		padding-top: 260px;
+        	}
         }
     }
 
@@ -235,6 +274,9 @@ header {
         }
         .step_item {
         	padding-top: 70px;
+        	@media (min-width: 336px) {
+        		padding-top: 214px;
+        	}
         }
     }
 }
@@ -249,15 +291,18 @@ header {
 		margin-bottom: 15px;
 	}
 
-	.partners_container {
+	.img_container {
 		position: relative;
+		width: 121px;
+		height: 121px;
 		margin-bottom: 16px;
 		margin-left: 2px;
+		margin: 0 auto;
 
 		.pictogram {
 			position: absolute;
 			bottom: -2px;
-			right: 28%;
+			right: 1px;
 		}
 
 		.img_item {border-radius: 50%;}
@@ -267,24 +312,37 @@ header {
 		}
 	}
 
+	.partners_container {
+		width: 100%;
+		margin: 0 auto;
+		@media (min-width: 336px) {
+			width: 50%;
+			float: left;
+		}
+
 	
-	h4 {
-		font-size: 14px;
-		margin-bottom: 13px;
+		h4 {
+			font-size: 14px;
+			margin-bottom: 13px;
 
+		}
+
+		h4:hover {
+			text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
+		}
+
+		p {
+			font-family: $font-rob;
+			font-size: 14px;
+			width: 75%;
+			margin-bottom: 25px;
+			margin-left: 12%;
+			line-height: 19px;
+		}
 	}
 
-	h4:hover {
-		text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
-	}
-
-	p {
-		font-family: $font-rob;
-		font-size: 14px;
-		width: 75%;
-		margin-bottom: 25px;
-		margin-left: 12%;
-		line-height: 19px;
+	.partners_container:after {
+		@include clearfix;
 	}
 	
 	button {
@@ -318,6 +376,11 @@ header {
 		height: 120px;
 		margin-bottom: 10px;
 		border-radius: 5px;
+		@media (min-width: 336px) {
+			height: 310px;
+			float: left;
+			margin-right: 1%;
+		}
 
 		h3 {
 			color: white;
@@ -332,37 +395,76 @@ header {
 	.tile_1 {
 		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
         background-position: 0px 0px; 
+        @media (min-width: 336px) {
+        	background: url(../img/tablet_images/ideas_sprite.png) no-repeat;
+       		background-position: 0px 0px; 
+       		width: 236px;
+        }
 	}
 	
 	.tile_2 {
 		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
         background-position: 0px -122px; 
+        @media (min-width: 336px) {
+        	background: url(../img/tablet_images/ideas_sprite.png) no-repeat;
+       		background-position: -244px 0px; 
+       		width: 236px;
+        }
 	}
 
 	.tile_3 {
 		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
         background-position: 0px -249px; 
+        @media (min-width: 336px) {
+        	background: url(../img/tablet_images/ideas_sprite.png) no-repeat;
+       		background-position: -488px 0px; 
+       		width: 236px;
+        }
 	}
 
 	.tile_4 {
 		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
         background-position: 0px -375px; 
+        @media (min-width: 336px) {
+        	background: url(../img/tablet_images/ideas_sprite.png) no-repeat;
+       		background-position: -735px 0px; 
+       		width: 236px;
+        }
 	}
 
 	.tile_5 {
 		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
         background-position: 0px -502px; 
+        @media (min-width: 336px) {
+        	background: url(../img/tablet_images/ideas_sprite.png) no-repeat;
+       		background-position: -980px 0px; 
+       		width: 491px;
+        }
 	}
 
 	.tile_6 {
 		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
         background-position: 0px -629px; 
+        @media (min-width: 336px) {
+        	background: url(../img/tablet_images/ideas_sprite.png) no-repeat;
+       		background-position: -1482px 0px; 
+       		width: 491px;
+        }
 	}
 
 	.tile_7 {
 		background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
         background-position: 0px -756px; 
+        @media (min-width: 336px) {
+        	background: url(../img/tablet_images/ideas_sprite.png) no-repeat;
+       		background-position: -1986px 0px; 
+       		width: 236px;
+        }
 	}
+}
+
+.ideas:after {
+	@include clearfix;
 }
 
 .search {
