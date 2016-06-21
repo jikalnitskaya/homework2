@@ -189,7 +189,7 @@ header {
     border-radius: 6px;
     position: relative;
     /*╨╕╤Б╨┐╤А╨░╨▓╨╕╨╗╨░ 338 470*/ }
-    @media screen and (min-width: 625px) {
+    @media screen and (min-width: 600px) {
       .steps .step_1, .steps .step_2, .steps .step_3 {
         width: 31.4%;
         height: 402px; } }
@@ -199,6 +199,7 @@ header {
         height: 402px; } }
     .steps .step_1 .arrow_left, .steps .step_2 .arrow_left, .steps .step_3 .arrow_left {
       display: none;
+      z-index: 5;
       width: 30px;
       height: 55px;
       position: absolute;
@@ -213,6 +214,7 @@ header {
           top: 153px; } }
     .steps .step_1 .arrow_right, .steps .step_2 .arrow_right, .steps .step_3 .arrow_right {
       display: none;
+      z-index: 5;
       width: 30px;
       height: 55px;
       position: absolute;
@@ -226,7 +228,10 @@ header {
         .steps .step_1 .arrow_right, .steps .step_2 .arrow_right, .steps .step_3 .arrow_right {
           top: 153px; } }
     .steps .step_1 .step_item, .steps .step_2 .step_item, .steps .step_3 .step_item {
-      margin: 0 2% 20px 7%; }
+      /*margin: 0 2% 20px 7%;*/
+      position: absolute;
+      height: 40%;
+      width: 86%; }
       .steps .step_1 .step_item div, .steps .step_2 .step_item div, .steps .step_3 .step_item div {
         border-radius: 20px;
         background: #ff4e50;
@@ -273,8 +278,7 @@ header {
         margin-right: 2.9%; } }
     @media screen and (min-width: 786px) {
       .steps .step_1 {
-        background: url(../img/desctop_images/steps_sprite.png) no-repeat;
-        background-position: 0px 0px;
+        background: url(../img/desctop_images/step_1.png) no-repeat;
         margin-right: 1.7%; } }
     @media screen and (min-width: 786px) {
       .steps .step_1 .arrow_left {
@@ -320,8 +324,7 @@ header {
         margin-right: 2.9%; } }
     @media screen and (min-width: 786px) {
       .steps .step_2 {
-        background: url(../img/desctop_images/steps_sprite.png) no-repeat;
-        background-position: -308px 0px;
+        background: url(../img/desctop_images/step_2.png) no-repeat;
         margin-right: 1.4%; } }
     .steps .step_2 .arrow_left {
       left: 11px; }
@@ -371,8 +374,7 @@ header {
         /*margin-left: 1.1px;*/ } }
     @media screen and (min-width: 786px) {
       .steps .step_3 {
-        background: url(../img/desctop_images/steps_sprite.png) no-repeat;
-        background-position: -616px 0px; } }
+        background: url(../img/desctop_images/step_3.png) no-repeat; } }
     .steps .step_3 .arrow_left {
       left: 25px; }
     .steps .step_3 .arrow_right {

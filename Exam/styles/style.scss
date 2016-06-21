@@ -224,7 +224,7 @@ header {
 		border-radius: 6px;
 		position: relative;
 		/*исправила 338 470*/
-		@media screen and (min-width: 625px) {
+		@media screen and (min-width: 600px) {
 			width: 31.4%;
 			height: 402px;
 		}
@@ -235,6 +235,7 @@ header {
 
 		.arrow_left {
 			display: none;
+			z-index: 5;
 			width: 30px;
      		height: 55px;
 			position: absolute;
@@ -251,6 +252,7 @@ header {
 
 		.arrow_right {
 			display: none;
+			z-index: 5;
 			width: 30px;
     		height: 55px;
 			position: absolute;
@@ -266,7 +268,10 @@ header {
 		}
 
 		.step_item {
-			margin: 0 2% 20px 7%;
+			/*margin: 0 2% 20px 7%;*/
+			position: absolute;
+			height: 40%;
+			width: 86%;
 
 
 			div {
@@ -322,8 +327,7 @@ header {
         	margin-right: 2.9%;
         }
         @media screen and (min-width: 786px) {
-        	background: url(../img/desctop_images/steps_sprite.png) no-repeat;
-        	background-position: 0px 0px; 
+        	background: url(../img/desctop_images/step_1.png) no-repeat;
         	margin-right: 1.7%;
         }
 
@@ -376,8 +380,7 @@ header {
         	margin-right: 2.9%;
         }
         @media screen and (min-width: 786px) {
-        	background: url(../img/desctop_images/steps_sprite.png) no-repeat;
-        	background-position: -308px 0px; 
+        	background: url(../img/desctop_images/step_2.png) no-repeat;
         	margin-right: 1.4%;
         }
 
@@ -435,8 +438,7 @@ header {
         	/*margin-left: 1.1px;*/
         }
         @media screen and (min-width: 786px) {
-        	background: url(../img/desctop_images/steps_sprite.png) no-repeat;
-        	background-position: -616px 0px; 
+        	background: url(../img/desctop_images/step_3.png) no-repeat;
         }
         .arrow_left {
         	left: 25px;
