@@ -56,7 +56,7 @@ $(function (){
        $('.partners_container').html(list);
     };*/
 
-    function search (userPhoto) {
+    function search () {
         //e && e.preventDefault();
         var url='';
         //var $input = $('#in').val();
@@ -66,7 +66,7 @@ $(function (){
       
         $.ajax({
             url: url,
-            dataType: "jsonp",
+            dataType: "json",
             success: function(data) {
                 console.log("Here");
                 console.log(data);
