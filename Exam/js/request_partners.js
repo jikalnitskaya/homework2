@@ -3,23 +3,39 @@ $(function (){
     //var $input = $('#in').val();
     //var request;
 
+    function getName(data) {
+        var userName = [];
+        for (i = 0; i < 4; i++){
+            console.log (data.results[i].name.first);
+            console.log (data.results[i].name.last);
+            var fullName = data.results[i].name.first + '' + data.results[i].name.last;
+            console.log (fullName);
+            userName.push(fullName);
+        };
+        return userName;
+        console.log (userName);
+    };
+    
     function search (e) {
-    	e && e.preventDefault();
+        e && e.preventDefault();
         var url='';
         //var $input = $('#in').val();
         //$input = $input.replace(' ','+');
-        url = 'https://randomuser.me/api/?';
+        url = 'https://randomuser.me/api/?results=4';
         console.log (url);
         /*if (request) {
-        	request.abort();
+            request.abort();
         };*/
-        /*request = */$.ajax({
+        $.ajax({
             url: url,
-            dataType: "jsonp",
+            dataType: "json",
             success: function(data) {
                 console.log("Here");
                 console.log(data);
-                if (data.responseData==null) {
+                return data;
+                getName(data);
+                console.log (userName);
+                /*if (data.responseData==null) {
                     var htmlError = data.responseDetails;
                     console.log (htmlError);
                     //htmlError = '<p class="res">'+htmlError+'</p>';
@@ -34,17 +50,15 @@ $(function (){
                     });
                     $(".result").append(html);*/
                      
-                };
-            } ,
+                //};
+            },
             error: function(error) {
                 console.log("error");
                 console.log(error);
-            }/*,
-            complete: function(){
-                request = 0;
-            }*/
+            }
         });
     };
     
     $("#search").on("click", search);
+
 });
