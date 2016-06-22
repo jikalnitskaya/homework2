@@ -6,27 +6,47 @@ $(function() {
 	$arrowLeft.on('click', slideLeft);
 
 
-    function slideRight (e) {
-    	//e.stopImmediatePropagation();
+    function slideRight () {
     	console.log ("this", this);
-    	var i = $arrowRight.attr("data-title");
+        var $target = /*this;/*/$arrowRight;
+        console.log ("target", $target);
+    	var i = $target.attr("data-title");
+        console.log ("i", i);
+    		i = ++i;	
+    	if (i == 4) {
+    		i = 1
+    	};
     	console.log ("i", i);
-    	//e.preventDefault();
-        var target = e.target;
-        console.log ("target", target);
-	    var stepContainer = $('.step_1');
+  
+	    var stepContainer = $target.parent('div');
 	    console.log ("stepContainer", stepContainer);
-        //var $background = $stepContainer.css('background');
-        //console.log ($background);
         var stepItem = $('.step_item');
-        console.log ("stepItem", stepItem);
-	    var $url = 'url(./img/desctop_images/step_2.png) no-repeat';
+        //console.log ("stepItem", stepItem);
+	    var $url = 'url(./img/desctop_images/step_'+i+'.png) no-repeat';
 	    stepContainer.css("background", $url);
+	    $target.attr("data-title", i);
+	    console.log ("attr", $target.attr("data-title"));
 	};
 
 	function slideLeft (e) {
-    	//e.preventDefault();
-        var target = e.target;
-        console.log ("target", target);
+		console.log ("this", this);
+    	var $target = $arrowLeft;
+        //console.log ("target", $target);
+    	var i = $target.attr("data-title");
+    	console.log ("i", i);
+    		i = --i;	
+    	if (i == 0) {
+    		i = 3
+    	};
+    	console.log ("i", i);
+  
+	    var stepContainer = $target.parent('div');
+	    //console.log ("stepContainer", stepContainer);
+        var stepItem = $('.step_item');
+        //console.log ("stepItem", stepItem);
+	    var $url = 'url(./img/desctop_images/step_'+i+'.png) no-repeat';
+	    stepContainer.css("background", $url);
+	    $target.removeAttr("data-title").attr("data-title", i);
+	    console.log ("attr", $target.attr("data-title"));
     };
 });
