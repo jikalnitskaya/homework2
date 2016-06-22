@@ -1,4 +1,5 @@
 $(function() {
+    //функция слайдера
 	var $arrowRight = $('.arrow_right');
 	$arrowRight.on('click', slideRight);
 

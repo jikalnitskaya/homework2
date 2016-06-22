@@ -1,40 +1,82 @@
 $(function (){
-     //запрос
+    //запрос
     //var $input = $('#in').val();
     //var request;
 
-    function getName(data) {
+    /*function getName(data) {
         var userName = [];
         for (i = 0; i < 4; i++){
-            console.log (data.results[i].name.first);
-            console.log (data.results[i].name.last);
-            var fullName = data.results[i].name.first + '' + data.results[i].name.last;
-            console.log (fullName);
+            var fullName = _.capitalize(data.results[i].name.first) + ' ' + _.capitalize(data.results[i].name.last);
             userName.push(fullName);
         };
-        return userName;
         console.log (userName);
+        //return userName;
     };
-    
-    function search (e) {
-        e && e.preventDefault();
+
+    function getPhoto(data) {
+        var userPhoto = [];
+        for (i = 0; i < 4; i++){
+            userPhoto.push(data.results[i].picture.large);
+        };
+        console.log (userPhoto);
+        return userPhoto;
+    };
+
+    function getLocation(data) {
+        var userLocation = [];
+        for (i = 0; i < 4; i++){
+            var fullLocation = _.capitalize(data.results[i].location.city)+', '+_.capitalize(data.results[i].location.state);
+            userLocation.push(fullLocation);
+        };
+        console.log (userLocation);
+    };*/
+
+    function getPartners(data) {
+        var users = [];
+       // _.forEach(data, function(){
+        for (var i = 0; i < 4; i++){
+            var user[i] = {
+                name : _.capitalize(data.results[i].name.first) + ' ' + _.capitalize(data.results[i].name.last),
+                photo : data.results[i].picture.large,
+                location : _.capitalize(data.results[i].location.city)+', '+_.capitalize(data.results[i].location.state)
+            };
+            console.log (user[i]);
+            return user[i];
+        };
+        
+            user[i].push(users);
+            return users;
+    //});
+        console.log (users);
+    };
+
+    /*function renderPartners (userPhoto){
+       var tmpl = _.template($('#list_tmpl').html());
+       var list = tmpl({data : userPhoto});
+       $('.partners_container').html(list);
+    };*/
+
+    function search (userPhoto) {
+        //e && e.preventDefault();
         var url='';
         //var $input = $('#in').val();
         //$input = $input.replace(' ','+');
         url = 'https://randomuser.me/api/?results=4';
         console.log (url);
-        /*if (request) {
-            request.abort();
-        };*/
+      
         $.ajax({
             url: url,
-            dataType: "json",
+            dataType: "jsonp",
             success: function(data) {
                 console.log("Here");
                 console.log(data);
-                return data;
-                getName(data);
-                console.log (userName);
+                /*getName(data);
+                getPhoto(data);
+                getLocation(data);
+                renderPartners (userPhoto);*/
+                getPartners(data);
+
+                
                 /*if (data.responseData==null) {
                     var htmlError = data.responseDetails;
                     console.log (htmlError);
