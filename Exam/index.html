@@ -80,17 +80,15 @@
 		<h2>Meet a partner for your best holiday</h2>
 		<script type="text/template" id="list_tmpl">
     	<% for (var i = 0; i < data.length; i++) { %>
-		<div>
+		<div id="list">
 			<div class="partners_container">
 				<div class="img_container">
-					<img class="img_item" src="<%=data[i]%>" alt="img">
+					<img class="img_item" src="<%=data[i].photo %>" alt="img">
 					<img class="pictogram" src="img/mobile_images/ellipse_tv.png" alt="elipse">
 				</div>
-				<h4>Bradley Hunter</h4>
-				<p>Based in Chicago. I love playing tennis and loud music.</p>
+				<h4><%=data[i].name%></h4>
+				<p>Based in <%=data[i].location%></p>
 			</div>
-		<% }; %>
-    </script>
 			<!--<div class="partners_container marg">
 				<div class="img_container">
 					<img class="img_item" src="img/mobile_images/partner_2.png" alt="img">
@@ -116,6 +114,8 @@
 				<p>Based in Chicago. I love playing tennis and loud music.</p>
 			</div>-->
 		</div>
+		<% }; %>
+    </script>
 		<button id="search">See other partners</button>
 	</section>
 	<section class="ideas">

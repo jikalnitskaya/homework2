@@ -354,4 +354,4 @@ var count = _.forEach(objTest, function(o){
   o.friends = o.friends.length;
 });
 
-document.write(JSON.stringify(objTest));
+document.write(JSON.stringify(objTest));*/
