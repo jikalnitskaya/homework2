@@ -58,7 +58,7 @@ $(function (){
             location : _.capitalize(data.results[3].location.city)+', '+_.capitalize(data.results[3].location.state)
         };
         users.push(user);
-        console.log (users);
+        //console.log (users);
         return users;
     };
 
@@ -87,7 +87,7 @@ $(function (){
                 getPhoto(data);
                 getLocation(data);
                 renderPartners (userPhoto);*/
-                getPartners(data);
+                var users = getPartners(data);
         console.log (users);
                 renderPartners (users);
                 
