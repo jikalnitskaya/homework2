@@ -35,10 +35,14 @@ $(function (){
         content = tmpl(html, {data : users});
         //$('#list').remove();
         $('#list').empty().append(content);
+        var pictogram = ["img/mobile_images/ellipse_tv.png", "img/mobile_images/ellipse_chem.png", "img/mobile_images/ellipse_coffie.png", "img/mobile_images/ellipse_fly.png"];
+        for (i=0; i<4; i++) {
+            $('pictogram').css("src", pictogram[i]);
+        };
     };
 
     /*function renderPictogram (){
-        var pictogram = ["img/mobile_images/ellipse_tv.png", "img/mobile_images/ellipse_chem.png", "img/mobile_images/ellipse_coffie.png", "img/mobile_images/ellipse_fly.png"];
+        
         var html = $('#list_tmpl').html();
         var content = tmpl(html, {pic : pictogram});
         $('#list').append(content);
@@ -47,7 +51,7 @@ $(function (){
     function search () {
         var url='';
         url = 'https://randomuser.me/api/?results=4';
-        console.log (url);
+        //console.log (url);
       
         $.ajax({
             url: url,
@@ -67,6 +71,7 @@ $(function (){
     };
     search();
     $("#search").on("click", search);
+    $("#search_new").on("click", search);
 });
 
 

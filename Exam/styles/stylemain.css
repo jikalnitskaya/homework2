@@ -539,6 +539,7 @@ header {
         vertical-align: middle;
         padding-top: 46%;
         line-height: 27px;
+        text-transform: capitalize;
         /*@media screen and (min-width: 338px) {
         	padding: auto 5%;
         }

@@ -1,11 +1,14 @@
 $(function (){
-	function searchIdeas () {
-        //e && e.preventDefault();
+	function searchIdeas (e) {
+        e && e.preventDefault();
         var url='';
-        //var $input = $('#in').val();
+        var $input = $('#input').val();
         //$input = $input.replace(' ','+');
-        url = 'https://randomuser.me/api/?results=4';
-        console.log (url);
+        $input = encodeURIComponent($input);
+        //console.log ($input);
+        var key = '2810130-69f58e75c3b8596474840dbd3';
+        url = "https://pixabay.com/api/?key=" + key + "&q=" + $input + "&order=popular&image_type=photo&per_page=7"+/*"&page="+page +*/"&callback=?";
+        //console.log (url);
       
         $.ajax({
             url: url,
@@ -13,10 +16,15 @@ $(function (){
             success: function(data) {
                 console.log("Here");
                 console.log(data);
+                //var img = '<img src="'+data.hits[0].webformatURL+'">';
+                //$('#req').html(img);
+                var src = 'url('+data.hits[0].webformatURL+') no-repeat';
+                $('.tile_1').css('background', src);
+                $('.tile_1 h3').html(data.hits[0].tags);
                 /*getName(data);
                 getPhoto(data);
                 getLocation(data);
-                renderPartners (userPhoto);*/
+                renderPartners (userPhoto);
                 var users = getPartners(data);
         console.log (users);
                 renderPartners (users);
@@ -34,9 +42,9 @@ $(function (){
                         html = html+'<h2>'+item.title+'</h2>'+'<p>'+item.content+'</p>'+'<a href="#">'+item.url+'</a>';            
                         $('a').attr('url', item.url);
                     });
-                    $(".result").append(html);*/
+                    $(".result").append(html);
                      
-                //};
+                //};*/
             },
             error: function(error) {
                 console.log("error");

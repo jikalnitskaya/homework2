@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="js/vendor/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
 	<script type="text/javascript" src="js/request_partners.js"></script>
+	<script type="text/javascript" src="js/request_pictures.js"></script>
 	<script type="text/javascript" src="js/masonry.script.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/stylemain.css">
@@ -32,7 +33,7 @@
 		<div class="topic">
 			<h1>Share your holiday dreams</h1>
 			<p>And find the perfect partner to fullfill it</p>
-			<button>Find your holiday partner</button>
+			<button id="search_new">Find your holiday partner</button>
 		</div>
 	</div>
 </header>
@@ -149,10 +150,11 @@
 		</div>
 	</section>
 	<section class="search">
+	<div id="req"></div>
 		<h2>Discover holiday activity ideas</h2>
 		<p>Hi! What are your holiday interests?</p>
 		<div>
-			<input type="text" placeholder="Enter your interests" name="">
+			<input id="input" type="text" placeholder="Enter your interests" name="">
 			<button id="idea">Search partners</button>
 		</div>
 	</section>
