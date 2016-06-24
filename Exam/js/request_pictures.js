@@ -18,9 +18,13 @@ $(function (){
                 console.log(data);
                 //var img = '<img src="'+data.hits[0].webformatURL+'">';
                 //$('#req').html(img);
-                var src = 'url('+data.hits[0].webformatURL+') no-repeat';
-                $('.tile_1').css('background', src);
-                $('.tile_1 h3').html(data.hits[0].tags);
+                for (i=0; i<7; i++) {
+	                var src = 'url('+data.hits[i].webformatURL+') no-repeat';
+	                var target = '.tile_' + (i+1);
+	                var targetH = '.tile_' + (i+1) + ' h3';
+	                $(target).css('background', src);
+	                $(targetH).html(data.hits[i].tags);
+	            }
                 /*getName(data);
                 getPhoto(data);
                 getLocation(data);
