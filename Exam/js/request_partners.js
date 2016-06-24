@@ -33,20 +33,16 @@ $(function (){
         var content = " ";
         var html = $('#list_tmpl').html();
         content = tmpl(html, {data : users});
-        //$('#list').remove();
         $('#list').empty().append(content);
-        var pictogram = ["img/mobile_images/ellipse_tv.png", "img/mobile_images/ellipse_chem.png", "img/mobile_images/ellipse_coffie.png", "img/mobile_images/ellipse_fly.png"];
-        for (i=0; i<4; i++) {
-            $('pictogram').css("src", pictogram[i]);
-        };
+        renderPictogram();
     };
 
-    /*function renderPictogram (){
-        
-        var html = $('#list_tmpl').html();
+    function renderPictogram (){
+        var pictogram = ["img/mobile_images/ellipse_tv.png", "img/mobile_images/ellipse_chem.png", "img/mobile_images/ellipse_coffie.png", "img/mobile_images/ellipse_fly.png"];       
+        var html = $('#pictogram_tmpl').html();
         var content = tmpl(html, {pic : pictogram});
-        $('#list').append(content);
-    };*/
+        $('#picto').append(content);
+    };
 
     function search () {
         var url='';

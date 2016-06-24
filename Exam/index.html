@@ -82,7 +82,7 @@
 	</section>
 	<section class="partners">
 		<h2>Meet a partner for your best holiday</h2>
-		<div id="list">
+		<div class="list" id="list">
 		</div>
 		
 		<script type="text/template" id="list_tmpl">
@@ -90,37 +90,18 @@
 			<div class="partners_container">
 				<div class="img_container">
 					<img class="img_item" src="<%=data[i].photo %>" alt="img">
-					<img class="pictogram" src="img/mobile_images/ellipse_tv.png" alt="elipse">
+					<div id="picto"><!--<img class="pictogram" src="img/mobile_images/ellipse_tv.png" alt="elipse">--></div>
 				</div>
 				<h4><%=data[i].name%></h4>
 				<p>Based in <span><%=data[i].location%></span></p>
 			</div>
-			<!--<div class="partners_container marg">
-				<div class="img_container">
-					<img class="img_item" src="img/mobile_images/partner_2.png" alt="img">
-					<img class="pictogram" src="img/mobile_images/ellipse_chem.png" alt="elipse">
-				</div>
-				<h4>Lucas Marsha</h4>
-				<p>I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
-			</div>
-			<div class="partners_container">
-				<div class="img_container">
-					<img class="img_item" src="img/mobile_images/partner_3.png" alt="img">
-					<img class="pictogram" src="img/mobile_images/ellipse_coffie.png" alt="elipse">
-				</div>
-				<h4>Heather Walker</h4>
-				<p>I'm a happy person that loves cats and climbing on mountains.</p>
-			</div>
-			<div class="partners_container">
-				<div class="img_container">
-					<img class="img_item" src="img/mobile_images/partner_4.png" alt="img">
-					<img class="pictogram" src="img/mobile_images/ellipse_fly.png" alt="elipse">
-				</div>
-				<h4>Bradley Hunter</h4>
-				<p>Based in Chicago. I love playing tennis and loud music.</p>
-			</div>-->
 		<% }; %>
     </script>
+    <script type="text/template" id="pictogram_tmpl">
+    	<% for (var i = 0; i < pic.length; i++) { %>
+    	<img class="pictogram" src=<%=pic[i]%> alt="elipse">
+    	<% }; %>
+    </script>	
 		<button id="search">See other partners</button>
 	</section>
 	<section class="ideas">
