@@ -1,36 +1,4 @@
 $(function (){
-    var users;
-    //запрос
-    //var $input = $('#in').val();
-    //var request;
-
-    /*function getName(data) {
-        var userName = [];
-        for (i = 0; i < 4; i++){
-            var fullName = _.capitalize(data.results[i].name.first) + ' ' + _.capitalize(data.results[i].name.last);
-            userName.push(fullName);
-        };
-        console.log (userName);
-        //return userName;
-    };
-
-    function getPhoto(data) {
-        var userPhoto = [];
-        for (i = 0; i < 4; i++){
-            userPhoto.push(data.results[i].picture.large);
-        };
-        console.log (userPhoto);
-        return userPhoto;
-    };
-
-    function getLocation(data) {
-        var userLocation = [];
-        for (i = 0; i < 4; i++){
-            var fullLocation = _.capitalize(data.results[i].location.city)+', '+_.capitalize(data.results[i].location.state);
-            userLocation.push(fullLocation);
-        };
-        console.log (userLocation);
-    };*/
 //переделать!!!
     function getPartners(data) {
         var users = [];
@@ -58,7 +26,6 @@ $(function (){
             location : _.capitalize(data.results[3].location.city)+', '+_.capitalize(data.results[3].location.state)
         };
         users.push(user);
-        //console.log (users);
         return users;
     };
 
@@ -67,7 +34,7 @@ $(function (){
         var html = $('#list_tmpl').html();
         content = tmpl(html, {data : users});
         //$('#list').remove();
-        $('#list').append(content);
+        $('#list').empty().append(content);
     };
 
     /*function renderPictogram (){
@@ -78,10 +45,7 @@ $(function (){
     };*/
 
     function search () {
-        //e && e.preventDefault();
         var url='';
-        //var $input = $('#in').val();
-        //$input = $input.replace(' ','+');
         url = 'https://randomuser.me/api/?results=4';
         console.log (url);
       
@@ -91,30 +55,9 @@ $(function (){
             success: function(data) {
                 console.log("Here");
                 console.log(data);
-                /*getName(data);
-                getPhoto(data);
-                getLocation(data);
-                renderPartners (userPhoto);*/
                 var users = getPartners(data);
                 //console.log (users);
                 renderPartners (users);
-                
-                /*if (data.responseData==null) {
-                    var htmlError = data.responseDetails;
-                    console.log (htmlError);
-                    //htmlError = '<p class="res">'+htmlError+'</p>';
-                    //$('.result').append(htmlError);
-                } else {
-                    var html="";
-                    //$(".result").children().remove();
-                    var obj=data.responseData.results;
-                    /*obj.forEach(function(item, i){
-                        html = html+'<h2>'+item.title+'</h2>'+'<p>'+item.content+'</p>'+'<a href="#">'+item.url+'</a>';            
-                        $('a').attr('url', item.url);
-                    });
-                    $(".result").append(html);*/
-                     
-                //};
             },
             error: function(error) {
                 console.log("error");
@@ -122,7 +65,36 @@ $(function (){
             }
         });
     };
-   // seach();
+    search();
     $("#search").on("click", search);
-
 });
+
+
+    
+    /*function getName(data) {
+        var userName = [];
+        for (i = 0; i < 4; i++){
+            var fullName = _.capitalize(data.results[i].name.first) + ' ' + _.capitalize(data.results[i].name.last);
+            userName.push(fullName);
+        };
+        console.log (userName);
+        //return userName;
+    };
+
+    function getPhoto(data) {
+        var userPhoto = [];
+        for (i = 0; i < 4; i++){
+            userPhoto.push(data.results[i].picture.large);
+        };
+        console.log (userPhoto);
+        return userPhoto;
+    };
+
+    function getLocation(data) {
+        var userLocation = [];
+        for (i = 0; i < 4; i++){
+            var fullLocation = _.capitalize(data.results[i].location.city)+', '+_.capitalize(data.results[i].location.state);
+            userLocation.push(fullLocation);
+        };
+        console.log (userLocation);
+    };*/
