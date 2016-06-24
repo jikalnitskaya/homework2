@@ -5,25 +5,29 @@ $(function (){
         var user = {
             name : _.capitalize(data.results[0].name.first) + ' ' + _.capitalize(data.results[0].name.last),
             photo : data.results[0].picture.large,
-            location : _.capitalize(data.results[0].location.city)+', '+_.capitalize(data.results[0].location.state)
+            location : _.capitalize(data.results[0].location.city)+', '+_.capitalize(data.results[0].location.state),
+            picto : "img/mobile_images/ellipse_tv.png"
         };
         users.push(user);
         var user = {
             name : _.capitalize(data.results[1].name.first) + ' ' + _.capitalize(data.results[1].name.last),
             photo : data.results[1].picture.large,
-            location : _.capitalize(data.results[1].location.city)+', '+_.capitalize(data.results[1].location.state)
+            location : _.capitalize(data.results[1].location.city)+', '+_.capitalize(data.results[1].location.state),
+            picto : "img/mobile_images/ellipse_chem.png"
         };
         users.push(user);
         var user = {
             name : _.capitalize(data.results[2].name.first) + ' ' + _.capitalize(data.results[2].name.last),
             photo : data.results[2].picture.large,
-            location : _.capitalize(data.results[2].location.city)+', '+_.capitalize(data.results[2].location.state)
+            location : _.capitalize(data.results[2].location.city)+', '+_.capitalize(data.results[2].location.state),
+            picto : "img/mobile_images/ellipse_coffie.png"
         };
         users.push(user);
         var user = {
             name : _.capitalize(data.results[3].name.first) + ' ' + _.capitalize(data.results[3].name.last),
             photo : data.results[3].picture.large,
-            location : _.capitalize(data.results[3].location.city)+', '+_.capitalize(data.results[3].location.state)
+            location : _.capitalize(data.results[3].location.city)+', '+_.capitalize(data.results[3].location.state),
+            picto : "img/mobile_images/ellipse_fly.png"
         };
         users.push(user);
         return users;
@@ -34,15 +38,15 @@ $(function (){
         var html = $('#list_tmpl').html();
         content = tmpl(html, {data : users});
         $('#list').empty().append(content);
-        renderPictogram();
+        //renderPictogram();
     };
 
-    function renderPictogram (){
+    /*function renderPictogram (){
         var pictogram = ["img/mobile_images/ellipse_tv.png", "img/mobile_images/ellipse_chem.png", "img/mobile_images/ellipse_coffie.png", "img/mobile_images/ellipse_fly.png"];       
         var html = $('#pictogram_tmpl').html();
         var content = tmpl(html, {pic : pictogram});
-        $('#picto').append(content);
-    };
+        $('.picto').append(content);
+    };*/
 
     function search () {
         var url='';

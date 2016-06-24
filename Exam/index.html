@@ -90,18 +90,18 @@
 			<div class="partners_container">
 				<div class="img_container">
 					<img class="img_item" src="<%=data[i].photo %>" alt="img">
-					<div id="picto"><!--<img class="pictogram" src="img/mobile_images/ellipse_tv.png" alt="elipse">--></div>
+					<div class="picto"><img class="pictogram" src="<%=data[i].picto %>" alt="elipse"></div>
 				</div>
 				<h4><%=data[i].name%></h4>
 				<p>Based in <span><%=data[i].location%></span></p>
 			</div>
 		<% }; %>
     </script>
-    <script type="text/template" id="pictogram_tmpl">
+    <!--<script type="text/template" id="pictogram_tmpl">
     	<% for (var i = 0; i < pic.length; i++) { %>
-    	<img class="pictogram" src=<%=pic[i]%> alt="elipse">
+    	<img class="pictogram" src=<%=pic[i]%>>
     	<% }; %>
-    </script>	
+    </script>	-->
 		<button id="search">See other partners</button>
 	</section>
 	<section class="ideas">
