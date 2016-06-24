@@ -63,8 +63,10 @@ $(function (){
     };
 
     function renderPartners (users){
+        var content = " ";
         var html = $('#list_tmpl').html();
-        var content = tmpl(html, {data : users});
+        content = tmpl(html, {data : users});
+        //$('#list').remove();
         $('#list').append(content);
     };
 
@@ -94,7 +96,7 @@ $(function (){
                 getLocation(data);
                 renderPartners (userPhoto);*/
                 var users = getPartners(data);
-                console.log (users);
+                //console.log (users);
                 renderPartners (users);
                 
                 /*if (data.responseData==null) {

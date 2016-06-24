@@ -480,6 +480,8 @@ header {
           line-height: 18px;
           letter-spacing: 0.1px;
           margin-bottom: 21px; } }
+      .partners .partners_container p span {
+        text-transform: capitalize; }
   .partners .marg p {
     margin-bottom: 19px; }
   @media screen and (min-width: 786px) {
