@@ -63,11 +63,17 @@ $(function (){
     };
 
     function renderPartners (users){
-        var tmpl = _.template($('#list_tmpl').html());
-        var list = tmpl({data : users});
-        //console.log (list);
-        $('#list').html(list);
+        var html = $('#list_tmpl').html();
+        var content = tmpl(html, {data : users});
+        $('#list').append(content);
     };
+
+    /*function renderPictogram (){
+        var pictogram = ["img/mobile_images/ellipse_tv.png", "img/mobile_images/ellipse_chem.png", "img/mobile_images/ellipse_coffie.png", "img/mobile_images/ellipse_fly.png"];
+        var html = $('#list_tmpl').html();
+        var content = tmpl(html, {pic : pictogram});
+        $('#list').append(content);
+    };*/
 
     function search () {
         //e && e.preventDefault();
@@ -88,7 +94,7 @@ $(function (){
                 getLocation(data);
                 renderPartners (userPhoto);*/
                 var users = getPartners(data);
-        console.log (users);
+                console.log (users);
                 renderPartners (users);
                 
                 /*if (data.responseData==null) {
@@ -114,7 +120,7 @@ $(function (){
             }
         });
     };
-    
+   // seach();
     $("#search").on("click", search);
 
 });

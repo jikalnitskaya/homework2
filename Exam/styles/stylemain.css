@@ -519,7 +519,6 @@ header {
         margin-left: -3px; } }
   .ideas .grid {
     width: 100%;
-    height: 950px;
     margin: 0 auto; }
     .ideas .grid .grid-item {
       /*width: 300px;*/
@@ -535,36 +534,37 @@ header {
           margin-bottom: 20px; } }
       .ideas .grid .grid-item h3 {
         color: white;
-        padding-top: 46px;
-        line-height: 27px; }
-        @media screen and (min-width: 338px) {
-          .ideas .grid .grid-item h3 {
-            padding: auto 5%; } }
+        vertical-align: middle;
+        padding-top: 46%;
+        line-height: 27px;
+        /*@media screen and (min-width: 338px) {
+        	padding: auto 5%;
+        }
         @media screen and (min-width: 786px) {
-          .ideas .grid .grid-item h3 {
-            padding: auto 5%; } }
+        	padding: auto 5%;
+        }*/ }
+      .ideas .grid .grid-item .padding_top {
+        padding-top: 23%; }
   .ideas .grid-item:hover {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); }
   .ideas .width1 {
-    width: 100%; }
+    width: 100%;
+    		/*@media screen and (min-width: 786px) {
+           		width: 31.8%; /*300px;	
+    		}*/ }
     @media screen and (min-width: 338px) {
       .ideas .width1 {
         width: 31.8%;
         /*236px;	*/ } }
-    @media screen and (min-width: 786px) {
-      .ideas .width1 {
-        width: 31.8%;
-        /*300px;	*/ } }
   .ideas .width2 {
-    width: 100%; }
+    width: 100%;
+    /*@media screen and (min-width: 786px) {
+    	width: 60%; /*620px;
+    }*/ }
     @media screen and (min-width: 338px) {
       .ideas .width2 {
-        width: 65%;
+        width: 66%;
         /*493px;*/ } }
-    @media screen and (min-width: 786px) {
-      .ideas .width2 {
-        width: 65%;
-        /*620px;*/ } }
   .ideas .tile_1 {
     background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
     background-position: 0px 0px; }
@@ -581,23 +581,35 @@ header {
         /*background-position: 0px 0px; */ } }
   .ideas .tile_2 {
     background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
-    background-position: 0px -122px; }
+    background-position: 0px -122px;
+    /*h3 {
+    	@media screen and (min-width: 338px) {
+    		padding: 55% 15%;
+    	}
+    }*/ }
     @media screen and (min-width: 338px) {
       .ideas .tile_2 {
         background: url(../img/tablet_images/ideas_sprite.png) no-repeat;
-        background-position: -244px 0px;
-        /*margin-right: 2.4%;*/ } }
+        background-position: -244px 0px; } }
     @media screen and (min-width: 786px) {
       .ideas .tile_2 {
-        margin-right: 2.2%;
+        /*margin-right: 2.2%;*/
         background: url(../img/desctop_images/idea_2.png) no-repeat;
         /*background-position: -309px 0px; */ } }
-    @media screen and (min-width: 338px) {
-      .ideas .tile_2 h3 {
-        padding: 55% 15%; } }
   .ideas .tile_3 {
     background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
-    background-position: 0px -249px; }
+    background-position: 0px -249px;
+    /*h3 {
+    	margin: 0px auto 0;
+		width: 73%;
+		padding-top: 30px;
+    	@media screen and (min-width: 338px) {
+    		padding: 54% 10%;
+    	}
+    	@media screen and (min-width: 786px) {
+    		padding: 38% 15%;
+    	}
+    }*/ }
     @media screen and (min-width: 338px) {
       .ideas .tile_3 {
         background: url(../img/tablet_images/ideas_sprite.png) no-repeat;
@@ -607,16 +619,6 @@ header {
       .ideas .tile_3 {
         background: url(../img/desctop_images/idea_3.png) no-repeat;
         /*background-position: -618px 0px; */ } }
-    .ideas .tile_3 h3 {
-      margin: 0px auto 0;
-      width: 73%;
-      padding-top: 30px; }
-      @media screen and (min-width: 338px) {
-        .ideas .tile_3 h3 {
-          padding: 54% 10%; } }
-      @media screen and (min-width: 786px) {
-        .ideas .tile_3 h3 {
-          padding: 38% 15%; } }
   .ideas .tile_4 {
     background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
     background-position: 0px -375px; }
@@ -633,7 +635,16 @@ header {
         /*background-position: -927px 0px; */ } }
   .ideas .tile_5 {
     background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
-    background-position: 0px -502px; }
+    background-position: 0px -502px;
+    /*h3 {
+    	padding-top: 23%;
+    	/*@media screen and (min-width: 338px) {
+    		padding: 29% 5%;
+    	}
+    	@media screen and (min-width: 786px) {
+    		padding: 23% 5%;
+    	}
+    }*/ }
     @media screen and (min-width: 338px) {
       .ideas .tile_5 {
         background: url(../img/tablet_images/ideas_sprite.png) no-repeat;
@@ -643,15 +654,18 @@ header {
       .ideas .tile_5 {
         background: url(../img/desctop_images/idea_5.png) no-repeat;
         /*background-position: -1236px 0px; */ } }
-    @media screen and (min-width: 338px) {
-      .ideas .tile_5 h3 {
-        padding: 29% 5%; } }
-    @media screen and (min-width: 786px) {
-      .ideas .tile_5 h3 {
-        padding: 23% 5%; } }
   .ideas .tile_6 {
     background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
-    background-position: 0px -629px; }
+    background-position: 0px -629px;
+   /*h3 {
+   	padding-top: 23%;
+  		/*@media screen and (min-width: 338px) {
+  			padding: 29% 5%;
+  		}
+  		@media screen and (min-width: 786px) {
+  			padding: 23% 5%;
+  		}
+  	}*/ }
     @media screen and (min-width: 338px) {
       .ideas .tile_6 {
         background: url(../img/tablet_images/ideas_sprite.png) no-repeat;
@@ -663,12 +677,6 @@ header {
         /*margin-right: 2%;*/
         background: url(../img/desctop_images/idea_6.png) no-repeat;
         /*background-position: -1872px 0px; */ } }
-    @media screen and (min-width: 338px) {
-      .ideas .tile_6 h3 {
-        padding: 29% 5%; } }
-    @media screen and (min-width: 786px) {
-      .ideas .tile_6 h3 {
-        padding: 23% 5%; } }
   .ideas .tile_7 {
     background: url(../img/mobile_images/ideas_sprite.png) no-repeat;
     background-position: 0px -756px; }
