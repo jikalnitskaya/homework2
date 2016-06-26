@@ -13,7 +13,7 @@ $(function (){
             success: function(data) {
                 console.log("Here");
                 console.log(data);
-                for (i=0; i<7; i++) {
+                for (i=0; i<8; i++) {
 	                var src = 'url('+data.hits[i].webformatURL+') no-repeat';
 	                var target = '.tile_' + (i+1);
 	                var targetH = '.tile_' + (i+1) + ' h3';

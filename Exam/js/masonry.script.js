@@ -1,8 +1,11 @@
 $(function (){
 	$('.grid').masonry({
 		itemSelector: '.grid-item',
-		columnWidth: 31.8,
+		//columnWidth: '.grid-sizer',
+		//columnWidth: 31.8,
 		percentPosition: true,
-		gutter: 3.1
+		gutter: '.gutter',
+		//gutter: '3.1%'
+		//gutter: '2.3%'
 	});
 });

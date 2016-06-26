@@ -22,6 +22,8 @@ $(function() {
   		var stepContainer = $target.parent('div');
 	    var $url = 'url(./img/desctop_images/step_'+i+'.png) no-repeat';
 	    stepContainer.css("background", $url);
+        stepContainer.css("background-size", "cover");
+        stepContainer.css("background-position", "center center");
 	    //меняем текст
         var nextItem = htmlSteps[i-1];
         var stepItem = $target.next('.step_item').html(nextItem);
@@ -41,6 +43,8 @@ $(function() {
   		var stepContainer = $target.parent('div');
 	    var $url = 'url(./img/desctop_images/step_'+i+'.png) no-repeat';
 	    stepContainer.css("background", $url);
+        stepContainer.css("background-size", "cover");
+        stepContainer.css("background-position", "center center");
 	    //меняем текст
         var nextItem = htmlSteps[i-1];
         var stepItem = $target.prev('.step_item').html(nextItem);
