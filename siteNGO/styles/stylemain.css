@@ -67,3 +67,17 @@ body {
     -moz-box-shadow: -15px 15px 25px 0px rgba(128,128,128,0.25);
     box-shadow: -15px 15px 25px 0px rgba(128,128,128,0.25);
 }
+
+.history, .preview, .actions, .activities {
+	margin: 20px;
+}
+
+.history h3, .preview h3, .actions h3, .activities h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.history, .preview, .actions, .activities article {
+
+}
